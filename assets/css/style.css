@@ -1,8 +1,6 @@
 /**
-* Template Name: SoftLand - v4.3.0
-* Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template: MixedBag - v1.1.5
+* Author: Mixed-bag.nl
 */
 
 /*--------------------------------------------------------------
@@ -27,6 +25,8 @@ a {
 a:hover {
   color: #000;
 }
+
+.pointer {cursor: pointer;}
 
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: "Poppins", sans-serif;
@@ -74,6 +74,10 @@ section {
   background: linear-gradient(-45deg, #3db3c5, #274685);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.rounded-img{
+  border-radius: 20%;
 }
 
 /*--------------------------------------------------------------
@@ -830,7 +834,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
+  background: url(../img/hero-bg.jpg);
   position: relative;
 }
 
@@ -1007,4 +1011,8 @@ section {
 
 .social a i {
   line-height: 0;
+}
+
+.form-group {
+  padding: 5px;
 }

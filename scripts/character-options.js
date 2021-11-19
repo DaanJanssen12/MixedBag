@@ -1,14 +1,14 @@
-const commonRaces = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Half-Orc", "Halfling", "Human", "Tiefling"];
-const monsterRaces = ["Bugbear", "Centaur", "Goblin", "Grung", "Hobgoblin", "Kobold", "Lizardfolk", "Minotaur", "Orc", "Yuan-Ti"];
-const exoticRaces = ["Aarakocra", "Aasimar", "Changeling", "Firbolg", "Genasi", "Gith", "Goliath", "Kalashtar", "Kenku", "Satyr", "Shifter", "Tabaxi", "Tortle", "Triton", "Warforged"];
+var commonRaces = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Half-Orc", "Halfling", "Human", "Tiefling"];
+var monsterRaces = ["Bugbear", "Centaur", "Goblin", "Grung", "Hobgoblin", "Kobold", "Lizardfolk", "Minotaur", "Orc", "Yuan-Ti"];
+var exoticRaces = ["Aarakocra", "Aasimar", "Changeling", "Firbolg", "Genasi", "Gith", "Goliath", "Kalashtar", "Kenku", "Satyr", "Shifter", "Tabaxi", "Tortle", "Triton", "Warforged"];
 
-const classes = ["Artificer", "Barbarian", "Bard", "Blood Hunter", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"];
-const ArtificerSub = [
+var classes = ["Artificer", "Barbarian", "Bard", "Blood Hunter", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"];
+var ArtificerSub = [
 	{name: "Alchemist", link: "http://dnd5e.wikidot.com/artificer:alchemist"}, 
 	{name: "Armorer", link: "http://dnd5e.wikidot.com/artificer:armorer"}, 
 	{name: "Artillerist", link: "http://dnd5e.wikidot.com/artificer:artillerist"}, 
 	{name: "Battle Smith", link: "http://dnd5e.wikidot.com/artificer:battle-smith"}];
-const BarbarianSub = [
+var BarbarianSub = [
 	{name: "Path of the Ancestral Guardian", link: "http://dnd5e.wikidot.com/barbarian:ancestral-guardian"},
 	{name: "Path of the Battlerager", link: "http://dnd5e.wikidot.com/barbarian:battlerager"},
 	{name: "Path of the Beast", link: "http://dnd5e.wikidot.com/barbarian:beast"},
@@ -17,7 +17,7 @@ const BarbarianSub = [
 	{name: "Path of the Totem Warrior", link: "http://dnd5e.wikidot.com/barbarian:totem-warrior"},
 	{name: "Path of Wild Magic", link: "http://dnd5e.wikidot.com/barbarian:wild-magic"},
 	{name: "Path of the Zealot", link: "http://dnd5e.wikidot.com/barbarian:zealot"}];
-const BardSub = [
+var BardSub = [
 	{name: "College of Creation", link: "http://dnd5e.wikidot.com/bard:creation"},
 	{name: "College of Eloquence", link: "http://dnd5e.wikidot.com/bard:eloquence"},
 	{name: "College of Glamour", link: "http://dnd5e.wikidot.com/bard:glamour"},
@@ -27,13 +27,13 @@ const BardSub = [
 	{name: "College of Valor", link: "http://dnd5e.wikidot.com/bard:valor"},
 	{name: "College of Whispers", link: "http://dnd5e.wikidot.com/bard:whispers"}
 ];
-const BloodHunterSub = [
+var BloodHunterSub = [
 	{name: "Order of the Ghostslayer", link: "http://dnd5e.wikidot.com/blood-hunter:ghostslayer"},
 	{name: "Order of the Lycan", link: "http://dnd5e.wikidot.com/blood-hunter:lycan"},
 	{name: "Order of the Mutant", link: "http://dnd5e.wikidot.com/blood-hunter:mutant"},
 	{name: "Order of the Profane Soul", link: "http://dnd5e.wikidot.com/blood-hunter:profane-soul"}
 ];
-const ClericSub = [
+var ClericSub = [
 	{name: "Arcana Domain", link: "http://dnd5e.wikidot.com/cleric:arcana"},
 	{name: "Death Domain", link: "http://dnd5e.wikidot.com/cleric:death"},
 	{name: "Forge Domain", link: "http://dnd5e.wikidot.com/cleric:forge"},
@@ -49,7 +49,7 @@ const ClericSub = [
 	{name: "Twilight Domain", link: "http://dnd5e.wikidot.com/cleric:twilight"},
 	{name: "War Domain", link: "http://dnd5e.wikidot.com/cleric:war"}
 ];
-const DruidSub = [
+var DruidSub = [
 	{name: "Circle of Dreams", link: "http://dnd5e.wikidot.com/druid:dreams"},
 	{name: "Circle of the Land", link: "http://dnd5e.wikidot.com/druid:land"},
 	{name: "Circle of the Moon", link: "http://dnd5e.wikidot.com/druid:moon"},
@@ -58,7 +58,7 @@ const DruidSub = [
 	{name: "Circle of Stars", link: "http://dnd5e.wikidot.com/druid:stars"},
 	{name: "Circle of Wildfire", link: "http://dnd5e.wikidot.com/druid:wildfire"}
 ];
-const FighterSub = [
+var FighterSub = [
 	{name: "Arcane Archer", link: "http://dnd5e.wikidot.com/fighter:arcane-archer"},
 	{name: "Banneret", link: "http://dnd5e.wikidot.com/fighter:banneret"},
 	{name: "Battle Master", link: "http://dnd5e.wikidot.com/fighter:battle-master"},
@@ -70,7 +70,7 @@ const FighterSub = [
 	{name: "Rune Knight", link: "http://dnd5e.wikidot.com/fighter:rune-knight"},
 	{name: "Samurai", link: "http://dnd5e.wikidot.com/fighter:samurai"}
 ];
-const MonkSub = [
+var MonkSub = [
 	{name: "Way of Mercy", link: "http://dnd5e.wikidot.com/monk:mercy"},
 	{name: "Way of the Astral Self", link: "http://dnd5e.wikidot.com/monk:astral-self"},
 	{name: "Way of the Drunken Master", link: "http://dnd5e.wikidot.com/monk:drunken-master"},
@@ -81,7 +81,7 @@ const MonkSub = [
 	{name: "Way of Shadow", link: "http://dnd5e.wikidot.com/monk:shadow"},
 	{name: "Way of the Sun Soul", link: "http://dnd5e.wikidot.com/monk:sun-soul"}
 ];
-const PaladinSub = [
+var PaladinSub = [
 	{name: "Oath of the Ancients", link: "http://dnd5e.wikidot.com/paladin:ancients"},
 	{name: "Oath of Conquest", link: "http://dnd5e.wikidot.com/paladin:conquest"},
 	{name: "Oath of the Crown", link: "http://dnd5e.wikidot.com/paladin:crown"},
@@ -92,7 +92,7 @@ const PaladinSub = [
 	{name: "Oath of the Watchers", link: "http://dnd5e.wikidot.com/paladin:watchers"},
 	{name: "Oathbreaker", link: "http://dnd5e.wikidot.com/paladin:oathbreaker"}
 ];
-const RangerSub = [
+var RangerSub = [
 	{name: "Beast Master Conclave", link: "http://dnd5e.wikidot.com/ranger:beast-master"},
 	{name: "Fey Wanderer", link: "http://dnd5e.wikidot.com/ranger:fey-wanderer"},
 	{name: "Gloom Stalker Conclave", link: "http://dnd5e.wikidot.com/ranger:gloom-stalker"},
@@ -101,7 +101,7 @@ const RangerSub = [
 	{name: "Monster Slayer Conclave", link: "http://dnd5e.wikidot.com/ranger:monster-slayer"},
 	{name: "Swarmkeeper", link: "http://dnd5e.wikidot.com/ranger:swarmkeeper"}
 ];
-const RogueSub = [
+var RogueSub = [
 	{name: "Arcane Trickster", link: "http://dnd5e.wikidot.com/rogue:arcane-trickster"},
 	{name: "Assassin", link: "http://dnd5e.wikidot.com/rogue:assassin"},
 	{name: "Inquisitive", link: "http://dnd5e.wikidot.com/rogue:inquisitive"},
@@ -112,7 +112,7 @@ const RogueSub = [
 	{name: "Swashbuckler", link: "http://dnd5e.wikidot.com/rogue:swashbuckler"},
 	{name: "Thief", link: "http://dnd5e.wikidot.com/rogue:thief"}
 ];
-const SorcererSub = [
+var SorcererSub = [
 	{name: "Abberant Mind", link: "http://dnd5e.wikidot.com/sorcerer:abberant-mind"},
 	{name: "Clockwork Soul", link: "http://dnd5e.wikidot.com/sorcerer:clockwork-soul"},
 	{name: "Droconic Bloodline", link: "http://dnd5e.wikidot.com/sorcerer:draconic-bloodline"},
@@ -121,7 +121,7 @@ const SorcererSub = [
 	{name: "Storm Sorcery", link: "http://dnd5e.wikidot.com/sorcerer:storm-sorcery"},
 	{name: "Wild Magic", link: "http://dnd5e.wikidot.com/sorcerer:wild-magic"}
 ];
-const WarlockSub = [
+var WarlockSub = [
 	{name: "Archfey", link: "http://dnd5e.wikidot.com/warlock:archfey"},
 	{name: "Celestial", link: "http://dnd5e.wikidot.com/warlock:celestial"},
 	{name: "Fathomless", link: "http://dnd5e.wikidot.com/warlock:fathomless"},
@@ -132,7 +132,7 @@ const WarlockSub = [
 	{name: "Undead", link: "http://dnd5e.wikidot.com/warlock:undead"},
 	{name: "Undying", link: "http://dnd5e.wikidot.com/warlock:undying"}
 ];
-const WizardSub = [
+var WizardSub = [
 	{name: "School of Abjuration", link: "http://dnd5e.wikidot.com/wizard:abjuration"},
 	{name: "School of Bladesinging", link: "http://dnd5e.wikidot.com/wizard:bladesinging"},
 	{name: "School of Chronurgy", link: "http://dnd5e.wikidot.com/wizard:chronurgy"},
@@ -147,16 +147,22 @@ const WizardSub = [
 	{name: "School of Transmutation", link: "http://dnd5e.wikidot.com/wizard:transmutation"},
 	{name: "School of War Magic", link: "http://dnd5e.wikidot.com/wizard:war-magic"},
 ];
-const HomebrewSubclasses = [
+var HomebrewSubclasses = [
 	{mainClass: "Monk", name: "Way of the Siren", link: "https://homebrewery.naturalcrit.com/share/0K2krc1LO"},
 	{mainClass: "Rogue", name: "Alchemist", link: "https://homebrewery.naturalcrit.com/share/H1m1-auowr"},
 	{mainClass: "Wizard", name: "School of Nature", link: "https://homebrewery.naturalcrit.com/share/4Qk5nSceV"},
 	{mainClass: "Warlock", name: "The Gambler", link: "https://homebrewery.naturalcrit.com/share/V-Q520LHC"},
 	{mainClass: "Fighter", name: "Illusion Warrior", link: "https://homebrewery.naturalcrit.com/share/s2WHWXY11"},
-	{mainClass: "Paladin", name: "Oath of Mockery", link: "https://homebrewery.naturalcrit.com/share/veVzAw6Kq"}
+	{mainClass: "Paladin", name: "Oath of Mockery", link: "https://homebrewery.naturalcrit.com/share/veVzAw6Kq"},
+	{mainClass: "Paladin", name: "Oath of the Open Sea", link: "http://dnd5e.wikidot.com/paladin:open-sea"},
+	{mainClass: "Monk", name: "Way of the Cobalt Soul", link: "http://dnd5e.wikidot.com/monk:cobalt-soul"},
+	{mainClass: "Bard", name: "College of the Maestro", link: "http://dnd5e.wikidot.com/bard:maestro"},
+	{mainClass: "Fighter", name: "Gunslinger", link: "http://dnd5e.wikidot.com/fighter:gunslinger"},
+	{mainClass: "Cleric", name: "Blood Domain", link: "http://dnd5e.wikidot.com/cleric:blood"},
+	{mainClass: "", name: "", link: "http://dnd5e.wikidot.com/"}
 ];
 
-const backgrounds = ["Acolyte", "Anthropologist", "Archaeologist", "Charlatan", "City Watch", "Cloistered Sholar", "Courtier", "Criminal", "Entertainer", "Faceless", "Faction Agent", "Far Traveler", 
+var backgrounds = ["Acolyte", "Anthropologist", "Archaeologist", "Charlatan", "City Watch", "Cloistered Sholar", "Courtier", "Criminal", "Entertainer", "Faceless", "Faction Agent", "Far Traveler", 
 	"Folk Hero", "Gladiator", "Guild Artisan", "Guild Merchant", "Haunted One", "House Agent", "Hermit", "Inheritor", "Investigator", "Knight", "Knight of the Order", "Mercenary Veteran", "Noble", "Outlander", 
 	"Pirate", "Sage", "Sailor", "Soldier", "Spy", "Urban Bounty Hunter", "Urchin", "Uthgardt Tribe Member", "Waterdhavian Noble", "Grinner", "Volstrucker Agent"];
 
@@ -187,9 +193,10 @@ function myFunction() {
 	if(['a', 'e', 'i', 'u', 'o', 'y'].includes(background.charAt(0).toLowerCase())){
 		combineWord = "an";
 	}
-	document.getElementById("total").innerHTML = `You are playing a <text style="color: red">${race}</text> <text style="color: green">${_class}</text>, who has the background of ${combineWord} <text style="color: blue">${background}</text>`;
+	document.getElementById("total").innerHTML = `You are playing a <text style="color: red">${race}</text> <text style="color: green">${_class}</text>${includeSubclass ? ` (<text style="color:darkgreen">${subclass.name}</text>)` : ``}, who has the background of ${combineWord} <text style="color: blue">${background}</text>`;
 	$("#result").css("display", "");
 	$("#result-img").css("display", "none");
+	rollForStats();
 }
 function getRace(){
 	var min = 1;
@@ -282,7 +289,7 @@ function rollForStats(){
 	stats.sort(function(a, b) {
 		return a - b;
 	});
-	$("#stats").html(`Stats: ${stats[0]}, ${stats[1]}, ${stats[2]}, ${stats[3]}, ${stats[4]}, ${stats[5]}`);
+	$("#stats").html(`${stats[0]}, ${stats[1]}, ${stats[2]}, ${stats[3]}, ${stats[4]}, ${stats[5]}`);
 }
 
 function rollStat(){
