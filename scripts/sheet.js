@@ -1,64 +1,42 @@
-$('.stat').bind('input', function()
-    {
-      var inputName = $(this).attr('name')
-      var mod = parseInt($(this).val()) - 10
-      
-      if (mod % 2 == 0)
-        mod = mod / 2
-      else
-        mod = (mod - 1) / 2
-  
-      if (isNaN(mod))
-        mod = ""
-      else if (mod >= 0)
-        mod = "+" + mod
-  
-      var scoreName = inputName.slice(0, inputName.indexOf("score"))
-      var modName = scoreName + "mod"
-      
-      $("[name='" + modName + "']").val(mod)
-    })
-
-$('.statmod').bind('change', function()
-{
-  var name = $(this).attr('name')
-  name = "uses" + name.slice(0, name.indexOf('mod'))
-  
-})
-
-$("[name='classlevel']").bind('input', function()
-  {
-    var classes = $(this).val()
-    var r = new RegExp(/\d+/g)
-    var total = 0
-    var result
-    while ((result = r.exec(classes)) != null)
-    {
-      var lvl = parseInt(result)
-      if (!isNaN(lvl))
-        total += lvl
-    }
-    var prof = 2
-    if (total > 0)
-    {
-      total -= 1
-      prof += Math.trunc(total/4)
-      prof = "+" + prof
-    }
-    else
-    {
-      prof = ""    
-    }
-    $("[name='proficiencybonus']").val(prof)
+$(document).ready(function(){
+  var self = this;
+  $("input:text.stat").off("keyup").on("keyup", function(){
+    var stat = $(this).attr("name");
+    var score = $(this).val();
+    ChangeModifier(stat, score);
+  });
+  $("input[name$='prof']").off("change").on("change", function(){
+    var name = $(this).attr("name").replace("-prof", "");
+    var checked = $(this).is(":checked");
+    ToggleProficiency(name, checked);
   })
+});
 
-$("[name='totalhd']").bind('input', function()
-{
-  $("[name='remaininghd']").val($(this).val())
-})
+function ChangeModifier(stat, score){
+  var modifier = Math.floor((score - 10)/2);
+  var modStr = modifier <= 0 ? modifier : "+"+modifier;
 
-function totalhd_clicked()
-{
-  $("[name='remaininghd']").val($("[name='totalhd']").val())
+  stat = stat.replace("score", "");
+  $(`input[name='${stat}mod']`).val(modStr);
+  $(`.${stat}-skill`).each(function(){
+    var skill = $(this).attr("name");
+    skillMod = parseInt(modifier);
+    if($(`input[name="${skill}-prof"]`).is(":checked")){
+      var profBonus = $("input[name='proficiencybonus']").val().replace("+","");
+      skillMod += parseInt(profBonus);
+    }
+    $(this).val(skillMod <= 0 ? skillMod : "+"+skillMod);
+  });
 }
 
+function ToggleProficiency(name, checked){
+  var val = parseInt($(`input[name='${name}']`).val().replace("+", ""));
+  var profBonus = parseInt($("input[name='proficiencybonus']").val().replace("+",""));
+  if(checked) {
+    val += profBonus;
+  }
+  else {
+    val -= profBonus;
+  }
+  $(`input[name='${name}']`).val(val <= 0 ? val : "+"+val);
+}

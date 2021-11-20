@@ -862,13 +862,12 @@ section {
 }
 
 .hero-section.inner-page {
-  height: 60vh;
+  height: 30vh;
   min-height: 0;
 }
 
 .hero-section.inner-page .hero-text {
-  transform: translateY(-150px);
-  margin-top: -120px;
+  transform: translateY(-300px);
 }
 
 @media screen and (max-width: 992px) {

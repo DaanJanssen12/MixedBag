@@ -194,12 +194,12 @@ form.charsheet .sheet-main > section section.attributes div.scores ul li input {
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.score input {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 2px 0px 0px 0px;
   background: white;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier {
-  margin-top: 3px;
+  margin-top: 7px;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier input {
   background: white;
@@ -298,7 +298,7 @@ form.charsheet .sheet-main > section div.passive-perception input {
   border-radius: 10px;
 }
 form.charsheet .sheet-main > section div.otherprofs textarea {
-  height: 26em;
+  height: 325px;
 }
 form.charsheet .sheet-main section.combat {
   background-color: #eee;
@@ -529,6 +529,7 @@ form.charsheet .sheet-main section.attacksandspellcasting > div > table input {
 }
 form.charsheet .sheet-main section.attacksandspellcasting > div textarea {
   border: 0;
+  height: 260px;
 }
 form.charsheet .sheet-main section.equipment {
   border: 1px solid black;
@@ -617,6 +618,7 @@ form.charsheet .sheet-main section.features div {
   border-radius: 10px;
   display: flex;
   flex-direction: column-reverse;
+  height: 727px;
 }
 form.charsheet .sheet-main section.features div label {
   text-align: center;
@@ -624,5 +626,5 @@ form.charsheet .sheet-main section.features div label {
 form.charsheet .sheet-main section.features div textarea {
   border: 0;
   padding: 5px;
-  height: 43em;
+  height: 100%;
 }
