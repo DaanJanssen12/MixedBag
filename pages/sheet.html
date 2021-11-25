@@ -1,7 +1,5 @@
-
-<link rel="stylesheet" href="./scripts/sheet.css" />
 <!DOCTYPE html>
-<section class="hero-section inner-page">
+<section class="hero-section inner-page ignore-in-pdf">
   <div class="wave">
 
 	<svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -27,10 +25,13 @@
   </div>
 
 </section>
-<form class="charsheet">
+<form id="charsheet" class="charsheet">
+  <link rel="stylesheet" href="./scripts/sheet.css" />
   <div class="sheet-header">
     <section class="charname">
-      <label for="charname">Character Name</label><input name="charname" placeholder="Thoradin Fireforge" />
+      <label for="charname">Character Name</label>
+        <input style="width: 75%;" name="charname" placeholder="Thoradin Fireforge" />  
+        <i id="download" class="fa fa-download ignore-in-pdf"></i>
     </section>
     <section class="misc">
       <ul>
@@ -257,7 +258,7 @@
               <label onclick="totalhd_clicked()" for="totalhd">Total</label><input name="totalhd" placeholder="2d10" type="text" />
             </div>
             <div class="remaining">
-              <label for="remaininghd">Hit Dice</label><input style="width: 50px;margin-left: 5px;" name="remaininghd" type="text" />
+              <label for="remaininghd">Hit Dice</label><input style="width: 75px;margin-left: 5px;height: 40px;border: none;" name="remaininghd" type="text" />
             </div>
           </div>
         </div>
@@ -392,4 +393,6 @@
     </section>
   </div>
 </form>
+<script src="./assets/vendor/jsPDF/html2canvas.min.js"></script>
+<script src="./assets/vendor/jsPDF/jspdf.min.js"></script>
 <script src="./scripts/sheet.js"></script>

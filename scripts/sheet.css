@@ -30,7 +30,7 @@ div.box {
 }
 
 form.charsheet {
-  width: 800px;
+  width: 1080px;
   right: 0;
   left: 0;
   margin-right: auto;
@@ -161,10 +161,13 @@ form.charsheet .sheet-main > section section.attributes {
   justify-content: space-between;
 }
 form.charsheet .sheet-main > section section.attributes div.scores {
-  width: 101px;
+  width: 40%;
   background-color: #bbb;
   border-radius: 10px;
   padding-bottom: 5px;
+}
+form.charsheet .sheet-main > section section.attributes div.attr-applications {
+  width: 55%;
 }
 form.charsheet .sheet-main > section section.attributes div.scores label {
   font-size: 8px;
@@ -178,8 +181,8 @@ form.charsheet .sheet-main > section section.attributes div.scores ul {
   height: 100%;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li {
-  height: 80px;
-  width: 70px;
+  height: 100px;
+  width: 85px;
   background-color: white;
   border: 1px solid black;
   text-align: center;
@@ -194,18 +197,18 @@ form.charsheet .sheet-main > section section.attributes div.scores ul li input {
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.score input {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   padding: 2px 0px 0px 0px;
   background: white;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier {
-  margin-top: 7px;
+  margin-top: 2px;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier input {
   background: white;
-  width: 30px;
-  height: 20px;
-  border: 1px inset black;
+  width: 40px;
+  height: 30px;
+  border: 1px solid black;
   border-radius: 20px;
   margin: -1px;
   text-align: center;
@@ -257,7 +260,7 @@ form.charsheet .sheet-main > section section.attributes div.attr-applications di
 }
 form.charsheet .sheet-main > section section.attributes div.attr-applications div.list-section ul li label {
   text-transform: none;
-  font-size: 8px;
+  font-size: 11px;
   text-align: left;
   order: 3;
 }
@@ -298,7 +301,7 @@ form.charsheet .sheet-main > section div.passive-perception input {
   border-radius: 10px;
 }
 form.charsheet .sheet-main > section div.otherprofs textarea {
-  height: 325px;
+  height: 440px;
 }
 form.charsheet .sheet-main section.combat {
   background-color: #eee;
@@ -577,6 +580,7 @@ form.charsheet .sheet-main section.equipment > div > label {
 form.charsheet .sheet-main section.equipment > div > textarea {
   flex: 1;
   border: 0;
+  height: 325px;
 }
 form.charsheet .sheet-main section.flavor {
   padding: 10px;
@@ -618,7 +622,6 @@ form.charsheet .sheet-main section.features div {
   border-radius: 10px;
   display: flex;
   flex-direction: column-reverse;
-  height: 727px;
 }
 form.charsheet .sheet-main section.features div label {
   text-align: center;
@@ -626,5 +629,5 @@ form.charsheet .sheet-main section.features div label {
 form.charsheet .sheet-main section.features div textarea {
   border: 0;
   padding: 5px;
-  height: 100%;
+  height: 815px;
 }
