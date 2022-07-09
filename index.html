@@ -45,7 +45,7 @@
 <body>
   <header id="header" class="fixed-top d-flex align-items-center"></header>
   <main id="main"></main>
-  <footer class="footer" role="contentinfo"></footer>
+  <footer id="footer" class="footer" role="contentinfo"></footer>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -60,8 +60,8 @@
   <script src="scripts/character-options.js"></script>
   <script>
 	$(document).ready(function(){
-		$("#header").load("./common/header.html");
 		$("#footer").load("./common/footer.html");
+		$("#header").load("./common/header.html");
 		if(window.location.search !== '') {
 			var urlParams = new URLSearchParams(window.location.search);
 			if(window.location.search.includes('page')){

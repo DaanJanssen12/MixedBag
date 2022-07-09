@@ -194,12 +194,12 @@ form.charsheet .sheet-main > section section.attributes div.scores ul li input {
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.score input {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 2px 0px 0px 0px;
   background: white;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier {
-  margin-top: 3px;
+  margin-top: 10px;
 }
 form.charsheet .sheet-main > section section.attributes div.scores ul li div.modifier input {
   background: white;

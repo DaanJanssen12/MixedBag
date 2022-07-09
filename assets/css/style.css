@@ -836,6 +836,7 @@ section {
 .hero-section {
   background: url(../img/hero-bg.jpg);
   position: relative;
+  background-size: cover;
 }
 
 .hero-section .wave {
