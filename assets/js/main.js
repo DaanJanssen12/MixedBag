@@ -1,79 +1,27 @@
 $(document).ready(async function(){
-  await $("#header").load("./common/header.html");
-  await $("#footer").load("./common/footer.html");
-  if(window.location.search !== '') {
-    var urlParams = new URLSearchParams(window.location.search);
-    if(window.location.search.includes('page')){
-      var page = 'pages/' + urlParams.get('page') + '.html';
-      load_page(null, page);
+  if($("#HAS_LOADED").val() <= 0){
+    $("#HAS_LOADED").val(1);
+
+    $("#footer").load("./common/footer.html");
+    $("#header").load("./common/header.html");
+    if(window.location.search !== '') {
+      var urlParams = new URLSearchParams(window.location.search);
+      if(window.location.search.includes('id'))
+      {
+        $("#POKEMON_ID").val(urlParams.get('id'));
+      }
+      if(window.location.search.includes('page')){
+        var page = 'pages/' + urlParams.get('page') + '.html';
+        load_page(null, page);
+      }
+      else {
+        $("#main").load("./pages/pokedex-full.html");
+      }
     }
     else {
-      $("#main").load("./pages/home.html");
+      $("#main").load("./pages/pokedex-full.html");
     }
   }
-  else {
-    $("#main").load("./pages/home.html");
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-   if ($('#header').length > 0) {
-     const headerScrolled = () => {
-       if (window.scrollY > 100) {
-        $('#header').addClass('header-scrolled');
-       } else {
-        $('#header').removeClass('header-scrolled');
-       }
-     }
-     window.addEventListener('load', headerScrolled);
-     onscroll(document, headerScrolled);
-   }
- 
-   /**
-    * Back to top button
-    */
-   if ($('.back-to-top').length > 0) {
-     const toggleBacktotop = () => {
-       if (window.scrollY > 100) {
-        $('.back-to-top').addClass('active');
-       } else {
-        $('.back-to-top').removeClass('active');
-       }
-     }
-     window.addEventListener('load', toggleBacktotop);
-     onscroll(document, toggleBacktotop);
-   }
- 
-   /**
-    * Testimonials slider
-    */
-   new Swiper('.testimonials-slider', {
-     speed: 600,
-     loop: true,
-     autoplay: {
-       delay: 5000,
-       disableOnInteraction: false
-     },
-     slidesPerView: 'auto',
-     pagination: {
-       el: '.swiper-pagination',
-       type: 'bullets',
-       clickable: true
-     }
-   });
- 
-   /**
-    * Animation on scroll
-    */
-   window.addEventListener('load', () => {
-     AOS.init({
-       duration: 1000,
-       easing: 'ease-in-out',
-       once: true,
-       mirror: false
-     })
-   });
 });
 
 async function load_page(menuItem, pageToLoad, menuParent) {

@@ -1,33 +1,33 @@
 {
-    "name" : "Salareen",
-    "primaryType": "Grass",
-    "secondaryType": "",
-    "species": "Lizard",
-    "height": "0.3",
-    "weight": "0.3",
+    "name" : "Chirquency",
+    "primaryType": "Flying",
+    "secondaryType": "Sound",
+    "species": "Music",
+    "height": "1.5",
+    "weight": "80.0",
     "catchRate": 45,
     "baseExp": 64,
     "baseFriendship": 50,
-    "abilities": "Overgrow, Levitate (hidden ability)",
+    "abilities": "Soundproof, Tangled Feet",
     "stats":{
-        "hp": 45,
-        "atk": 65,
-        "def": 49,
-        "spd": 65,
-        "spatk": 49,
-        "spdef": 45
+        "hp": 83,
+        "atk": 100,
+        "def": 80,
+        "spd": 100,
+        "spatk": 82,
+        "spdef": 80
     },
     "evolutions": [
         {
-            "name": "Salareen",
+            "name": "Musibird",
             "lvl": 0
         },
         {
-            "name": "Iguareen",
+            "name": "Parowave",
             "lvl": 16
         },
         {
-            "name": "Draguana",
+            "name": "Chirquency",
             "lvl": 32
         }
     ],
@@ -84,14 +84,6 @@
             "lvl": 20,
             "move": "Needle Arm",
             "type": "Grass",
-            "category": "Physical",
-            "power": "60",
-            "accuracy": "100"
-        },
-        {
-            "lvl": 23,
-            "move": "Power-Up Punch",
-            "type": "Fighting",
             "category": "Physical",
             "power": "40",
             "accuracy": "100"

@@ -163,6 +163,26 @@ function calculateTypeDefenseStat(stats, type){
             stats.bug /= 2;
             stats.dark /= 2;
             break;
+        case "Flying":
+            //Weaknesses
+            stats.rock *= 2;
+            stats.electric *= 2;
+            stats.ice *= 2;
+            //Resistances
+            stats.fighting /= 2;
+            stats.bug /= 2;
+            stats.grass /= 2;
+            //Immunities
+            stats.ground *=0;
+            break;
+        case "Sound":
+            //Weaknesses
+            stats.light *= 2;
+            stats.psychic *= 2;
+            //Resistances
+            stats.dragon /= 2;
+            stats.ghost /= 2;
+            break;
         case "Grass":
             //Weaknesses
             stats.flying *= 2;

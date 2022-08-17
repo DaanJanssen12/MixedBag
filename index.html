@@ -48,8 +48,8 @@
 <body>
 	<input type="hidden" id="POKEMON_ID" value=""/>
 	<input type="hidden" id="HAS_LOADED" value="0"/>
-  <header id="header" class="fixed-top d-flex align-items-center"></header>
-  <main id="main"></main>
+  <header id="header" class="fixed-top d-flex align-items-center header-scrolled"></header>
+  <main id="main" style="margin-top: 100px;"></main>
   <footer id="footer" class="footer" role="contentinfo"></footer>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -65,29 +65,7 @@
   <script src="scripts/character-options.js"></script>
   <script>
 	$(document).ready(function(){
-		if($("#HAS_LOADED").val() <= 0){
-			$("#HAS_LOADED").val(1);
-
-			$("#footer").load("./common/footer.html");
-			$("#header").load("./common/header.html");
-			if(window.location.search !== '') {
-				var urlParams = new URLSearchParams(window.location.search);
-				if(window.location.search.includes('id'))
-				{
-					$("#POKEMON_ID").val(urlParams.get('id'));
-				}
-				if(window.location.search.includes('page')){
-					var page = 'pages/' + urlParams.get('page') + '.html';
-					load_page(null, page);
-				}
-				else {
-					$("#main").load("./pages/home.html");
-				}
-			}
-			else {
-				$("#main").load("./pages/home.html");
-			}
-		}
+		
 	});
 	function load_page(menuItem, pageToLoad, menuParent) {
 		$("#main").load(pageToLoad);
