@@ -1,0 +1,92 @@
+{
+    "name" : "Snaember",
+    "primaryType": "Fire",
+    "secondaryType": "",
+    "species": "Fire Snake",
+    "height": "0.7",
+    "weight": "3.1",
+    "catchRate": 45,
+    "baseExp": 64,
+    "baseFriendship": 50,
+    "abilities": "Blaze",
+    "stats":{
+        "hp": 45,
+        "atk": 49,
+        "def": 49,
+        "spd": 45,
+        "spatk": 65,
+        "spdef": 65
+    },
+    "evolutions": [
+        {
+            "name": "Snaember",
+            "lvl": 0
+        },
+        {
+            "name": "Charbra",
+            "lvl": 16
+        },
+        {
+            "name": "Flaraga",
+            "lvl": 32
+        }
+    ],
+    "moves": [
+        {
+            "lvl": 1,
+            "move": "Tackle",
+            "type": "Normal",
+            "category": "Physical",
+            "power": "40",
+            "accuracy": "100"
+        },
+        {
+            "lvl": 1,
+            "move": "Growl",
+            "type": "Sound",
+            "category": "status",
+            "power": "-",
+            "accuracy": "100"
+        },
+        {
+            "lvl": 6,
+            "move": "Leafage",
+            "type": "Grass",
+            "category": "Physical",
+            "power": "40",
+            "accuracy": "100"
+        },
+        {
+            "lvl": 9,
+            "move": "Synthesis",
+            "type": "Grass",
+            "category": "Status",
+            "power": "-",
+            "accuracy": "-"
+        },
+        {
+            "lvl": 12,
+            "move": "Twister",
+            "type": "Dragon",
+            "category": "Special",
+            "power": "40",
+            "accuracy": "100"
+        },
+        {
+            "lvl": 17,
+            "move": "Razor Leaf",
+            "type": "Grass",
+            "category": "Physical",
+            "power": "55",
+            "accuracy": "95"
+        },
+        {
+            "lvl": 20,
+            "move": "Needle Arm",
+            "type": "Grass",
+            "category": "Physical",
+            "power": "40",
+            "accuracy": "100"
+        }
+    ]
+}
