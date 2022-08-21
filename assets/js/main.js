@@ -9,6 +9,7 @@ $(document).ready(async function(){
       if(window.location.search.includes('id'))
       {
         $("#POKEMON_ID").val(urlParams.get('id'));
+        insertParam('id', urlParams.get('id'), false);
       }
       if(window.location.search.includes('page')){
         var page = 'pages/' + urlParams.get('page') + '.html';
@@ -49,6 +50,36 @@ async function load_page(menuItem, pageToLoad, menuParent) {
   }
   
   return false;
+}
+
+function insertParam(key, value, reload) {
+  key = encodeURIComponent(key);
+  value = encodeURIComponent(value);
+
+  // kvp looks like ['key1=value1', 'key2=value2', ...]
+  var kvp = document.location.search.substr(1).split('&');
+  let i=0;
+
+  for(; i<kvp.length; i++){
+    if (kvp[i].startsWith(key + '=')) {
+      let pair = kvp[i].split('=');
+      pair[1] = value;
+      kvp[i] = pair.join('=');
+      break;
+    }
+  }
+
+  if(i >= kvp.length){
+    kvp[kvp.length] = [key,value].join('=');
+  }
+
+  // can return this or...
+  let params = kvp.join('&');
+
+  if(reload){
+    // reload page with new params
+    document.location.search = params;
+  }
 }
 
 /**

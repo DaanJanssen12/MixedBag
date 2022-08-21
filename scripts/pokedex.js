@@ -17,23 +17,39 @@ function escapeRegExp(string){
 }
 function buildEvolutionChart(evolutions){
     var $container = $("#evolution-container");
-
+    if(!evolutions){
+        $container.text("This pokemon does not evolve.");
+    }else{
+        
     evolutions.forEach(evolution => {
         //Arrow
         if(evolution.lvl > 0){
             var $arrowSpan = $("<span></span>").addClass("infocard infocard-arrow");
-            var $arrowI = $("<i></i>").addClass("icon-arrow icon-arrow-e");
-            var $arrowSmall = $("<small></small>").text(`(Level ${evolution.lvl})`);
 
+            var $arrowI = $("<i></i>").addClass("icon-arrow icon-arrow-e");
+            var $arrowSmall = $("<small></small>").text(`Level ${evolution.lvl}`);
+            if(evolution.extraInfo){
+                $arrowSmall.html($arrowSmall.text() + "</br>" + `(${evolution.extraInfo})`);
+            }
             $arrowI.appendTo($arrowSpan);
             $arrowSmall.appendTo($arrowSpan);
+            
+            if(evolution.alternateEvo){
+                var $altArrowI = $("<i></i>").addClass("icon-arrow icon-arrow-e").css("margin-top", "100px");
+                var $altArrowSmall = $("<small></small>").text(`Level ${evolution.alternateEvo.lvl}`);
+                if(evolution.alternateEvo.extraInfo){
+                    $altArrowSmall.html($altArrowSmall.text() + "</br>" + `(${evolution.alternateEvo.extraInfo})`);
+                }
+                $altArrowI.appendTo($arrowSpan);
+                $altArrowSmall.appendTo($arrowSpan);
+            }
             $arrowSpan.appendTo($container);
         }
         //Pokemon
         var $infocard = $("<div></div>").addClass("infocard");
 
         var $span = $("<span></span>").addClass("infocard-lg-img");
-        var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${evolution.name.toLowerCase()}`);
+        var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${evolution.nr}_${evolution.name.toLowerCase()}`);
         var $picture = $("<picture></picture>");
         var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.name.toLowerCase()}.png`);
         $img.appendTo($picture);
@@ -46,8 +62,25 @@ function buildEvolutionChart(evolutions){
         $a2.appendTo($span2);
         $span2.appendTo($infocard);
 
+        if(evolution.alternateEvo){
+            var $altSpan = $("<span></span>").addClass("infocard-lg-img").css("margin-top", "50px");
+            var $altA = $("<a></a>").attr("href", `index.html?page=pokedex&id=${evolution.alternateEvo.nr}_${evolution.alternateEvo.name.toLowerCase()}`);
+            var $altPicture = $("<picture></picture>");
+            var $altImg = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.alternateEvo.name.toLowerCase()}.png`);
+            $altImg.appendTo($altPicture);
+            $altPicture.appendTo($altA);
+            $altA.appendTo($altSpan);
+            $altSpan.appendTo($infocard);
+
+            var $altSpan2 = $("<span></span>").addClass("infocard-lg-data text-muted");
+            var $altA2 = $("<a></a>").addClass("ent-name").text(evolution.alternateEvo.name);
+            $altA2.appendTo($altSpan2);
+            $altSpan2.appendTo($infocard);
+        }
+
         $infocard.appendTo($container);
     });
+    }
 }
 function getEffectivenessLabel(amount){
     switch(amount){
@@ -62,17 +95,17 @@ function getEffectivenessLabel(amount){
     }
 }
 function getStatRank(stat){
-    if(stat <= 30){
+    if(stat < 30){
         return 1;
-    } else if (stat <= 60){
+    } else if (stat < 60){
         return 2;
-    } else if (stat <= 90){
+    } else if (stat < 90){
         return 3;
-    } else if (stat <= 120){
+    } else if (stat < 120){
         return 4;
-    } else if (stat <= 150){
+    } else if (stat < 150){
         return 5;
-    } else if (stat <= 180){
+    } else if (stat < 180){
         return 6;
     } else {
         return 7;
@@ -86,14 +119,25 @@ function buildStatsTable(table, stats){
     $("tbody", $(table)).append(createStatRow("Sp.Def", stats.spdef));
     $("tbody", $(table)).append(createStatRow("Speed", stats.spd));
 }
-function buildMovesTable(table, moves){
+function buildMovesTable(movesDB, table, moves){
     moves.forEach(move => {
-        $("tbody", $(table)).append(createMoveRow(move));
+        if(movesDB.filter(f => f.move === move.name).length > 0){
+            var dbMove = movesDB.filter(f => f.move === move.name)[0];
+            $("tbody", $(table)).append(createMoveRow(move.lvl, dbMove));
+        }else{
+            $("tbody", $(table)).append(createMoveRow(move.lvl, {
+                move: move.name,
+                type: "",
+                category: "special",
+                power: "-",
+                accuracy: "-"
+            }));
+        }
     });
 }
-function createMoveRow(move){
+function createMoveRow(lvl, move){
     $tr = $("<tr></tr>");
-    $td1 = $("<td></td>").addClass("cell-num").text(move.lvl);
+    $td1 = $("<td></td>").addClass("cell-num").text(lvl);
     $td1.appendTo($tr);
 
     $td2 = $("<td></td>").addClass("cell-name");
@@ -175,6 +219,84 @@ function calculateTypeDefenseStat(stats, type){
             //Immunities
             stats.ground *=0;
             break;
+        case "Poison":
+            //Weaknesses
+            stats.psychic *= 2;
+            stats.ground *= 2;
+            //Resistances
+            stats.fighting /= 2;
+            stats.poison /= 2;
+            stats.bug /= 2;
+            stats.grass /= 2;
+            stats.fairy /= 2;
+            //Immunities
+            break;
+        case "Ground":
+            //Weaknesses
+            stats.water *= 2;
+            stats.grass *= 2;
+            stats.ice *= 2;
+            //Resistances
+            stats.poison /= 2;
+            stats.rock /= 2;
+            //Immunities
+            stats.electric *= 0;
+            break;
+        case "Rock":
+            //Weaknesses
+            stats.fighting *= 2;
+            stats.ground *= 2;
+            stats.steel *= 2;
+            stats.water *= 2;
+            stats.grass *= 2;
+            //Resistances
+            stats.normal /= 2;
+            stats.flying /= 2;
+            stats.poison /= 2;
+            stats.fire /= 2;
+            //Immunities
+            break;
+        case "Bug":
+            //Weaknesses
+            stats.flying *= 2;
+            stats.rock *= 2;
+            stats.fire *= 2;
+            //Resistances
+            stats.fighting /= 2;
+            stats.ground /= 2;
+            stats.grass /= 2;
+            //Immunities
+            break;
+        case "Ghost":
+            //Weaknesses
+            stats.ghost *= 2;
+            stats.dark *= 2;
+            //Resistances
+            stats.poison /= 2;
+            stats.bug /= 2;
+            //Immunities
+            stats.normal *= 0;
+            stats.fighting *= 0;
+            break;
+        case "Steel":
+            //Weaknesses
+            stats.fighting *= 2;
+            stats.ground *= 2;
+            stats.fire *= 2;
+            //Resistances
+            stats.normal /= 2;
+            stats.flying /= 2;
+            stats.bug /= 2;
+            stats.rock /= 2;
+            stats.steel /= 2;
+            stats.grass /= 2;
+            stats.psychic /= 2;
+            stats.ice /= 2;
+            stats.dragon /= 2;
+            stats.fairy /= 2;
+            //Immunities
+            stats.poison /= 0;
+            break;
         case "Sound":
             //Weaknesses
             stats.light *= 2;
@@ -219,6 +341,35 @@ function calculateTypeDefenseStat(stats, type){
             stats.water /= 2;
             stats.ice /= 2;
             break;
+        case "Electric":
+            //Weaknesses
+            stats.ground *= 2;
+            //Resistances
+            stats.flying /= 2;
+            stats.steel /= 2;
+            stats.electric /= 2;
+            //Immunities
+            break;
+        case "Psychic":
+            //Weaknesses
+            stats.bug *= 2;
+            stats.ghost *= 2;
+            stats.dark *= 2;
+            //Resistances
+            stats.fighting /= 2;
+            stats.psychic /= 2;
+            //Immunities
+            break;
+        case "Ice":
+            //Weaknesses
+            stats.fighting *= 2;
+            stats.rock *= 2;
+            stats.steel *= 2;
+            stats.fire *= 2;
+            //Resistances
+            stats.ice /= 2;
+            //Immunities
+            break;
         case "Dragon":
             //Weaknesses
             stats.ice *= 2;
@@ -229,6 +380,39 @@ function calculateTypeDefenseStat(stats, type){
             stats.water /= 2;
             stats.grass /= 2;
             stats.electric /= 2;
+            break;
+        case "Dark":
+            //Weaknesses
+            stats.fighting *= 2;
+            stats.bug *= 2;
+            stats.fairy *= 2;
+            stats.light *= 2;
+            //Resistances
+            stats.ghost /=2;
+            stats.dark /=2;
+            stats.sound /=2;
+            //Immunities
+            stats.psychic *=0;
+            break;
+        case "Fairy":
+            //Weaknesses
+            stats.poison *= 2;
+            stats.steel *= 2;
+            //Resistances
+            stats.dark /=2;
+            stats.fighting /=2;
+            stats.bug /=2;
+            //Immunities
+            stats.dragon /=2;
+            break;
+        case "Light":
+            //Weaknesses
+            stats.water *= 2;
+            stats.electric *= 2;
+            //Resistances
+            stats.dark /=2;
+            stats.fairy /=2;
+            //Immunities
             break;
     }
     return stats;
@@ -251,9 +435,8 @@ $(document).ready(function(){
         var pokemon = 'data/pokemon/' + id + '.json';
         readTextFile(pokemon, function(text){
             var data = JSON.parse(text);
-    
+            window.history.pushState(id, id, window.location.href + `&id=${id}`);
             var html = document.body.innerHTML;
-            
             html = replaceAll(html, "$Name", data.name);
             html = replaceAll(html, "$PrimaryTypeLower", data.primaryType.toLowerCase());
             html = replaceAll(html, "$PrimaryType", data.primaryType);
@@ -272,7 +455,8 @@ $(document).ready(function(){
             html = replaceAll(html, "$CatchRate", data.catchRate);
             html = replaceAll(html, "$BaseExp", data.baseExp);
             html = replaceAll(html, "$BaseFriendship", data.baseFriendship);
-            html = replaceAll(html, "$Abilities", data.abilities.replace(",", "</br>"));
+            html = replaceAll(html, "$Abilities", replaceAll(data.abilities, ",", "</br>"));
+            html = replaceAll(html, "$PokedexEntry", data.dexEntry);
 
             var stats = calculateTypeDefenses(data.primaryType, data.secondaryType);
             html = replaceAll(html, "$NormalTypeEffectivenessClass", (stats.normal * 100));
@@ -342,9 +526,83 @@ $(document).ready(function(){
             var imgSrc = "data/pokemon/img/"+data.name+".png";
             $("#POKEMON_IMG").attr("src", imgSrc); 
             buildStatsTable("#StatsTable", data.stats);
-            buildMovesTable("#moves-table", data.moves);
             buildEvolutionChart(data.evolutions);
+            setPokemonData(data);
             $(".type-hidden").hide();
+            
+
+            readTextFile("data/moves.json", function(moveText){
+                var movesDB = JSON.parse(moveText);
+                buildMovesTable(movesDB, "#moves-table", data.moves.sort(lowLevelFirst));
+            });
         });
     }
 });
+
+function lowLevelFirst(a,b){
+    if(a.lvl > b.lvl) return 1;
+    if(a.lvl < b.lvl) return -1;
+    return 0;
+}
+
+function setPokemonData(pokemon){
+    var text = `#------------------------------- </br>
+    [${pokemon.name.toUpperCase()}] </br>
+    Name = ${pokemon.name} </br>
+    Types = ${pokemon.primaryType.toUpperCase()}`;
+
+    if(pokemon.secondaryType){
+        text += `,${pokemon.secondaryType.toUpperCase()}`;
+    }
+
+    text += ` </br>
+    BaseStats = ${pokemon.stats.hp},${pokemon.stats.atk},${pokemon.stats.def},${pokemon.stats.spd},${pokemon.stats.spatk},${pokemon.stats.spdef} </br>`;
+    if(pokemon.genderRatio){
+        text += `GenderRatio = ${pokemon.genderRatio} </br>`;
+    }else{
+        text += `GenderRatio = Female50Percent </br>`;
+    }
+    if(pokemon.growthRate){
+        text += `GrowthRate = ${pokemon.growthRate} </br>`;
+    }else{
+        text += `GrowthRate = Medium </br>`;
+    }
+    text += `EVs =  </br>
+    CatchRate = ${pokemon.catchRate} </br>
+    Happiness = ${pokemon.baseFriendship} </br>
+    BaseExp = ${pokemon.baseExp} </br>
+    Abilities = ${replaceAll(pokemon.abilities.toUpperCase(), " ", "")} </br>
+    Moves = `;
+
+    pokemon.moves.sort(lowLevelFirst).forEach(move => {
+        var moveName = replaceAll(replaceAll(move.name.toUpperCase(), " ", ""), "-", "");
+        text += `${move.lvl},${moveName}`
+        if(pokemon.moves[pokemon.moves.length -1] === move){
+            text += "</br>";
+        }else{
+            text += ",";
+        }
+    });
+
+    text += `
+    EggGroups = Undiscovered </br>
+    HatchSteps = 1 </br>
+    Height = ${pokemon.height} </br>
+    Weight = ${pokemon.weight} </br>
+    Color = Green </br>
+    Shape = Head </br>
+    Evolutions =  </br>
+    Category = ${pokemon.species} </br>
+    Pokedex = ${pokemon.dexEntry} </br>
+    #-------------------------------`;
+
+    $("#dex-info").html(text);
+}
+
+function toggleDiv(id){
+    if($(id).css("display") === "none"){
+        $(id).show();
+    }else{
+        $(id).hide();
+    }
+}

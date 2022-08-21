@@ -9,19 +9,16 @@ function readTextFile(file, callback) {
     }
     rawFile.send(null);
 }
-function buildPokemonBlock(pokemon){
-
-}
 $(document).ready(function(){
     readTextFile("data/pokedex-full.json", function(text){
         var data = JSON.parse(text);
         var $container = $("#pokedex");
 
         data.forEach(pokemon => {
-            var $infocard = $("<div></div>").addClass("infocard");
+            var $infocard = $("<div></div>").addClass("infocard col-md-2");
 
             var $span = $("<span></span>").addClass("infocard-lg-img");
-            var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${pokemon.name.toLowerCase()}`);
+            var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${pokemon.nr}_${pokemon.name.toLowerCase()}`);
             var $picture = $("<picture></picture>");
             var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${pokemon.name.toLowerCase()}.png`);
             $img.appendTo($picture);
@@ -32,9 +29,22 @@ $(document).ready(function(){
             var $span2 = $("<span></span>").addClass("infocard-lg-data text-muted");
             var $a2 = $("<a></a>").addClass("ent-name").text(`#${pokemon.nr} ${pokemon.name}`);
             $a2.appendTo($span2);
+            var $br = $("</br>");
+            $br.appendTo($span2);
+            pokemon.type.split(",", 2).forEach(type => {
+                handleTypingCount(type);
+                var $type = $("<a></a>").addClass("type-icon").addClass(`type-${type.toLowerCase()}`).text(type);    
+                $type.appendTo($span2);    
+            });
+            
             $span2.appendTo($infocard);
-
             $infocard.appendTo($container);
         });
-    });
+    })
 });
+
+function handleTypingCount(type){
+    var id = `#${type.toLowerCase()}-count`;
+    var newCount = parseInt($(id).text()) + 1;
+    $(id).text(newCount);
+}

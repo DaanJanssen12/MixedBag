@@ -146,7 +146,8 @@
     </div>
     </div>
     </div>
-    <div class="component text-center" style="min-height:90px"><div id="bsa-zone_1642018196755-7_123456"></div></div>
+    <h2>Pokedex Entry</h2>
+    <p>$PokedexEntry</p>
     <div id="dex-evolution"></div>
     <h2>Evolution chart</h2>
     <div id="evolution-container" class="infocard-list-evo">
@@ -155,10 +156,40 @@
     <h2>Moves learned by $Name</h2>
     <div class="sv-tabs-panel-list">
     <div class="sv-tabs-panel active" id="tab-moves-19">
-    <div class="grid-row"> <div class="grid-col span-lg-6"><h3>Moves learnt by level up</h3> <div class="resp-scroll">
-        <table id="moves-table" class="data-table"><thead><tr><th class="sorting sorting-asc" data-sort="int" data-sort-dir="asc"><div class="sortwrap">Lv.</div></th> <th class="sorting" data-sort="string"><div class="sortwrap">Move</div></th> <th class="sorting" data-sort="string"><div class="sortwrap">Type</div></th> <th class="sorting" data-sort="string"><div class="sortwrap">Cat.</div></th> <th class="sorting" data-sort="int" data-blanks="1"><div class="sortwrap">Power</div></th> <th class="sorting" data-sort="int" data-blanks="1"><div class="sortwrap">Acc.</div></th> </tr></thead>
+    <div class="grid-row"> 
+        <div class="grid-col span-lg-6"><h3>Moves learnt by level up</h3> <div class="resp-scroll">
+        <table id="moves-table" class="data-table">
+            <thead>
+                <tr>
+                    <th class="sorting sorting-asc" data-sort="int" data-sort-dir="asc">
+                        <div class="sortwrap">Lv.</div>
+                    </th> <th class="sorting" data-sort="string">
+                        <div class="sortwrap">Move</div>
+                    </th> 
+                    <th class="sorting" data-sort="string">
+                        <div class="sortwrap">Type</div>
+                    </th> 
+                    <th class="sorting" data-sort="string">
+                        <div class="sortwrap">Cat.</div>
+                    </th> 
+                    <th class="sorting" data-sort="int" data-blanks="1">
+                        <div class="sortwrap">Power</div>
+                    </th> <th class="sorting" data-sort="int" data-blanks="1">
+                        <div class="sortwrap">Acc.</div>
+                    </th> 
+                </tr>
+            </thead>
             <tbody></tbody>
-        </table></div></div> 
+        </table></div>
+    </div>
+    <div class="grid-col span-lg-6">
+        <button type="button" onclick="toggleDiv('#dex-info')">
+            Toggle Pokemon Essentials Data
+        </button>
+        <div id="dex-info" style="display: none;">
+        
+        </div>
+    </div> 
     </div>
     </div>
     </div>
