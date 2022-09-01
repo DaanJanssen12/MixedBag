@@ -120,23 +120,26 @@ function buildStatsTable(table, stats){
     $("tbody", $(table)).append(createStatRow("Speed", stats.spd));
 }
 function buildMovesTable(movesDB, table, moves){
-    moves.forEach(move => {
+    moves.sort(lowLevelFirst).forEach(move => {
         if(movesDB.filter(f => f.move === move.name).length > 0){
             var dbMove = movesDB.filter(f => f.move === move.name)[0];
             $("tbody", $(table)).append(createMoveRow(move.lvl, dbMove));
         }else{
+            $.get(`https://pokeapi.co/api/v2/move/${move.name.toLowerCase().replace(" ", "-")}`, null, (data) => {
+                var pokeApiMove = data;
             $("tbody", $(table)).append(createMoveRow(move.lvl, {
-                move: move.name,
-                type: "",
-                category: "special",
-                power: "-",
-                accuracy: "-"
-            }));
+                    move: move.name,
+                    type: pokeApiMove.type.name,
+                    category: pokeApiMove.damage_class.name,
+                    power: pokeApiMove.power,
+                    accuracy: pokeApiMove.accuracy
+                }));
+            });
         }
     });
 }
 function createMoveRow(lvl, move){
-    $tr = $("<tr></tr>");
+    $tr = $("<tr></tr>").attr("lvl", lvl);
     $td1 = $("<td></td>").addClass("cell-num").text(lvl);
     $td1.appendTo($tr);
 
@@ -534,10 +537,34 @@ $(document).ready(function(){
             readTextFile("data/moves.json", function(moveText){
                 var movesDB = JSON.parse(moveText);
                 buildMovesTable(movesDB, "#moves-table", data.moves.sort(lowLevelFirst));
+                
+                setTimeout(() => {
+                    sortTable($("#moves-table"), "lvl", "asc");
+                }, 1000);
             });
+
+            bindEvents();
         });
     }
 });
+
+function bindEvents(){
+    $(".sorting").off("click")
+        .click(function(){
+            var sort = "asc";
+            if($(this).hasClass("sorting-asc")){
+                sort = "desc";
+                $(this).removeClass("sorting-asc");
+                $(this).addClass("sorting-desc");
+            }
+            else{
+                sort = "asc";
+                $(this).removeClass("sorting-desc");
+                $(this).addClass("sorting-asc");
+            }
+            sortTable($("#moves-table"), "lvl", sort);
+        });
+}
 
 function lowLevelFirst(a,b){
     if(a.lvl > b.lvl) return 1;
@@ -605,4 +632,19 @@ function toggleDiv(id){
     }else{
         $(id).hide();
     }
+}
+
+function sortTable(table, orderProp, orderDir) {
+    var asc   = orderDir === 'asc',
+        tbody = table.find('tbody');
+
+    tbody.find('tr').sort(function(a, b) {
+        var aVal = $(a).attr(orderProp);
+        var bVal = $(b).attr(orderProp);
+        if (asc) {
+            return aVal - bVal;
+        } else {
+            return bVal - aVal;
+        }
+    }).appendTo(tbody);
 }

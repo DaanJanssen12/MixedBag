@@ -1,0 +1,37 @@
+{
+    "name" : "Ellamp",
+    "primaryType": "Ghost",
+    "secondaryType": "",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 0,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 30,
+        "atk": 50,
+        "def": 70,
+        "spd": 30,
+        "spatk": 70,
+        "spdef": 50
+    },
+    "evolutions": [
+        {
+            "nr": "000",
+            "name": "Self",
+            "lvl": 0
+        },
+        {
+            "nr": "000",
+            "name": "Evo",
+            "lvl": 24
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}
