@@ -16,6 +16,10 @@ body {
   line-height: 1.5;
 }
 
+.content{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 a {
   color: #777;
   text-decoration: none;
@@ -603,11 +607,23 @@ section {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
+
+  
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #header.header-scrolled {
   background: rgba(39, 70, 133, 0.8);
   height: 60px;
+}
+
+#header .logo{
+  margin-left: 15px;
+}
+
+#header .navbar {
+  margin-right: 15px;
 }
 
 #header .logo h1 {
@@ -628,7 +644,6 @@ section {
   margin: 0;
   max-height: 40px;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/

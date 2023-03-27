@@ -45,7 +45,13 @@ $(document).ready(function(){
         //Create PDF
         const pdf = new jsPDF('p', 'mm', 'a4');
         pdf.addImage(avatarCtx.canvas.toDataURL('image/png'), 'PNG', 0, 0, 210, 297);
-        pdf.save("Test.pdf");
+
+        var d = new Date();
+        var strDate = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate();
+        var charName = $("input[name='charname']").val();
+        pdf.save(`${charName}_${strDate}.pdf`);
+
+        document.body.removeChild(avatarCanvas);
     });
   });
 });
