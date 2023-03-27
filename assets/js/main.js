@@ -1,19 +1,19 @@
 $(document).ready(async function(){
-  await $("#header").load("./common/header.html");
-  await $("#footer").load("./common/footer.html");
-  if(window.location.search !== '') {
-    var urlParams = new URLSearchParams(window.location.search);
-    if(window.location.search.includes('page')){
-      var page = 'pages/' + urlParams.get('page') + '.html';
-      load_page(null, page);
-    }
-    else {
-      $("#main").load("./pages/home.html");
-    }
-  }
-  else {
-    $("#main").load("./pages/home.html");
-  }
+  // await $("#header").load("./common/header.html");
+  // await $("#footer").load("./common/footer.html");
+  // if(window.location.search !== '') {
+  //   var urlParams = new URLSearchParams(window.location.search);
+  //   if(window.location.search.includes('page')){
+  //     var page = 'pages/' + urlParams.get('page') + '.html';
+  //     load_page(null, page);
+  //   }
+  //   else {
+  //     $("#main").load("./pages/home.html");
+  //   }
+  // }
+  // else {
+  //   $("#main").load("./pages/home.html");
+  // }
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
@@ -62,46 +62,34 @@ $(document).ready(async function(){
        clickable: true
      }
    });
- 
-   /**
-    * Animation on scroll
-    */
-   window.addEventListener('load', () => {
-     AOS.init({
-       duration: 1000,
-       easing: 'ease-in-out',
-       once: true,
-       mirror: false
-     })
-   });
 });
 
-async function load_page(menuItem, pageToLoad, menuParent) {
-  await $("#main").load(pageToLoad);
+// async function load_page(menuItem, pageToLoad, menuParent) {
+//   await $("#main").load(pageToLoad);
   
-  let pageResult = "?page="+pageToLoad.substring(pageToLoad.indexOf('/')+1, pageToLoad.indexOf('.'));
-  await window.history.pushState("object or string", "Title", pageResult);
+//   let pageResult = "?page="+pageToLoad.substring(pageToLoad.indexOf('/')+1, pageToLoad.indexOf('.'));
+//   await window.history.pushState("object or string", "Title", pageResult);
   
-  $("#navbar .active").removeClass("active");
-  if(menuItem !== undefined){
-    $(menuItem).addClass("active");
-  }
-  if(menuParent !== undefined){
-    $(menuParent).addClass("active");
-  }
+//   $("#navbar .active").removeClass("active");
+//   if(menuItem !== undefined){
+//     $(menuItem).addClass("active");
+//   }
+//   if(menuParent !== undefined){
+//     $(menuParent).addClass("active");
+//   }
   
-  if($(".back-to-top").length > 0){
-    $(".back-to-top").trigger('click');
-  }
+//   if($(".back-to-top").length > 0){
+//     $(".back-to-top").trigger('click');
+//   }
   
-  if($('.mobile-nav-toggle').length > 0 && $('.mobile-nav-toggle').css("display") !== "none"){
-    if($('.mobile-nav-toggle').hasClass('bi-x')){
-      $('.mobile-nav-toggle').trigger('click');
-    }
-  }
+//   if($('.mobile-nav-toggle').length > 0 && $('.mobile-nav-toggle').css("display") !== "none"){
+//     if($('.mobile-nav-toggle').hasClass('bi-x')){
+//       $('.mobile-nav-toggle').trigger('click');
+//     }
+//   }
   
-  return false;
-}
+//   return false;
+// }
 
 /**
    * Easy on scroll event listener 
