@@ -18,6 +18,8 @@ body {
 
 .content{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: unset !important;
+  padding-right: unset !important;
 }
 
 a {
@@ -882,7 +884,7 @@ section {
 }
 
 .hero-section.inner-page .hero-text {
-  transform: translateY(-300px);
+  transform: translateY(100px);
 }
 
 @media screen and (max-width: 992px) {
