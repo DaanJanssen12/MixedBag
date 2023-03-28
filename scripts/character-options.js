@@ -1,12 +1,6 @@
-var commonRaces = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Half-Orc", "Halfling", "Human", "Tiefling"];
-var monsterRaces = ["Bugbear", "Centaur", "Goblin", "Grung", "Hobgoblin", "Kobold", "Lizardfolk", "Minotaur", "Orc", "Yuan-Ti"];
-var exoticRaces = ["Aarakocra", "Aasimar", "Changeling", "Firbolg", "Genasi", "Gith", "Goliath", "Kalashtar", "Kenku", "Satyr", "Shifter", "Tabaxi", "Tortle", "Triton", "Warforged"];
-
 var classes = [];
-
-var backgrounds = ["Acolyte", "Anthropologist", "Archaeologist", "Charlatan", "City Watch", "Cloistered Sholar", "Courtier", "Criminal", "Entertainer", "Faceless", "Faction Agent", "Far Traveler", 
-	"Folk Hero", "Gladiator", "Guild Artisan", "Guild Merchant", "Haunted One", "House Agent", "Hermit", "Inheritor", "Investigator", "Knight", "Knight of the Order", "Mercenary Veteran", "Noble", "Outlander", 
-	"Pirate", "Sage", "Sailor", "Soldier", "Spy", "Urban Bounty Hunter", "Urchin", "Uthgardt Tribe Member", "Waterdhavian Noble", "Grinner", "Volstrucker Agent"];
+var races = [];
+var backgrounds = [];
 
 function myFunction() {
 	var race = getRace();
@@ -41,29 +35,17 @@ function myFunction() {
 	rollForStats();
 }
 function getRace(){
-	var min = 1;
-	var max = 4;
-	if($("#raceSwitch")[0].checked == false){
-		max--;
+	var realisticMode = $("#raceSwitch")[0].checked;
+	var list = races;
+	if(realisticMode){
+		var x = getRandomInt(0, 100);
+		if(x <= 67){
+			list = races.filter(f => f.type == "Common");
+		}else{
+			list = races.filter(f => f.type != "Common");
+		}
 	}
-	var group = getRandomInt(min, max + 1);
-	switch(group){
-		case 1:
-			return commonRaces[getRandomInt(0, commonRaces.length)];
-			break;
-		case 2:
-			return monsterRaces[getRandomInt(0, monsterRaces.length)];
-			break;
-		case 3:
-			return exoticRaces[getRandomInt(0, exoticRaces.length)];
-			break;
-		case 4:
-			return "Custom Origin";
-			break;
-		default:
-			return commonRaces[getRandomInt(0, commonRaces.length)];
-			break;
-	}
+	return races[getRandomInt(0, list.length)].id;
 }
 function getClass(){
 	return classes[getRandomInt(0, classes.length)];
@@ -97,19 +79,14 @@ function rollStat(){
 	var min = Array.min(rolls);
 	return rolls.reduce((a, b) => a + b, 0) - min;
 }
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}
 $(document).ready(function(){
 	readTextFile("data/classes.json", (data) => {
 		classes = JSON.parse(data);
+	});
+	readTextFile("data/races.json", (data) => {
+		races = JSON.parse(data);
+	});
+	readTextFile("data/backgrounds.json", (data) => {
+		backgrounds = JSON.parse(data);
 	});
 });

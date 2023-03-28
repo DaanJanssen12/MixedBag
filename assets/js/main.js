@@ -1,20 +1,4 @@
 $(document).ready(async function(){
-  // await $("#header").load("./common/header.html");
-  // await $("#footer").load("./common/footer.html");
-  // if(window.location.search !== '') {
-  //   var urlParams = new URLSearchParams(window.location.search);
-  //   if(window.location.search.includes('page')){
-  //     var page = 'pages/' + urlParams.get('page') + '.html';
-  //     load_page(null, page);
-  //   }
-  //   else {
-  //     $("#main").load("./pages/home.html");
-  //   }
-  // }
-  // else {
-  //   $("#main").load("./pages/home.html");
-  // }
-
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
@@ -64,36 +48,21 @@ $(document).ready(async function(){
    });
 });
 
-// async function load_page(menuItem, pageToLoad, menuParent) {
-//   await $("#main").load(pageToLoad);
-  
-//   let pageResult = "?page="+pageToLoad.substring(pageToLoad.indexOf('/')+1, pageToLoad.indexOf('.'));
-//   await window.history.pushState("object or string", "Title", pageResult);
-  
-//   $("#navbar .active").removeClass("active");
-//   if(menuItem !== undefined){
-//     $(menuItem).addClass("active");
-//   }
-//   if(menuParent !== undefined){
-//     $(menuParent).addClass("active");
-//   }
-  
-//   if($(".back-to-top").length > 0){
-//     $(".back-to-top").trigger('click');
-//   }
-  
-//   if($('.mobile-nav-toggle').length > 0 && $('.mobile-nav-toggle').css("display") !== "none"){
-//     if($('.mobile-nav-toggle').hasClass('bi-x')){
-//       $('.mobile-nav-toggle').trigger('click');
-//     }
-//   }
-  
-//   return false;
-// }
-
 /**
    * Easy on scroll event listener 
    */
  const onscroll = (el, listener) => {
   el.addEventListener('scroll', listener)
+}
+
+function readTextFile(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function() {
+      if (rawFile.readyState === 4 && rawFile.status == "200") {
+          callback(rawFile.responseText);
+      }
+  }
+  rawFile.send(null);
 }

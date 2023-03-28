@@ -1,0 +1,138 @@
+[
+    {
+        "id": "Dragonborn",
+        "type": "Common"
+    },
+    {
+        "id": "Dwarf",
+        "type": "Common"
+    },
+    {
+        "id": "Elf",
+        "type": "Common"
+    },
+    {
+        "id": "Gnome",
+        "type": "Common"
+    },
+    {
+        "id": "Half-Elf",
+        "type": "Common"
+    },
+    {
+        "id": "Half-Orc",
+        "type": "Common"
+    },
+    {
+        "id": "Halfling",
+        "type": "Common"
+    },
+    {
+        "id": "Human",
+        "type": "Common"
+    },
+    {
+        "id": "Tiefling",
+        "type": "Common"
+    },
+    {
+        "id": "Bugbear",
+        "type": "Monster"
+    },
+    {
+        "id": "Centaur",
+        "type": "Monster"
+    },
+    {
+        "id": "Goblin",
+        "type": "Monster"
+    },
+    {
+        "id": "Grung",
+        "type": "Monster"
+    },
+    {
+        "id": "Hobgoblin",
+        "type": "Monster"
+    },
+    {
+        "id": "Kobold",
+        "type": "Monster"
+    },
+    {
+        "id": "Lizardfolk",
+        "type": "Monster"
+    },
+    {
+        "id": "Minotaur",
+        "type": "Monster"
+    },
+    {
+        "id": "Orc",
+        "type": "Monster"
+    },
+    {
+        "id": "Yuan-Ti",
+        "type": "Monster"
+    },
+    {
+        "id": "Aarakocra",
+        "type": "Exotic"
+    },
+    {
+        "id": "Aasimar",
+        "type": "Exotic"
+    },
+    {
+        "id": "Changeling",
+        "type": "Exotic"
+    },
+    {
+        "id": "Firbolg",
+        "type": "Exotic"
+    },
+    {
+        "id": "Genasi",
+        "type": "Exotic"
+    },
+    {
+        "id": "Gith",
+        "type": "Exotic"
+    },
+    {
+        "id": "Goliath",
+        "type": "Exotic"
+    },
+    {
+        "id": "Kalashtar",
+        "type": "Exotic"
+    },
+    {
+        "id": "Kenku",
+        "type": "Exotic"
+    },
+    {
+        "id": "Satyr",
+        "type": "Exotic"
+    },
+    {
+        "id": "Shifter",
+        "type": "Exotic"
+    },
+    {
+        "id": "Tabaxi",
+        "type": "Exotic"
+    },
+    {
+        "id": "Tortle",
+        "type": "Exotic"
+    },
+    {
+        "id": "Triton",
+        "type": "Exotic"
+    },
+    {
+        "id": "Warforged",
+        "type": "Exotic"
+    }
+]
