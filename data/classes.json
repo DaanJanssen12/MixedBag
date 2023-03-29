@@ -47,7 +47,19 @@
             },
             {
                 "id": "Path of the Totem Warrior",
-                "link": "http://dnd5e.wikidot.com/barbarian:totem-warrior"
+                "link": "http://dnd5e.wikidot.com/barbarian:totem-warrior",
+                "features": [
+                    {
+                        "hasHomebrew": true,
+                        "id": "Totem option",
+                        "options": [
+                            {
+                                "id": "Totem of the Penguin",
+                                "link": "https://homebrewery.naturalcrit.com/share/iUM64XvB7"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "id": "Path of Wild Magic",
@@ -98,7 +110,8 @@
             {
                 "id": "College of the Maestro",
                 "link": "http://dnd5e.wikidot.com/bard:maestro",
-                "isHomebrew": true
+                "isHomebrew": true,
+                "author": "Matthew Mercer"
             }
         ]
     },
@@ -187,7 +200,8 @@
             {
                 "id": "Blood Domain",
                 "link": "http://dnd5e.wikidot.com/cleric:blood",
-                "isHomebrew": true
+                "isHomebrew": true,
+                "author": "Matthew Mercer"
             }
         ]
     },
@@ -277,7 +291,8 @@
             {
                 "id": "Gunslinger",
                 "link": "http://dnd5e.wikidot.com/fighter:gunslinger",
-                "isHomebrew": true
+                "isHomebrew": true,
+                "author": "Matthew Mercer"
             }
         ]
     },
@@ -329,7 +344,8 @@
             {
                 "id": "Way of the Cobalt Soul",
                 "link": "http://dnd5e.wikidot.com/monk:cobalt-soul",
-                "isHomebrew": true
+                "isHomebrew": true,
+                "author": "Matthew Mercer"
             }
         ]
     },
@@ -376,7 +392,8 @@
             {
                 "id": "Oath of the Open Sea", 
                 "link": "http://dnd5e.wikidot.com/paladin:open-sea",
-                "isHomebrew": true
+                "isHomebrew": true,
+                "author": "Matthew Mercer"
             },
             {
                 "id": "Oath of Mockery", 
@@ -544,6 +561,18 @@
                 "id": "The Gambler",
                 "link": "https://homebrewery.naturalcrit.com/share/V-Q520LHC",
                 "isHomebrew": true
+            }
+        ],
+        "features": [
+            {
+                "hasHomebrew": true,
+                "id": "Pact option",
+                "options": [
+                    {
+                        "id": "Pact of the Firearm",
+                        "link": "https://homebrewery.naturalcrit.com/share/lYI2jtWaQ"
+                    }
+                ]
             }
         ]
     },
