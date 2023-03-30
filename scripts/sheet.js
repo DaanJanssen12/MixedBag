@@ -17,6 +17,9 @@ $(document).ready(function(){
     html2canvas(document.querySelector('body'),
         { scale: quality }
     ).then(canvas => {
+        // Set Ignore items invisible
+        $(".ignore-in-pdf").hide();
+
         // Get x and y coordinates
         var coordinates = document.getElementsByClassName('charsheet')[0].getBoundingClientRect();
         var x1 = coordinates.left - padding;
@@ -52,6 +55,9 @@ $(document).ready(function(){
         pdf.save(`${charName}_${strDate}.pdf`);
 
         document.body.removeChild(avatarCanvas);
+
+        // Set Ignore items visible again
+        $(".ignore-in-pdf").show();
     });
   });
 });
