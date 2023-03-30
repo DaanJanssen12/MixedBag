@@ -4,9 +4,9 @@ var backgrounds = [];
 
 function myFunction() {
 	var race = getRace();
-	var raceElem = `<a href='http://dnd5e.wikidot.com/${race.toLowerCase().replace(" ", "-")}' target='_blank'>${race}</a>`;
+	var raceElem = `<a id='race-link' href='http://dnd5e.wikidot.com/${race.toLowerCase().replace(" ", "-")}' target='_blank'>${race}</a>`;
 	var _class = getClass();
-	var classElem = `<a href='${_class.link}' target='_blank'>${_class.id}</a>`;
+	var classElem = `<a id='class-link' href='${_class.link}' target='_blank'>${_class.id}</a>`;
 	var includeSubclass = $("#subclassSwitch")[0].checked;
 	var subclass = "";
 	if(includeSubclass){
@@ -14,7 +14,7 @@ function myFunction() {
 		classElem += ` (<a href='${subclass.link}' target='_blank'>${subclass.id}</a>)`;
 	}
 	var background = getBackground();
-	var backgroundElem = `<a href='http://dnd5e.wikidot.com/background:${background.toLowerCase().replace(" ", "-")}' target='_blank'>${background}</a>`;
+	var backgroundElem = `<a id='background-link' href='http://dnd5e.wikidot.com/background:${background.toLowerCase().replace(" ", "-")}' target='_blank'>${background}</a>`;
 	document.getElementById("race").innerHTML = raceElem;
 	document.getElementById("class").innerHTML = classElem;
 	document.getElementById("background").innerHTML = backgroundElem;
@@ -33,6 +33,8 @@ function myFunction() {
 	$("#result").css("display", "");
 	$("#result-img").css("display", "none");
 	rollForStats();
+
+	$("#backstory-container").show();
 }
 function getRace(){
 	var realisticMode = $("#raceSwitch")[0].checked;

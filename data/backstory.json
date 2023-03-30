@@ -1,0 +1,120 @@
+{
+    "raceBackstories": [
+        {
+            "id": "Simple life",
+            "eligible": [
+                "*",
+                "Human",
+                "Halfling",
+                "Half-Elf",
+                "Elf",
+                "Dwarf",
+                "Dragonborn",
+                "Half-Orc",
+                "Dwarf",
+                "Gnome",
+                "Tiefling"
+            ],
+            "theme": "General",
+            "story": "As a kid growing up your life was simple, living with your father, mother and little brother. Your father worked as a {job}, not making too much but it was honest work."
+        },
+        {
+            "id": "Stranded",
+            "eligible": "*",
+            "theme": "Memory loss",
+            "story": "Your story starts later than most, or at least what you can remember. The first thing you remember is waking up to the sounds of waves crashing up and down the beach and the smell of salt. It was early, the sun was just rising, and your memory was empty. Completely empty. Looking at yourself, you would assume yourself to be in early adulthood."
+        },
+        {
+            "id": "Tribe",
+            "eligible": "*",
+            "theme": "Tribe",
+            "story": "You were born into a tribe, all of your own kind. The tribe wasn't big, 15 to 20 or somewhere around that. For as long as you remember your tribe has been on the move, doing whatever they needed to survive. Stealing, pillaging, hunting, basically whatever they could think of that could bring food to the table and wealth to the tribe."
+        }
+    ],
+    "classBackstories": [
+        {
+            "id": "IDK",
+            "eligible": "*",
+            "story": "At a young age you showed affinity for certain skills and you trained yourself to be a well-rounded {class}"
+        },
+        {
+            "id": "Battle hardened",
+            "eligible": [
+                "Fighter",
+                "Cleric",
+                "Rogue",
+                "Barbarian"
+            ],
+            "story": "In seeing your fair share of battle you have honed your skills. Your ability to {battle_style} has made you an expert fighter and a highly valued ally. Not many would want to go toe-to-toe with you."
+        }
+    ],
+    "backgroundBackstories": [
+        {
+            "eligible": [
+                "Soldier"
+            ],
+            "theme": "Battle",
+            "story": "At the point you reached adulthood there was a big war going on, so without much of a choice you were called up to serve your people. You got some basic combat training, but most skills were learned on the battlefield. A lot was lost on those fields, but a lot was also gained. The ones who made it out alive had a group of live-long friends, some people who know what you've gone through, since they have as well."
+        },
+        {
+            "eligible": [
+                "Acolyte"
+            ],
+            "theme": "Calm",
+            "story": "At some point in your life when you were looking for answers, you found them in the spiritual world. Desperation turned to hope, and at one point you connected with a deity on a level you had never expected was possible. Since then you have devoted your life towards your newfound calling, and in times of uncentainty you knew you had someone to rely on."
+        },
+        {
+            "eligible": [
+                "City Watch"
+            ],
+            "theme": "Community",
+            "story": "You have served the community where you grew up, standing as its first line of defense against crime. You aren't a soldier, directing your gaze outward at possible enemies. Instead, your service to your hometown was to help police its populace, protecting the citizenry from lawbreakers and malefactors of every stripe."
+        },
+        {
+            "eligible": [
+                "Archaeologist"
+            ],
+            "theme": "Exploration",
+            "story": "May it be caused by the years before, or maybe it was the curious nature you've been born with. You decided to go into the world of archaeology. Learning about the long-lost and fallen cultures of the past by studying their remains, their bones, their ruins, their surviving masterworks, and their tombs. In this line of work you have traveled to a vast amount of locations all over the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms. By doing so, you've had to face countless of challenges: An ogre living in city ruins, traps set in an age old tomb, and much much more."
+        },
+        {
+            "eligible": "*",
+            "story": "Hoi :)"
+        }
+    ],
+    "generalData": {
+        "jobs": [
+            "Carpenter",
+            "Law enforcer",
+            "Shopkeeper",
+            "Innkeeper",
+            "Farmer"
+        ],
+        "battleStyles": [
+            {
+                "eligible": [
+                    "Fighter"
+                ],
+                "text": "combine tactics and equipement to their best extend, swinging swords, blocking attacks and comandeering allies"
+            },
+            {
+                "eligible": [
+                    "Cleric"
+                ],
+                "text": "combine magic and tools, to stand your ground in a fight while also being able to heal and support your squad"
+            },
+            {
+                "eligible": [
+                    "Rogue"
+                ],
+                "text": "go undetected, hide in the shadows and strike when least expected"
+            },
+            {
+                "eligible": [
+                    "Barbarian"
+                ],
+                "text": "tank attacks like they are nothing and to fuel your massive attacks with your burning rage"
+            }
+        ]
+    }
+}
