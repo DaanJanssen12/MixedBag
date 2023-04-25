@@ -38,6 +38,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
 }
 
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
 .text-black {
   color: #000 !important;
 }

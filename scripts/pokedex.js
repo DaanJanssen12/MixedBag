@@ -545,6 +545,31 @@ $(document).ready(function(){
 
             bindEvents();
         });
+
+        var idWithoutName = id.substring(0, id.indexOf("_"));
+        readTextFile("data/pokedex-full.json", function(text){
+            var data = JSON.parse(text);
+            var poke = data.filter(f => f.nr == idWithoutName)[0];
+            var pokedexNr = data.indexOf(poke);
+
+            //Build previous
+            var nr = pokedexNr - 1;
+            if(nr < 0){
+                nr = data.length;
+            }
+            var pokemon = data[nr];
+            var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${pokemon.nr}_${pokemon.name.toLowerCase()}`).text(`< #${pokemon.nr} - ${pokemon.name}`);
+            $("#previous").html($a);
+
+            //Build next
+            var nrNext = pokedexNr + 1;
+            if (nrNext > data.length) {
+                nrNext = 0;
+            }
+            var pokemonNext = data[nrNext];
+            var $aNext = $("<a></a>").attr("href", `index.html?page=pokedex&id=${pokemonNext.nr}_${pokemonNext.name.toLowerCase()}`).text(`#${pokemonNext.nr} - ${pokemonNext.name} >`);
+            $("#next").html($aNext);
+        });
     }
 });
 
