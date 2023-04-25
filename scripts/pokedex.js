@@ -298,7 +298,7 @@ function calculateTypeDefenseStat(stats, type){
             stats.dragon /= 2;
             stats.fairy /= 2;
             //Immunities
-            stats.poison /= 0;
+            stats.poison *= 0;
             break;
         case "Sound":
             //Weaknesses

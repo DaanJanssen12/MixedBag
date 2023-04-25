@@ -1,36 +1,25 @@
 {
-    "name" : "",
-    "primaryType": "",
-    "secondaryType": "",
-    "species": "",
-    "height": "",
-    "weight": "",
-    "catchRate": 0,
-    "baseExp": 0,
+    "name" : "Sligment",
+    "primaryType": "Normal",
+    "secondaryType": "Rock",
+    "species": "Snail",
+    "height": "0.7",
+    "weight": "22.7",
+    "catchRate": 190,
+    "baseExp": 177,
     "baseFriendship": 50,
-    "hiddenAbilities": "",
+    "hiddenAbilities": "Contrary",
     "dexEntry": "",
-    "abilities": "",
+    "abilities": "Shell Armor, Solid Rock",
     "stats":{
-        "hp": 45,
-        "atk": 45,
-        "def": 45,
-        "spd": 45,
-        "spatk": 45,
-        "spdef": 45
+        "hp": 105,
+        "atk": 65,
+        "def": 95,
+        "spd": 20,
+        "spatk": 65,
+        "spdef": 95
     },
-    "evolutions": [
-        {
-            "nr": "000",
-            "name": "Self",
-            "lvl": 0
-        },
-        {
-            "nr": "000",
-            "name": "Evo",
-            "lvl": 24
-        }
-    ],
+    "evolutions": [],
     "moves": [
         {"lvl": 1, "name": "Tackle"}
     ]

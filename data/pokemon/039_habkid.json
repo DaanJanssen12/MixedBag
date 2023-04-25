@@ -1,8 +1,8 @@
 {
-    "name" : "Minsel",
+    "name" : "Habkid",
     "primaryType": "Steel",
-    "secondaryType": "",
-    "species": "",
+    "secondaryType": "Fighting",
+    "species": "Armored",
     "height": "",
     "weight": "",
     "catchRate": 0,
@@ -10,14 +10,14 @@
     "baseFriendship": 50,
     "hiddenAbilities": "",
     "dexEntry": "",
-    "abilities": "Justified, Battle Armor",
+    "abilities": "",
     "stats":{
-        "hp": 60,
-        "atk": 50,
-        "def": 80,
-        "spd": 40,
-        "spatk": 35,
-        "spdef": 35
+        "hp": 80,
+        "atk": 75,
+        "def": 100,
+        "spd": 50,
+        "spatk": 45,
+        "spdef": 45
     },
     "evolutions": [
         {
@@ -32,8 +32,6 @@
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Tackle"},
-        {"lvl": 1, "name": "Shelter"},
-        {"lvl": 1, "name": "Low Kick"}
+        {"lvl": 1, "name": "Tackle"}
     ]
 }
