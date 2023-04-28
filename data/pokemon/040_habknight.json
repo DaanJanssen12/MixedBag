@@ -19,16 +19,21 @@
         "spatk": 45,
         "spdef": 65
     },
-    "evolutions": [
+    "evolutions":[
         {
-            "nr": "000",
-            "name": "Self",
+            "nr": "038",
+            "name": "Minsel",
             "lvl": 0
         },
         {
-            "nr": "000",
-            "name": "Evo",
-            "lvl": 24
+            "nr": "039",
+            "name": "Habkid",
+            "lvl": 28
+        },
+        {
+            "nr": "040",
+            "name": "Habknight",
+            "lvl": 40
         }
     ],
     "moves": [
