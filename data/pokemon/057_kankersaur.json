@@ -1,7 +1,7 @@
 {
-    "name" : "Droopig",
-    "primaryType": "Ground",
-    "secondaryType": "Normal",
+    "name" : "Kankersaur",
+    "primaryType": "Poison",
+    "secondaryType": "Rock",
     "species": "",
     "height": "",
     "weight": "",

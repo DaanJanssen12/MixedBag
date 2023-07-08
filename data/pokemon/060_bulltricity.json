@@ -1,23 +1,23 @@
 {
-    "name" : "Eledor",
+    "name" : "Bulltricity",
     "primaryType": "Electric",
     "secondaryType": "Fighting",
-    "species": "Matador",
-    "height": "0.5",
-    "weight": "8.7",
-    "catchRate": 235,
-    "baseExp": 53,
+    "species": "Bull",
+    "height": "1.7",
+    "weight": "54.2",
+    "catchRate": 45,
+    "baseExp": 262,
     "baseFriendship": 50,
     "hiddenAbilities": "",
     "dexEntry": "",
     "abilities": "",
     "stats":{
-        "hp": 45,
-        "atk": 45,
-        "def": 34,
-        "spd": 65,
-        "spatk": 40,
-        "spdef": 34
+        "hp": 80,
+        "atk": 95,
+        "def": 79,
+        "spd": 120,
+        "spatk": 79,
+        "spdef": 70
     },
     "evolutions": [
         {

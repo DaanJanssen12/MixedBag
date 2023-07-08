@@ -17,7 +17,7 @@ function escapeRegExp(string){
 }
 function buildEvolutionChart(evolutions){
     var $container = $("#evolution-container");
-    if(!evolutions){
+    if(!evolutions || evolutions.length <= 0){
         $container.text("This pokemon does not evolve.");
     }else{
         
@@ -51,7 +51,7 @@ function buildEvolutionChart(evolutions){
         var $span = $("<span></span>").addClass("infocard-lg-img");
         var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${evolution.nr}_${evolution.name.toLowerCase()}`);
         var $picture = $("<picture></picture>");
-        var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.name.toLowerCase()}.png`);
+        var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.nr}_${evolution.name.toLowerCase()}.png`);
         $img.appendTo($picture);
         $picture.appendTo($a);
         $a.appendTo($span);
@@ -66,7 +66,7 @@ function buildEvolutionChart(evolutions){
             var $altSpan = $("<span></span>").addClass("infocard-lg-img").css("margin-top", "50px");
             var $altA = $("<a></a>").attr("href", `index.html?page=pokedex&id=${evolution.alternateEvo.nr}_${evolution.alternateEvo.name.toLowerCase()}`);
             var $altPicture = $("<picture></picture>");
-            var $altImg = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.alternateEvo.name.toLowerCase()}.png`);
+            var $altImg = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${evolution.alternateEvo.nr}_${evolution.alternateEvo.name.toLowerCase()}.png`);
             $altImg.appendTo($altPicture);
             $altPicture.appendTo($altA);
             $altA.appendTo($altSpan);
@@ -526,7 +526,7 @@ $(document).ready(function(){
             html = replaceAll(html, "$StatTotal", (data.stats.hp + data.stats.atk + data.stats.def + data.stats.spatk + data.stats.spdef + data.stats.spd));
 
             document.body.innerHTML = html;
-            var imgSrc = "data/pokemon/img/"+data.name+".png";
+            var imgSrc = "data/pokemon/img/"+id+".png";
             $("#POKEMON_IMG").attr("src", imgSrc); 
             buildStatsTable("#StatsTable", data.stats);
             buildEvolutionChart(data.evolutions);

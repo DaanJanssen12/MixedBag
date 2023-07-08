@@ -287,17 +287,57 @@
     {
         "nr": "058",
         "name": "Eledor",
-        "type": "Electric,None"
+        "type": "Electric,Fighting"
     },
     {
         "nr": "059",
         "name": "Chargador",
-        "type": "Electric,None"
+        "type": "Electric,Fighting"
     },
     {
         "nr": "060",
         "name": "Bulltricity",
-        "type": "Electric,None"
+        "type": "Electric,Fighting"
+    },
+    {
+        "nr": "061",
+        "name": "Cryscoon",
+        "type": "Ice,None"
+    },
+    {
+        "nr": "062",
+        "name": "Crycing",
+        "type": "Ice,None"
+    },
+    {
+        "nr": "063",
+        "name": "Diece",
+        "type": "Ghost,None"
+    },
+    {
+        "nr": "064",
+        "name": "Slitch",
+        "type": "Bug,Poison"
+    },
+    {
+        "nr": "065",
+        "name": "Slence",
+        "type": "Bug,Poison"
+    },
+    {
+        "nr": "066",
+        "name": "Taimber",
+        "type": "Fire,Dark"
+    },
+    {
+        "nr": "067",
+        "name": "Embadon",
+        "type": "Fire,Dark"
+    },
+    {
+        "nr": "068",
+        "name": "Zerbbadon",
+        "type": "Fire,Dark"
     },
     {
         "nr": "0",

@@ -20,7 +20,7 @@ $(document).ready(function(){
             var $span = $("<span></span>").addClass("infocard-lg-img");
             var $a = $("<a></a>").attr("href", `index.html?page=pokedex&id=${pokemon.nr}_${pokemon.name.toLowerCase()}`);
             var $picture = $("<picture></picture>");
-            var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${pokemon.name.toLowerCase()}.png`);
+            var $img = $("<img></img>").addClass("img-fixed").attr("src", `data/pokemon/img/${pokemon.nr}_${pokemon.name.toLowerCase()}.png`);
             $img.appendTo($picture);
             $picture.appendTo($a);
             $a.appendTo($span);
