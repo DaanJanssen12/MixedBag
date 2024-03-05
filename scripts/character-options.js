@@ -67,7 +67,7 @@ function getBackground(){
 function rollForStats(){
 	var stats = [rollStat(), rollStat(), rollStat(), rollStat(), rollStat(), rollStat()];
 	stats.sort(function(a, b) {
-		return a - b;
+		return b - a;
 	});
 	$("#stats").html(`${stats[0]}, ${stats[1]}, ${stats[2]}, ${stats[3]}, ${stats[4]}, ${stats[5]}`);
 }
@@ -91,4 +91,16 @@ $(document).ready(function(){
 	readTextFile("data/backgrounds.json", (data) => {
 		backgrounds = JSON.parse(data);
 	});
+	$("#generate-character-sheet").off("click").on("click", function(){
+		$("#cross-page-data-storage").append(createHiddenInput("character-class", $("#class").text()));
+		$("#cross-page-data-storage").append(createHiddenInput("character-race", $("#race").text()));
+		$("#cross-page-data-storage").append(createHiddenInput("character-background", $("#background").text()));
+		$("#cross-page-data-storage").append(createHiddenInput("character-stats", $("#stats").text()));
+
+		load_page(this, 'pages/sheet.html');
+	});
 });
+
+function createHiddenInput(id, value){
+	return $("<input type='hidden'></input>").attr("id", id).val(value);
+}

@@ -2,6 +2,7 @@
     {
         "id": "Artificer",
         "link": "http://dnd5e.wikidot.com/artificer",
+        "stat_destribution": ["Intelligence", "Constitution", "Dexterity", "Wisdom", "Charisma", "Strength"],
         "subclasses": [
             {
                 "id": "Alchemist",
@@ -24,6 +25,7 @@
     {
         "id": "Barbarian",
         "link": "http://dnd5e.wikidot.com/barbarian",
+        "stat_destribution": ["Strength", "Constitution", "Dexterity", "Wisdom", "Charisma", "Intelligence"],
         "subclasses": [
             {
                 "id": "Path of the Ancestral Guardian",
@@ -74,6 +76,7 @@
     {
         "id": "Bard",
         "link": "http://dnd5e.wikidot.com/bard",
+        "stat_destribution": ["Charisma", "Constitution", "Dexterity", "Wisdom", "Intelligence", "Strength"],
         "subclasses": [
             {
                 "id": "College of Creation",
@@ -118,6 +121,7 @@
     {
         "id": "Blood Hunter",
         "link": "http://dnd5e.wikidot.com/blood-hunter",
+        "stat_destribution": ["Dexterity", "Intelligence", "Constitution", "Wisdom", "Charisma", "Strength"],
         "subclasses": [
             {
                 "id": "Order of the Ghostslayer",
@@ -140,6 +144,7 @@
     {
         "id": "Cleric",
         "link": "http://dnd5e.wikidot.com/cleric",
+        "stat_destribution": ["Wisdom", "Strength", "Constitution", "Dexterity", "Charisma", "Intelligence"],
         "subclasses": [
             {
                 "id": "Arcana Domain",
@@ -208,6 +213,7 @@
     {
         "id": "Druid",
         "link": "http://dnd5e.wikidot.com/druid",
+        "stat_destribution": ["Wisdom", "Constitution", "Dexterity", "Charisma", "Intelligence", "Strength"],
         "subclasses": [
             {
                 "id": "Circle of Dreams",
@@ -242,6 +248,7 @@
     {
         "id": "Fighter",
         "link": "http://dnd5e.wikidot.com/fighter",
+        "stat_destribution": ["Strength", "Constitution", "Dexterity", "Wisdom", "Charisma", "Intelligence"],
         "subclasses": [
             {
                 "id": "Arcane Archer",
@@ -299,6 +306,7 @@
     {
         "id": "Monk",
         "link": "http://dnd5e.wikidot.com/monk",
+        "stat_destribution": ["Dexterity", "Wisdom", "Constitution", "Charisma", "Intelligence", "Strength"],
         "subclasses": [
             {
                 "id": "Way of Mercy",
@@ -352,6 +360,7 @@
     {
         "id": "Paladin",
         "link": "http://dnd5e.wikidot.com/paladin",
+        "stat_destribution": ["Strength", "Charisma", "Constitution", "Dexterity", "Wisdom", "Intelligence"],
         "subclasses": [
             {
                 "id": "Oath of the Ancients",
@@ -405,6 +414,7 @@
     {
         "id": "Ranger",
         "link": "http://dnd5e.wikidot.com/ranger",
+        "stat_destribution": ["Dexterity", "Wisdom", "Constitution", "Strength", "Charisma", "Intelligence"],
         "subclasses": [
             {
                 "id": "Beast Master Conclave",
@@ -439,6 +449,7 @@
     {
         "id": "Rogue",
         "link": "http://dnd5e.wikidot.com/rogue",
+        "stat_destribution": ["Dexterity", "Constitution", "Wisdom", "Intelligence", "Charisma", "Strength"],
         "subclasses": [
             {
                 "id": "Arcane Trickster",
@@ -486,6 +497,7 @@
     {
         "id": "Sorcerer",
         "link": "http://dnd5e.wikidot.com/sorcerer",
+        "stat_destribution": ["Charisma", "Constitution", "Dexterity", "Wisdom", "Strength", "Intelligence"],
         "subclasses": [
             {
                 "id": "Abberant Mind",
@@ -520,6 +532,7 @@
     {
         "id": "Warlock",
         "link": "http://dnd5e.wikidot.com/warlock",
+        "stat_destribution": ["Charisma", "Dexterity", "Constitution", "Wisdom", "Strength", "Intelligence"],
         "subclasses": [
             {
                 "id": "Archfey",
@@ -579,6 +592,7 @@
     {
         "id": "Wizard",
         "link": "http://dnd5e.wikidot.com/wizard",
+        "stat_destribution": ["Intelligence", "Constitution", "Dexterity", "Wisdom", "Charisma", "Strength"],
         "subclasses": [
             {
                 "id": "School of Abjuration",

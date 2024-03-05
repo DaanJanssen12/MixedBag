@@ -29,23 +29,303 @@
             "eligible": "*",
             "theme": "Tribe",
             "story": "You were born into a tribe, all of your own kind. The tribe wasn't big, 15 to 20 or somewhere around that. For as long as you remember your tribe has been on the move, doing whatever they needed to survive. Stealing, pillaging, hunting, basically whatever they could think of that could bring food to the table and wealth to the tribe."
-        }
-    ],
-    "classBackstories": [
-        {
-            "id": "IDK",
-            "eligible": "*",
-            "story": "At a young age you showed affinity for certain skills and you trained yourself to be a well-rounded {class}"
         },
         {
-            "id": "Battle hardened",
+            "id": "Mage's Apprentice",
+            "eligible": [
+                "Human",
+                "Elf",
+                "Half-Elf",
+                "Gnome"
+            ],
+            "theme": "Magic",
+            "story": "From a young age, you showed a talent for magic. A skilled mage in your hometown took you under their wing as an apprentice. As you trained, you discovered a mysterious artifact that unlocked hidden powers within you, setting you on a quest to uncover the artifact's origins and purpose."
+        },
+        {
+            "id": "Noble Exile",
+            "eligible": [
+                "Human",
+                "Half-Elf",
+                "Elf"
+            ],
+            "theme": "Noble",
+            "story": "Once part of a noble family, you were exiled for a crime you did not commit. Now, you wander the lands seeking redemption and trying to clear your name. Along the way, you've gained insights into courtly intrigue and developed skills to survive on the fringes of society."
+        },
+        {
+            "id": "Monster Hunter",
+            "eligible": "*",
+            "theme": "Adventure",
+            "story": "Raised in a village plagued by monsters, you vowed to protect your home. Trained as a monster hunter, you've faced and defeated various creatures. Recently, you received a mysterious letter requesting your skills in a distant land, prompting you to embark on a new adventure."
+        },
+        {
+            "id": "Arcane Scholar",
+            "eligible": [
+                "Human",
+                "Elf",
+                "Half-Elf",
+                "Gnome"
+            ],
+            "theme": "Scholarly",
+            "story": "Dedicated to the pursuit of knowledge, you spent years studying ancient texts and delving into arcane secrets. Your thirst for understanding has led you to seek out forgotten relics and decipher cryptic prophecies, making you a valuable asset to those in search of magical wisdom."
+        },
+        {
+            "id": "Pirate's Legacy",
+            "eligible": [
+                "*"
+            ],
+            "theme": "Sea",
+            "story": "Born into a notorious pirate crew, you grew up learning the ways of the sea. After a betrayal within the crew, you find yourself the sole inheritor of a hidden treasure map. Now, you sail the seas in search of both riches and revenge against those who wronged your family."
+        },
+        {
+            "id": "Clockwork Artisan",
+            "eligible": [
+                "Gnome",
+                "Dwarf"
+            ],
+            "theme": "Crafting",
+            "story": "Fascinated by the intricate gears and mechanisms of the world, you became a skilled artisan specializing in crafting clockwork creations. One day, you uncovered a secret society of technomancers seeking your expertise to build a legendary automaton with the power to reshape reality."
+        },
+        {
+            "id": "Celestial Guardian",
+            "eligible": [
+                "Aasimar",
+                "Tiefling"
+            ],
+            "theme": "Divine",
+            "story": "Blessed with celestial ancestry, you were chosen to be a guardian against dark forces. Guided by visions and divine whispers, you embark on a quest to fulfill a prophecy that could bring balance to the celestial realms and protect the mortal world from impending doom."
+        },
+        {
+            "id": "Cursed Bloodline",
+            "eligible": "*",
+            "theme": "Cursed",
+            "story": "Your family is cursed, and you bear the burden of a dark secret. As you grew older, you discovered that your bloodline is tied to a malevolent force. Now, you seek a way to break the curse and free your family from its dark influence."
+        },
+        {
+            "id": "Bardic Wanderer",
+            "eligible": "*",
+            "theme": "Bard",
+            "story": "Gifted with a charming voice and natural musical talent, you traveled from town to town as a wandering bard. Your performances earned you both admirers and enemies, and you now navigate a world of political intrigue and personal vendettas as you continue your journey."
+        },
+        {
+            "id": "Elemental Adept",
+            "eligible": "*",
+            "theme": "Elemental",
+            "story": "Born with a connection to the elemental planes, you can manipulate fire, water, air, or earth. Your abilities have drawn the attention of a mysterious elemental order, leading you on a quest to unlock the full potential of your powers and restore balance to the world."
+        },
+        {
+            "id": "Shadow Infiltrator",
+            "eligible": "*",
+            "theme": "Infiltration",
+            "story": "Trained by a secretive organization, you are a master of stealth and subterfuge. Tasked with infiltrating dangerous factions and uncovering hidden plots, you walk the line between darkness and light, always watching your back as you navigate the shadows."
+        },
+        {
+            "id": "Haunted Artisan",
+            "eligible": "*",
+            "theme": "Haunted",
+            "story": "As an artisan, you discovered a cursed artifact that haunted your every step. Now pursued by malevolent spirits, you seek a way to rid yourself of the curse. Along the way, your skills in crafting and enchantment become intertwined with the supernatural."
+        },
+        {
+            "id": "Warforged Sentinel",
+            "eligible": "Warforged",
+            "theme": "Warforged",
+            "story": "Forged for battle, you were created as a sentinel in a war-torn land. However, after the war ended, you were left without a purpose. Now, you travel in search of meaning, grappling with questions of identity and your place in a world at peace."
+        },
+        {
+            "id": "Eldritch Scholar",
+            "eligible": [
+                "Human",
+                "Elf",
+                "Half-Elf",
+                "Tiefling"
+            ],
+            "theme": "Eldritch",
+            "story": "Obsessed with forbidden knowledge, you delved into the dark arts and ancient tomes. In a moment of reckless curiosity, you made a pact with an otherworldly entity, gaining eldritch powers. Now, you navigate a perilous path as you strive to control the darkness within you."
+        },
+        {
+            "id": "Monastic Guardian",
+            "eligible": "*",
+            "theme": "Monastic",
+            "story": "Raised in a secluded monastery, you trained as a guardian of ancient secrets. Your monastic order tasked you with protecting a sacred artifact. When the artifact is stolen, you embark on a quest to recover it, facing both physical and spiritual challenges along the way."
+        },
+        {
+            "id": "Celestial Outcast",
+            "eligible": [
+                "Aasimar"
+            ],
+            "theme": "Celestial",
+            "story": "Despite your celestial lineage, you were cast out from your celestial realm due to an unforeseen event. Now, you walk the mortal realm as an outcast, seeking redemption and trying to understand the cosmic forces that led to your expulsion from the celestial hierarchy."
+        },
+        {
+            "id": "Alchemist's Experiment",
+            "eligible": "*",
+            "theme": "Alchemical",
+            "story": "You were the result of an alchemical experiment gone awry. Created in a mad alchemist's laboratory, you escaped and now struggle to control the unpredictable powers infused within you. Your journey is a quest for knowledge about your origins and a cure for the alchemical anomalies within your body."
+        }
+    ],    
+    "classBackstories": [
+        {
+            "id": "Battle Hardened",
             "eligible": [
                 "Fighter",
                 "Cleric",
                 "Rogue",
                 "Barbarian"
             ],
-            "story": "In seeing your fair share of battle you have honed your skills. Your ability to {battle_style} has made you an expert fighter and a highly valued ally. Not many would want to go toe-to-toe with you."
+            "story": "In seeing your fair share of battle, you have honed your skills. Your ability to {battle_style} has made you an expert fighter and a highly valued ally. Not many would want to go toe-to-toe with you."
+        },
+        {
+            "id": "Divine Seeker",
+            "eligible": [
+                "Cleric",
+                "Paladin"
+            ],
+            "story": "Touched by divine power, you dedicated your life to seeking the will of the gods. Guided by visions and divine messages, you strive to bring justice and order to the world. Your faith is unwavering, and you are prepared to face any challenge in the name of your deity."
+        },
+        {
+            "id": "Master Tactician",
+            "eligible": [
+                "Fighter",
+                "Rogue",
+                "Wizard"
+            ],
+            "story": "Known for your strategic brilliance, you rose to prominence as a master tactician. Whether leading troops into battle or outsmarting foes in a dark alley, your mind is your greatest weapon. Your reputation for outwitting adversaries has earned you both admiration and caution."
+        },
+        {
+            "id": "Nature's Guardian",
+            "eligible": [
+                "Druid",
+                "Ranger"
+            ],
+            "story": "Connected to the natural world, you are a guardian of the balance between civilization and wilderness. Raised in the heart of nature, you have a deep understanding of the flora and fauna around you. Your purpose is to protect the natural order and thwart those who seek to disrupt it."
+        },
+        {
+            "id": "Arcane Scholar",
+            "eligible": [
+                "Wizard",
+                "Sorcerer"
+            ],
+            "story": "From a young age, you displayed a natural aptitude for magic. As an arcane scholar, you spent years studying ancient tomes and unlocking the secrets of the arcane. Your pursuit of magical knowledge has made you a formidable spellcaster, wielding power that both fascinates and intimidates."
+        },
+        {
+            "id": "Shadow Infiltrator",
+            "eligible": [
+                "Rogue",
+                "Monk",
+                "Warlock"
+            ],
+            "story": "Trained in the arts of stealth and subterfuge, you are a shadow infiltrator. Whether navigating crowded city streets or infiltrating enemy strongholds, you move with unmatched grace and silence. Your skills make you a sought-after operative for covert missions and espionage."
+        },
+        {
+            "id": "Mystic Artisan",
+            "eligible": [
+                "Artificer",
+                "Wizard"
+            ],
+            "story": "A master of both magic and craftsmanship, you are a mystic artisan. Combining arcane knowledge with skillful hands, you create enchanting artifacts and magical inventions. Your creations are sought after by collectors and adventurers alike, making you a renowned figure in the arcane arts."
+        },
+        {
+            "id": "Soulbound Warrior",
+            "eligible": [
+                "Warlock",
+                "Paladin"
+            ],
+            "story": "Bound by a pact or oath, you are a soulbound warrior. Your powers are derived from a mystical connection with an otherworldly entity or divine force. As you fulfill your pact or oath, you grapple with the consequences and the ever-present influence of your otherworldly patron."
+        },
+        {
+            "id": "Bardic Wanderer",
+            "eligible": [
+                "Bard",
+                "Rogue"
+            ],
+            "story": "Gifted with a charming voice and natural musical talent, you travel from town to town as a wandering bard. Your performances earn you both admirers and enemies, and you navigate a world of political intrigue and personal vendettas as you continue your journey."
+        },
+        {
+            "id": "Elemental Fury",
+            "eligible": [
+                "Sorcerer",
+                "Druid"
+            ],
+            "story": "Born with a connection to the elemental planes, you can manipulate fire, water, air, or earth. Your abilities have drawn the attention of a mysterious elemental order, leading you on a quest to unlock the full potential of your powers and restore balance to the world."
+        },
+        {
+            "id": "Eldritch Investigator",
+            "eligible": [
+                "Warlock",
+                "Wizard",
+                "Rogue"
+            ],
+            "story": "Driven by a thirst for forbidden knowledge, you delve into the dark arts and ancient tomes. In a moment of reckless curiosity, you made a pact with an otherworldly entity, gaining eldritch powers. Now, you investigate arcane mysteries and supernatural occurrences, balancing on the edge of forbidden secrets."
+        },
+        {
+            "id": "Monastic Disciple",
+            "eligible": [
+                "Monk",
+                "Fighter"
+            ],
+            "story": "Raised in a secluded monastery, you trained as a disciplined monk. Your martial prowess and spiritual enlightenment make you a formidable combatant. Guided by the teachings of your monastic order, you seek to master the mind, body, and spirit in your quest for self-perfection."
+        },
+        {
+            "id": "Astral Nomad",
+            "eligible": [
+                "Sorcerer",
+                "Wizard",
+                "Warlock"
+            ],
+            "story": "Touched by the power of the cosmos, you are an astral nomad. Your mind has traversed the planes, unlocking mystical insights and cosmic energies. With each journey, you unravel the mysteries of the multiverse, wielding astral magic that transcends the limits of the material world."
+        },
+        {
+            "id": "Beast Conduit",
+            "eligible": [
+                "Ranger",
+                "Druid"
+            ],
+            "story": "Connected to the primal forces of nature, you are a beast conduit. You share a deep bond with the creatures of the wild, communicating and empathizing with them. Through this connection, you harness the strength and instincts of your animal companions to navigate the untamed wilderness."
+        },
+        {
+            "id": "Clockwork Engineer",
+            "eligible": [
+                "Artificer",
+                "Wizard"
+            ],
+            "story": "Fascinated by the intricate gears and mechanisms of the world, you became a skilled engineer specializing in crafting clockwork creations. One day, you uncovered a secret society of technomancers seeking your expertise to build a legendary automaton with the power to reshape reality."
+        },
+        {
+            "id": "Dragonkin Sorcerer",
+            "eligible": [
+                "Sorcerer"
+            ],
+            "story": "Infused with the blood of dragons, you are a dragonkin sorcerer. The dormant draconic power within you awakened, granting you the ability to command elements and unleash devastating spells. As you explore your lineage, you uncover the mysteries of dragons and their ancient legacy."
+        },
+        {
+            "id": "Holy Avenger",
+            "eligible": [
+                "Paladin",
+                "Cleric"
+            ],
+            "story": "Chosen by the divine, you are a holy avenger. Sworn to uphold justice and defend the innocent, your presence inspires hope and strikes fear into the hearts of evildoers. Guided by a sacred oath or divine calling, you wield both sword and divine magic in your quest for righteousness."
+        },
+        {
+            "id": "Infernal Renegade",
+            "eligible": [
+                "Warlock",
+                "Sorcerer"
+            ],
+            "story": "Bound by a pact with infernal forces, you are an infernal renegade. Your power is both a blessing and a curse, as the influence of your infernal patron shapes your destiny. Now, you navigate a world where your actions have consequences not just for you, but for the infernal entity that granted you power."
+        },
+        {
+            "id": "Pirate Corsair",
+            "eligible": [
+                "Rogue",
+                "Fighter"
+            ],
+            "story": "Raised on the high seas, you are a pirate corsair. Your life has been one of swashbuckling adventure, plundering the seas and eluding naval forces. Now, your expertise in piracy and naval combat makes you a force to be reckoned with as you continue to pursue the thrill of the open ocean."
+        },
+        {
+            "id": "Undying Warlock",
+            "eligible": [
+                "Warlock"
+            ],
+            "story": "Bound to an undying patron, you are an undying warlock. Your connection to a force beyond mortality has granted you unnatural resilience and dark powers. As you navigate the fine line between life and death, you seek to fulfill your patron's inscrutable desires while avoiding the grasp of the inevitable."
         }
     ],
     "backgroundBackstories": [
@@ -54,32 +334,145 @@
                 "Soldier"
             ],
             "theme": "Battle",
-            "story": "At the point you reached adulthood there was a big war going on, so without much of a choice you were called up to serve your people. You got some basic combat training, but most skills were learned on the battlefield. A lot was lost on those fields, but a lot was also gained. The ones who made it out alive had a group of live-long friends, some people who know what you've gone through, since they have as well."
+            "story": "At the point you reached adulthood, a massive war engulfed the land, and without much choice, you were called up to serve your people. Basic combat training only scratched the surface; the true skills were forged on the brutal battlefield. The war claimed many lives, but those who survived formed an unbreakable bond. Together with your lifelong friends, you share the scars and stories of a conflict that shaped your destiny."
         },
         {
             "eligible": [
                 "Acolyte"
             ],
             "theme": "Calm",
-            "story": "At some point in your life when you were looking for answers, you found them in the spiritual world. Desperation turned to hope, and at one point you connected with a deity on a level you had never expected was possible. Since then you have devoted your life towards your newfound calling, and in times of uncentainty you knew you had someone to rely on."
+            "story": "In a moment of desperation, you sought answers and found solace in the spiritual realm. A connection with a deity unfolded unexpectedly, transforming despair into hope. Devoting your life to this newfound calling, you became an acolyte. In times of uncertainty, you draw strength from the divine, knowing you have a higher power to guide you through the trials of life."
         },
         {
             "eligible": [
                 "City Watch"
             ],
             "theme": "Community",
-            "story": "You have served the community where you grew up, standing as its first line of defense against crime. You aren't a soldier, directing your gaze outward at possible enemies. Instead, your service to your hometown was to help police its populace, protecting the citizenry from lawbreakers and malefactors of every stripe."
+            "story": "As a member of the City Watch, you served as the first line of defense against crime in your hometown. Unlike soldiers focused on external threats, your duty was to police the community, safeguarding citizens from lawbreakers and malevolent forces within the city. Your commitment to maintaining order forged strong ties with the local populace, making you a trusted guardian of your home."
         },
         {
             "eligible": [
                 "Archaeologist"
             ],
             "theme": "Exploration",
-            "story": "May it be caused by the years before, or maybe it was the curious nature you've been born with. You decided to go into the world of archaeology. Learning about the long-lost and fallen cultures of the past by studying their remains, their bones, their ruins, their surviving masterworks, and their tombs. In this line of work you have traveled to a vast amount of locations all over the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms. By doing so, you've had to face countless of challenges: An ogre living in city ruins, traps set in an age old tomb, and much much more."
+            "story": "Fueled by innate curiosity and a passion for the past, you ventured into the world of archaeology. Delving into the remnants of long-lost cultures, you studied their remains, ruins, and surviving artifacts. Embarking on journeys across the world, you faced numerous challenges—confronting an ogre in city ruins, navigating traps in ancient tombs, and more. Your archaeological pursuits became a quest to uncover the untold stories of monarchs, high priests, wars, and cataclysms."
         },
         {
-            "eligible": "*",
-            "story": "Hoi :)"
+            "eligible": [
+                "Sailor"
+            ],
+            "theme": "Seafaring",
+            "story": "Raised in a coastal town, your life revolved around the sea. As a sailor, you navigated treacherous waters, faced fierce storms, and encountered legendary sea creatures. Your ship became a floating home, and your crew, a second family. Whether battling pirates or exploring uncharted islands, your seafaring adventures forged you into a seasoned mariner with tales as vast as the ocean itself."
+        },
+        {
+            "eligible": [
+                "Guild Artisan"
+            ],
+            "theme": "Craftsmanship",
+            "story": "Born into a family of skilled artisans, you inherited a deep appreciation for craftsmanship. Guided by tradition, you honed your skills as a guild artisan, creating exquisite works of art. Your masterpieces gained renown, attracting patrons and rivals alike. Through your craft, you discovered the power of creation, transforming raw materials into objects of beauty and utility."
+        },
+        {
+            "eligible": [
+                "Entertainer"
+            ],
+            "theme": "Performance",
+            "story": "From street performances to grand stages, your life has been a dazzling spectacle. As an entertainer, you captivated audiences with your charisma, whether through music, dance, or comedy. Your travels led you to perform in diverse venues, encountering both fame and adversity. Behind the curtain, you navigate a world where illusion and reality blur, always ready to steal the show."
+        },
+        {
+            "eligible": [
+                "Far Traveler"
+            ],
+            "theme": "Exotic Homeland",
+            "story": "Hailing from a distant land, you are a far traveler navigating the complexities of a foreign world. The customs, languages, and landscapes are vastly different, but your journey is one of exploration and adaptation. Your encounters range from cultural misunderstandings to forging unexpected alliances as you carry the essence of your exotic homeland into uncharted territories."
+        },
+        {
+            "eligible": [
+                "Noble"
+            ],
+            "theme": "Inheritance",
+            "story": "Born into a noble family, your life was shaped by privilege and responsibility. As the heir to a noble house, you inherited both wealth and expectations. Your story unfolds within the opulent halls of your ancestral home, where political intrigue, family secrets, and the weight of tradition mold your destiny. Balancing duty and desire, you navigate the complexities of noble society."
+        },
+        {
+            "eligible": [
+                "Folk Hero"
+            ],
+            "theme": "Justice",
+            "story": "In the heart of a humble village, you rose to become a folk hero. Faced with injustice, you stood up for the common people against tyranny. Your acts of courage and selflessness made you a symbol of hope. From defending the defenseless to leading rebellions, your story is etched in the hearts of those you championed. The echoes of your deeds resonate through the tapestry of the land."
+        },
+        {
+            "eligible": [
+                "Hermit"
+            ],
+            "theme": "Isolation",
+            "story": "Choosing a life of solitude, you became a hermit seeking meaning beyond the noise of society. In seclusion, you found solace in introspection and communion with nature. Your hermitage provided enlightenment, but a mysterious event forced you to leave your isolated haven. Now, you grapple with the dualities of solitude and connection as you reintegrate into a world you once chose to leave behind."
+        },
+        {
+            "eligible": [
+                "Knight"
+            ],
+            "theme": "Chivalry",
+            "story": "Sworn to uphold the code of chivalry, you became a knight dedicated to the ideals of honor, duty, and justice. Clad in armor and armed with a noble steed, your quest for glory led you to tournaments, quests, and battles. Balancing the demands of loyalty to your liege and the pursuit of personal virtue, your story unfolds in the age-old traditions of knighthood."
+        },
+        {
+            "eligible": [
+                "Outlander"
+            ],
+            "theme": "Survival",
+            "story": "Raised in the untamed wilderness, you are an outlander with a keen survival instinct. The harsh landscapes shaped you into a skilled hunter, tracker, and forager. Your connection to nature runs deep, but your journey has taken you beyond the wilds. As you navigate civilizations, your rustic roots provide a unique perspective, and your survival skills remain vital in the face of unforeseen challenges."
+        },
+        {
+            "eligible": [
+                "Charlatan"
+            ],
+            "theme": "Deception",
+            "story": "Masters of deception, you embraced the life of a charlatan. A clever manipulator and skilled imposter, you navigated the shadowy world of cons and schemes. From elaborate heists to cunning disguises, your life was a series of calculated risks. Behind the facade, you weave a tapestry of lies, always staying one step ahead of those who seek to uncover the truth."
+        },
+        {
+            "eligible": [
+                "Sage"
+            ],
+            "theme": "Knowledge",
+            "story": "Dedicated to the pursuit of knowledge, you became a sage, delving into the mysteries of the universe. Your thirst for understanding led you to ancient tomes, forgotten languages, and arcane secrets. As a scholar, you uncovered the threads that weave reality together. Whether deciphering ancient scripts or unlocking the secrets of the cosmos, your journey is an unending quest for enlightenment."
+        },
+        {
+            "eligible": [
+                "Pirate"
+            ],
+            "theme": "Plunder",
+            "story": "Born on the high seas, you are a pirate with saltwater in your veins. Your life has been a tumultuous blend of daring raids, naval battles, and hidden treasures. As captain or crew, you navigated the treacherous waters, earning a reputation as a swashbuckler. The thrill of the open sea and the lure of ill-gotten riches define your pirate's tale."
+        },
+        {
+            "eligible": [
+                "Haunted One"
+            ],
+            "theme": "Tragedy",
+            "story": "Haunted by a tragic past, you are a haunted one. A dark event or malevolent force scarred your soul, casting a shadow over your life. You seek redemption or revenge, grappling with the unseen horrors that haunt your every step. In the pursuit of closure, you navigate a world where the line between reality and the supernatural blurs, and your past refuses to be buried."
+        },
+        {
+            "eligible": [
+                "Urban Bounty Hunter"
+            ],
+            "theme": "Justice",
+            "story": "In the sprawling metropolis, you carved a niche as an urban bounty hunter. Your skills in tracking and capturing targets earned you a reputation for bringing lawbreakers to justice. From the seedy underbelly to the opulent districts, you navigate the urban landscape, guided by a sense of duty and the thrill of the chase."
+        },
+        {
+            "eligible": [
+                "Swashbuckler"
+            ],
+            "theme": "Adventure",
+            "story": "Embodying the spirit of a swashbuckler, you live for the thrill of adventure. Whether swinging from chandeliers, engaging in daring duels, or outsmarting foes, your life is a constant escapade. The allure of danger and the promise of glory propel you forward as you carve a path through a world filled with excitement, intrigue, and high-seas romance."
+        },
+        {
+            "eligible": [
+                "Inquisitor"
+            ],
+            "theme": "Investigation",
+            "story": "As an inquisitor, you dedicated your life to investigation and uncovering hidden truths. Serving a higher authority, you navigated a world rife with intrigue and subterfuge. From solving mysteries to rooting out corruption, your relentless pursuit of justice often places you on the razor's edge. Armed with keen insight and determination, you unravel the webs of deception that cloak the darkest secrets."
+        },
+        {
+            "eligible":["*"],
+            "theme": "Generic",
+            "story": "In the quiet village where you grew up, life was simple and uneventful. Your family, humble and hardworking, instilled in you the values of perseverance and community. As you reached adulthood, an unforeseen event disrupted the tranquil rhythm of your existence, forcing you to embark on a journey beyond the familiar. With a sense of curiosity and the echoes of an unknown destiny, you step into the vast world, eager to discover your purpose and unravel the mysteries that await."
         }
     ],
     "generalData": {
