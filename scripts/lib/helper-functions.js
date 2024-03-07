@@ -28,7 +28,7 @@ function toggleDiv(id){
 
 function getAppSettings() {
     return {
-        developmentMode: true
+        developmentMode: false
     };
 }
 
