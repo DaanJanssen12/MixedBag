@@ -26,6 +26,15 @@ function toggleDiv(id){
     }
 }
 
+function startPageLoad(){
+    $("#loading").show();
+    $("#page-content-container").hide();
+}
+function stopPageLoad(){
+    $("#loading").hide();
+    $("#page-content-container").show();
+}
+
 function getAppSettings() {
     return {
         developmentMode: false

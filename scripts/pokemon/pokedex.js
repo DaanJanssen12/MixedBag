@@ -602,6 +602,9 @@ $(document).ready(function(){
         if(!appsettings.developmentMode){
             $("[dev-mode]").remove();
         }
+        setTimeout(() => {
+            stopPageLoad();
+        }, 250);
     }
 });
 

@@ -31,6 +31,7 @@
   <link href="assets/vendor/google/css/fonts.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="content/loading.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -57,6 +58,7 @@
 				</div>
 			  </section>
 			  <div id="page-content-container" class="container"></div>
+			  <div id="loading"></div>
 		</main>
 		<div id="cross-page-data-storage" style="display: none;">
 		<input type="hidden" id="POKEMON_ID" value=""/>
@@ -142,8 +144,12 @@
 			pageUrl = `${pageUrl}/${module}`;
 		}
 		pageUrl = `${pageUrl}/${pageToLoad}.html`;
+
+		if(pageToLoad === "pokedex" || pageToLoad === "pokedex-full"){
+			startPageLoad();
+		}
 		await $("#page-content-container").load(pageUrl);
-		
+
 		let pageResult = "?page="+pageToLoad;
 		if(module !== undefined && module !== null && module !== ''){
 			pageResult = "?module="+module+"&page="+pageToLoad;
