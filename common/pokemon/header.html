@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-between align-items-center">
+	<input type="hidden" id="current-active-module" value="pokemon">
+	<div class="logo">
+	  <h1><a class="pointer" id="home" onclick="return load_page(null, this, 'home')">Mixed Bag</a></h1>
+	</div>
+
+  <nav id="navbar" class="navbar">
+	<ul>
+		<li><a class="active pointer" id="home" onclick="return load_page('pokemon', this, 'home')">Home</a></li>
+	  	<li><a class="active pointer" id="pokedex_menu_item" onclick="return load_page('pokemon', this, 'pokedex-full')">Pokedex</a></li>
+	</ul>
+  </nav><!-- .navbar -->
+
+</div>

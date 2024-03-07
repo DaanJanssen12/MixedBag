@@ -1,0 +1,42 @@
+{
+    "name" : "Rimpcrush",
+    "primaryType": "Fighting",
+    "secondaryType": "",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 45,
+        "atk": 45,
+        "def": 45,
+        "spd": 45,
+        "spatk": 45,
+        "spdef": 45
+    },
+    "evolutions": [
+        {
+            "nr": "076",
+            "name": "Ninmin",
+            "lvl": 0
+        },
+        {
+            "nr": "077",
+            "name": "Rimpnint",
+            "lvl": 24
+        },
+        {
+            "nr": "078",
+            "name": "Rimpcrush",
+            "lvl": 42
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

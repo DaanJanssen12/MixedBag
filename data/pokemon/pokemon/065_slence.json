@@ -1,0 +1,37 @@
+{
+    "name" : "Slence",
+    "primaryType": "Bug",
+    "secondaryType": "Poison",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 80,
+        "atk": 100,
+        "def": 60,
+        "spd": 70,
+        "spatk": 100,
+        "spdef": 145
+    },
+    "evolutions": [
+        {
+            "nr": "064",
+            "name": "Slitch",
+            "lvl": 0
+        },
+        {
+            "nr": "065",
+            "name": "Slence",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

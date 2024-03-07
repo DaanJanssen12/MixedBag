@@ -1,0 +1,37 @@
+{
+    "name" : "Snofsy",
+    "primaryType": "Flying",
+    "secondaryType": "Ice",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 70,
+        "atk": 70,
+        "def": 50,
+        "spd": 45,
+        "spatk": 40,
+        "spdef": 45
+    },
+    "evolutions": [
+        {
+            "nr": "072",
+            "name": "Snofsy",
+            "lvl": 0
+        },
+        {
+            "nr": "073",
+            "name": "Snowlide",
+            "lvl": 25
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

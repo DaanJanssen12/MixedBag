@@ -1,0 +1,39 @@
+
+<section class="section pb-0">
+  <div class="container col-md-12">
+	<div class="row align-items">
+	  <div class="col-md-4 me-auto">
+		<h2 class="mb-4">Loot Generator</h2>
+		<div class="mb-4">
+		  <div class="form row" style="margin-top: 20px; margin-bottom: 20px;">
+			<div class="form-group">
+			  <select class="form-select" id="rarity" aria-label="Default select example">
+				<option selected>Choose the item rarity</option>
+				<option value="Common">Common</option>
+				<option value="Uncommon">Uncommon</option>
+				<option value="Rare">Rare</option>
+				<option value="Very Rare">Very Rare</option>
+				<option value="Legendary">Legendary</option>
+				<option value="Artifact">Artifact</option>
+			  </select>
+			</div>
+			<div class="form-group">
+			  <button class="btn btn-primary btn-block" style="width:100%" onclick="getRandomItem('item')">Generate!</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-6">
+		<div id="result" style="min-height:250px;margin-top: 25px;">
+		  <h5>Name: <text id="item"></text></h5>
+		  <p>Requires attunement: <text id="attunement"></text></p>
+		  <p>Rarity: <text id="item-rarity"></text></p>
+		  <p>Type: <text id="type"></text></p>
+		  <p id="desc" style="white-space: pre-wrap;"></p>
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+</section>
+<script src="scripts/dnd/loot-generator.js"></script>

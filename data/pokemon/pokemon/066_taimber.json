@@ -1,0 +1,42 @@
+{
+    "name" : "Taimber",
+    "primaryType": "Fire",
+    "secondaryType": "Dark",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 45,
+        "atk": 65,
+        "def": 40,
+        "spd": 70,
+        "spatk": 60,
+        "spdef": 40
+    },
+    "evolutions": [
+        {
+            "nr": "066",
+            "name": "Taimber",
+            "lvl": 0
+        },
+        {
+            "nr": "067",
+            "name": "Embadon",
+            "lvl": 31
+        },
+        {
+            "nr": "068",
+            "name": "Zerbbadon",
+            "lvl": 48
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

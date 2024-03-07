@@ -1,0 +1,52 @@
+{
+    "name" : "Breezar",
+    "primaryType": "Psychic",
+    "secondaryType": "Fairy",
+    "species": "Floating Horse",
+    "height": "1.6",
+    "weight": "58.0",
+    "catchRate": 60,
+    "baseExp": 175,
+    "baseFriendship": 50,
+    "hiddenAbilities": "Anticipation",
+    "dexEntry": "",
+    "abilities": "Run Away, Pastel Veil",
+    "stats":{
+        "hp": 65,
+        "atk": 80,
+        "def": 70,
+        "spatk": 105,
+        "spdef": 80,
+        "spd": 100
+    },
+    "evolutions": [
+        {
+            "nr": "051",
+            "name": "Breeny",
+            "lvl": 0
+        },
+        {
+            "nr": "052",
+            "name": "Breezar",
+            "lvl": 32
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Confusion"},
+        {"lvl": 1, "name": "Tail Whip"},
+        {"lvl": 9, "name": "Work Up"},
+        {"lvl": 12, "name": "Imprision"},
+        {"lvl": 15, "name": "Stored Power"},
+        {"lvl": 17, "name": "Moonlight"},
+        {"lvl": 20, "name": "Magic Coat"},
+        {"lvl": 23, "name": "Psybeam"},
+        {"lvl": 25, "name": "Calm Mind"},
+        {"lvl": 28, "name": "Zen Headbutt"},
+        {"lvl": 31, "name": "Yawn"},
+        {"lvl": 39, "name": "Psychic"},
+        {"lvl": 36, "name": "Moonblast"},
+        {"lvl": 44, "name": "Future Sight"},
+        {"lvl": 33, "name": "Play Rough"},
+        {"lvl": 14, "name": "Draining Kiss"}
+    ]
+}

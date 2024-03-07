@@ -1,0 +1,42 @@
+{
+    "name" : "Kankryst",
+    "primaryType": "Poison",
+    "secondaryType": "Rock",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 45,
+        "atk": 45,
+        "def": 45,
+        "spd": 45,
+        "spatk": 45,
+        "spdef": 45
+    },
+    "evolutions": [
+        {
+            "nr": "055",
+            "name": "Kankwart",
+            "lvl": 0
+        },
+        {
+            "nr": "056",
+            "name": "Kankryst",
+            "lvl": 24
+        },
+        {
+            "nr": "057",
+            "name": "Kankersaur",
+            "lvl": 43
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

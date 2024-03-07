@@ -1,0 +1,477 @@
+[
+    {
+        "nr": "001",
+        "name": "Salareen",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "002",
+        "name": "Iguareen",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "003",
+        "name": "Draguana",
+        "type": "Grass,Dragon"
+    },
+    {
+        "nr": "004",
+        "name": "Snaember",
+        "type": "Fire,None"
+    },
+    {
+        "nr": "005",
+        "name": "Charbra",
+        "type": "Fire,None"
+    },
+    {
+        "nr": "006",
+        "name": "Flaraga",
+        "type": "Fire,Flying"
+    },
+    {
+        "nr": "007",
+        "name": "Dampurr",
+        "type": "Water,Sound"
+    },
+    {
+        "nr": "008",
+        "name": "Rainther",
+        "type": "Water,Sound"
+    },
+    {
+        "nr": "009",
+        "name": "Delugar",
+        "type": "Water,Sound"
+    },
+    {
+        "nr": "010",
+        "name": "Musibird",
+        "type": "Flying,Sound"
+    },
+    {
+        "nr": "011",
+        "name": "Parowave",
+        "type": "Flying,Sound"
+    },
+    {
+        "nr": "012",
+        "name": "Chirquency",
+        "type": "Flying,Sound"
+    },
+    {
+        "nr": "013",
+        "name": "Amazel",
+        "type": "Normal,None"
+    },
+    {
+        "nr": "014",
+        "name": "Elazel",
+        "type": "Normal,None"
+    },
+    {
+        "nr": "015",
+        "name": "Winbee",
+        "type": "Bug,Grass"
+    },
+    {
+        "nr": "016",
+        "name": "Winking",
+        "type": "Bug,Grass"
+    },
+    {
+        "nr": "017",
+        "name": "Winqueen",
+        "type": "Bug,Poison"
+    },
+    {
+        "nr": "018",
+        "name": "Baoby",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "019",
+        "name": "Baobaraffe",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "020",
+        "name": "Lanya",
+        "type": "Light,None"
+    },
+    {
+        "nr": "021",
+        "name": "Dawntern",
+        "type": "Light,Psychic"
+    },
+    {
+        "nr": "022",
+        "name": "Duskalight",
+        "type": "Light,Dark"
+    },
+    {
+        "nr": "023",
+        "name": "Intelliderp",
+        "type": "Psychic,None"
+    },
+    {
+        "nr": "024",
+        "name": "Squizard",
+        "type": "Water,Psychic"
+    },
+    {
+        "nr": "025",
+        "name": "Sorcepher",
+        "type": "Water,Psychic"
+    },
+    {
+        "nr": "026",
+        "name": "Mindow",
+        "type": "Ghost,None"
+    },
+    {
+        "nr": "027",
+        "name": "Slugnami",
+        "type": "Ghost,Poison"
+    },
+    {
+        "nr": "028",
+        "name": "Drashimi",
+        "type": "Dragon,Poison"
+    },
+    {
+        "nr": "029",
+        "name": "Tsushimi",
+        "type": "Dragon,Poison"
+    },
+    {
+        "nr": "030",
+        "name": "Tobshimi",
+        "type": "Dragon,Poison"
+    },
+    {
+        "nr": "031",
+        "name": "Pyen",
+        "type": "Dark,None"
+    },
+    {
+        "nr": "032",
+        "name": "Pyron",
+        "type": "Dark,Sound"
+    },
+    {
+        "nr": "033",
+        "name": "Pyrain",
+        "type": "Dark,Sound"
+    },
+    {
+        "nr": "034",
+        "name": "Kudo",
+        "type": "Fairy,Light"
+    },
+    {
+        "nr": "035",
+        "name": "Doechi",
+        "type": "Fairy,Light"
+    },
+    {
+        "nr": "036",
+        "name": "Ellamp",
+        "type": "Ghost,None"
+    },
+    {
+        "nr": "037",
+        "name": "Seiramp",
+        "type": "Ghost,None"
+    },
+    {
+        "nr": "038",
+        "name": "Minsel",
+        "type": "Steel,None"
+    },
+    {
+        "nr": "039",
+        "name": "Habkid",
+        "type": "Steel,Fighting"
+    },
+    {
+        "nr": "040",
+        "name": "Habknight",
+        "type": "Steel,Fighting"
+    },
+    {
+        "nr": "041",
+        "name": "Sligment",
+        "type": "Normal,Rock"
+    },
+    {
+        "nr": "042",
+        "name": "Minamai",
+        "type": "Water,Electric"
+    },
+    {
+        "nr": "043",
+        "name": "Marelstorm",
+        "type": "Water,Electric"
+    },
+    {
+        "nr": "044",
+        "name": "Snome",
+        "type": "Ice,Fairy"
+    },
+    {
+        "nr": "045",
+        "name": "Froll",
+        "type": "Ice,Fairy"
+    },
+    {
+        "nr": "046",
+        "name": "Droopig",
+        "type": "Ground,Normal"
+    },
+    {
+        "nr": "047",
+        "name": "Hoolihog",
+        "type": "Ground,Fighting"
+    },
+    {
+        "nr": "048",
+        "name": "Armadix",
+        "type": "Ground,None"
+    },
+    {
+        "nr": "049",
+        "name": "Marvog",
+        "type": "Ground,Steel"
+    },
+    {
+        "nr": "050",
+        "name": "Gramervog",
+        "type": "Ground,Steel"
+    },
+    {
+        "nr": "051",
+        "name": "Breeny",
+        "type": "Psychic,None"
+    },
+    {
+        "nr": "052",
+        "name": "Breezar",
+        "type": "Psychic,Fairy"
+    },
+    {
+        "nr": "053",
+        "name": "Makochine",
+        "type": "Water,Steel"
+    },
+    {
+        "nr": "054",
+        "name": "Megalomaton",
+        "type": "Water,Steel"
+    },
+    {
+        "nr": "055",
+        "name": "Kankwart",
+        "type": "Rock,None"
+    },
+    {
+        "nr": "056",
+        "name": "Kankryst",
+        "type": "Rock,None"
+    },
+    {
+        "nr": "057",
+        "name": "Kankersaur",
+        "type": "Rock,Poison"
+    },
+    {
+        "nr": "058",
+        "name": "Eledor",
+        "type": "Electric,Fighting"
+    },
+    {
+        "nr": "059",
+        "name": "Chargador",
+        "type": "Electric,Fighting"
+    },
+    {
+        "nr": "060",
+        "name": "Bulltricity",
+        "type": "Electric,Fighting"
+    },
+    {
+        "nr": "061",
+        "name": "Cryscoon",
+        "type": "Ice,None"
+    },
+    {
+        "nr": "062",
+        "name": "Crycing",
+        "type": "Ice,None"
+    },
+    {
+        "nr": "063",
+        "name": "Deecee",
+        "type": "Ghost,None"
+    },
+    {
+        "nr": "064",
+        "name": "Slitch",
+        "type": "Bug,Poison"
+    },
+    {
+        "nr": "065",
+        "name": "Slence",
+        "type": "Bug,Poison"
+    },
+    {
+        "nr": "066",
+        "name": "Taimber",
+        "type": "Fire,Dark"
+    },
+    {
+        "nr": "067",
+        "name": "Embadon",
+        "type": "Fire,Dark"
+    },
+    {
+        "nr": "068",
+        "name": "Zerbbadon",
+        "type": "Fire,Dark"
+    },
+    {
+        "nr": "069",
+        "name": "Clowee",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "070",
+        "name": "Clolly",
+        "type": "Grass,None"
+    },
+    {
+        "nr": "071",
+        "name": "Clodiva",
+        "type": "Grass,Fairy"
+    },
+    {
+        "nr": "072",
+        "name": "Snofsy",
+        "type": "Flying,Ice"
+    },
+    {
+        "nr": "073",
+        "name": "Snowlide",
+        "type": "Flying,Ice"
+    },
+    {
+        "nr": "074",
+        "name": "Plantid",
+        "type": "Bug,None"
+    },
+    {
+        "nr": "075",
+        "name": "Reaphid",
+        "type": "Bug,Steel"
+    },
+    {
+        "nr": "076",
+        "name": "Ninmin",
+        "type": "Fighting,None"
+    },
+    {
+        "nr": "077",
+        "name": "Rimpnint",
+        "type": "Fighting,Ground"
+    },
+    {
+        "nr": "078",
+        "name": "Rimpcrush",
+        "type": "Fighting,Ground"
+    },
+    {
+        "nr": "079",
+        "name": "Pompet",
+        "type": "Grass"
+    },
+    {
+        "nr": "080",
+        "name": "Pomprim",
+        "type": "Grass,Fighting"
+    },
+    {
+        "nr": "081",
+        "name": "Upspark",
+        "type": "Normal,Electric"
+    },
+    {
+        "nr": "082",
+        "name": "Zapoteur",
+        "type": "Electric,Normal"
+    },
+    {
+        "nr": "083",
+        "name": "Deveep",
+        "type": "Dark,None"
+    },
+    {
+        "nr": "084",
+        "name": "Dozein",
+        "type": "Dark,None"
+    },
+    {
+        "nr": "085",
+        "name": "Goatyr",
+        "type": "Fairy"
+    },
+    {
+        "nr": "086",
+        "name": "Goataur",
+        "type": "Fairy,Fighting"
+    },
+    {
+        "nr": "087",
+        "name": "Quex",
+        "type": "Dragon,None"
+    },
+    {
+        "nr": "088",
+        "name": "Dalbex",
+        "type": "Dragon,None"
+    },
+    {
+        "nr": "089",
+        "name": "Unex",
+        "type": "Dragon,None"
+    },
+    {
+        "nr": "090",
+        "name": "Rockid",
+        "type": "Rock,Normal"
+    },
+    {
+        "nr": "091",
+        "name": "Stubhorn",
+        "type": "Rock,Normal"
+    },
+    {
+        "nr": "092",
+        "name": "Lumini",
+        "type": "Light,None"
+    },
+    {
+        "nr": "093",
+        "name": "Lumedi",
+        "type": "Light,None"
+    },
+    {
+        "nr": "094",
+        "name": "Lumaxi",
+        "type": "Light,Psychic"
+    },
+    {
+        "nr": "095",
+        "name": "Lunapede",
+        "type": "Light,Bug"
+    }
+]

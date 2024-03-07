@@ -1,0 +1,42 @@
+{
+    "name" : "Zerbbadon",
+    "primaryType": "Fire",
+    "secondaryType": "Dark",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 95,
+        "atk": 115,
+        "def": 90,
+        "spd": 90,
+        "spatk": 80,
+        "spdef": 60
+    },
+    "evolutions": [
+        {
+            "nr": "066",
+            "name": "Taimber",
+            "lvl": 0
+        },
+        {
+            "nr": "067",
+            "name": "Embadon",
+            "lvl": 31
+        },
+        {
+            "nr": "068",
+            "name": "Zerbbadon",
+            "lvl": 48
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

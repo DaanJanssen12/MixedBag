@@ -1,0 +1,52 @@
+{
+    "name" : "Droopig",
+    "primaryType": "Ground",
+    "secondaryType": "Normal",
+    "species": "Pig",
+    "height": "0.6",
+    "weight": "20.1",
+    "catchRate": 200,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "Defiant",
+    "dexEntry": "",
+    "abilities": "Gluttony, Thick Fat",
+    "stats":{
+        "hp": 40,
+        "atk": 55,
+        "def": 75,
+        "spd": 35,
+        "spatk": 35,
+        "spdef": 65
+    },
+    "evolutions": [
+        {
+            "nr": "046",
+            "name": "Droopig",
+            "lvl": 0
+        },
+        {
+            "nr": "047",
+            "name": "Hoolihog",
+            "lvl": 26
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Pound"},
+        {"lvl": 1, "name": "Rollout"},
+        {"lvl": 1, "name": "Defense Curl"},
+        {"lvl": 1, "name": "Sand Attack"},
+        {"lvl": 5, "name": "Mud-Slap"},
+        {"lvl": 8, "name": "Sand Tomb"},
+        {"lvl": 12, "name": "Headbutt"},
+        {"lvl": 17, "name": "Bulldoze"},
+        {"lvl": 22, "name": "Double Slap"},
+        {"lvl": 25, "name": "Belly Drum"},
+        {"lvl": 29, "name": "Spikes"},
+        {"lvl": 33, "name": "Yawn"},
+        {"lvl": 36, "name": "Rest"},
+        {"lvl": 40, "name": "Dig"},
+        {"lvl": 44, "name": "Sleep Talk"},
+        {"lvl": 48, "name": "Earthquake"}
+    ]
+}

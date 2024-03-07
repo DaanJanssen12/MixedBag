@@ -1,0 +1,55 @@
+{
+    "name" : "Drashimi",
+    "primaryType": "Dragon",
+    "secondaryType": "Poison",
+    "species": "Sushi",
+    "height": "0.7",
+    "weight": "1.5",
+    "catchRate": 70,
+    "baseExp": 60,
+    "baseFriendship": 50,
+    "hiddenAbilities": "Marvel Scale",
+    "abilities": "Sticky Hold, Poison Heal",
+    "dexEntry": "Drashimi are excellent at neutralizing toxins, and some actually use the toxins for themselves as a source of power.",
+    "stats":{
+        "hp": 52,
+        "atk": 52,
+        "def": 52,
+        "spd": 52,
+        "spatk": 52,
+        "spdef": 52
+    },
+    "evolutions": [
+        {
+            "nr": "028",
+            "name": "Drashimi",
+            "lvl": 0
+        },
+        {
+            "nr": "029",
+            "name": "Tsushimi",
+            "lvl": 29
+        },
+        {
+            "nr": "030",
+            "name": "Tobshimi",
+            "lvl": 48
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Sticky Web"},
+        {"lvl": 1, "name": "Poison Sting"},
+        {"lvl": 5, "name": "Twister"},
+        {"lvl": 10, "name": "Purify"},
+        {"lvl": 15, "name": "Dragon Tail"},
+        {"lvl": 20, "name": "Agility"},
+        {"lvl": 25, "name": "Slam"},
+        {"lvl": 31, "name": "Aqua Tail"},
+        {"lvl": 35, "name": "Dragon Rush"},
+        {"lvl": 40, "name": "Safe Guard"},
+        {"lvl": 45, "name": "Coil"},
+        {"lvl": 50, "name": "Sludge Bomb"},
+        {"lvl": 55, "name": "Outrage"},
+        {"lvl": 60, "name": "Hyper Beam"}
+    ]
+}

@@ -1,0 +1,63 @@
+<section class="section pb-0">
+      <div class="container col-md-12">
+        <div class="row">
+          <div class="col-md-4 me-auto">
+			<div class="mb-4">
+				<div class="form" style="margin-top: 20px; margin-bottom: 20px;">
+					<div style="padding:5px;" class="row">
+						<label class="form-label col-md-3"><strong>Name</strong></label>
+						<div class="form-group col-md-9">
+							<input type="text" class="form-control" id="name"/>
+						</div>
+					</div>
+					<div class="row" style="padding:5px;">
+						<label class="form-label col-md-3"><strong>Initiative</strong></label>
+						<div class="form-group col-md-9">
+							<input type="number" class="form-control" id="initiative"/>
+						</div>
+					</div>
+					<div style="padding-top:10px;" class="form-group">
+						<button style="width:100%;" class="btn btn-primary btn-block" add-to-initiative>Add to initiative</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <div class="col-md-6">
+		<div id="initiative-tracker">
+			<div class="row">
+				<h5 class="col-md-6">Initiative Tracker:</h5>
+				<div class="row col-md-6">
+					<div style="padding:5px;width:50%;">
+						<button style="width:100%" class="btn btn-xs btn-primary" recalc>Sort Table</button>	
+					</div>
+					<div style="padding:5px;width:50%;float:right;">
+						<button style="width:100%" class="btn btn-xs btn-primary" onclick="nextTurn()">End Turn</button>		
+					</div>
+				</div>
+				
+			</div>		
+			<table class="table" id="combat-tracker">
+				<colgroup>
+					<col style="width:10%;">
+					<col style="width:auto;">
+					<col style="width:auto;">
+					<col style="width:150px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Turn</th>
+						<th>Name</th>
+						<th>Initiative</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	  </div>
+	  </div>
+	</div>
+	</div>
+    </section>
+  <script src="scripts/lib/cookies.js"></script>
+  <script src="scripts/dnd/cb-tracker.js"></script>

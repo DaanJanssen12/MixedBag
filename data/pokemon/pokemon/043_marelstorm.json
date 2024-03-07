@@ -1,0 +1,51 @@
+{
+    "name" : "Marelstorm",
+    "primaryType": "Water",
+    "secondaryType": "Electric",
+    "species": "Swordfish",
+    "height": "1.9",
+    "weight": "92.3",
+    "catchRate": 60,
+    "baseExp": 161,
+    "baseFriendship": 50,
+    "hiddenAbilities": "Intrepid Sword",
+    "dexEntry": "These swordfish are",
+    "abilities": "Volt Absorb, Rough Skin",
+    "stats":{
+        "hp": 70,
+        "atk": 107,
+        "def": 52,
+        "spd": 98,
+        "spatk": 70,
+        "spdef": 52
+    },
+    "evolutions": [
+        {
+            "nr": "042",
+            "name": "Minamai",
+            "lvl": 0
+        },
+        {
+            "nr": "043",
+            "name": "Marelstorm",
+            "lvl": 30
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 44, "name": "Swords Dance"},
+        {"lvl": 28, "name": "Sacred Sword"},
+        {"lvl": 37, "name": "Secret Sword"},
+        {"lvl": 6, "name": "Bubble"},
+        {"lvl": 9, "name": "Soak"},
+        {"lvl": 1, "name": "Withdraw"},
+        {"lvl": 17, "name": "Slash"},
+        {"lvl": 22, "name": "Aqua Cutter"},
+        {"lvl": 12, "name": "Nuzzle"},
+        {"lvl": 31, "name": "Wild Charge"},
+        {"lvl": 29, "name": "Charge Beam"},
+        {"lvl": 40, "name": "Thunder"},
+        {"lvl": 21, "name": "Charge"},
+        {"lvl": 34, "name": "Magnet Rise"}
+    ]
+}

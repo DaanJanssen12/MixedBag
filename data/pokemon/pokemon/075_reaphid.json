@@ -1,0 +1,37 @@
+{
+    "name" : "Reaphid",
+    "primaryType": "Bug",
+    "secondaryType": "Steel",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 68,
+        "atk": 122,
+        "def": 102,
+        "spd": 42,
+        "spatk": 50,
+        "spdef": 70
+    },
+    "evolutions": [
+        {
+            "nr": "074",
+            "name": "Plantid",
+            "lvl": 0
+        },
+        {
+            "nr": "075",
+            "name": "Reaphid",
+            "lvl": 24
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

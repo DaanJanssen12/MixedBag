@@ -1,0 +1,50 @@
+<div class="container d-flex justify-content-between align-items-center">
+	<input type="hidden" id="current-active-module" value="dnd">
+	<div class="logo">
+	  <h1><a class="pointer" id="home" onclick="return load_page(null, this, 'home')">Mixed Bag</a></h1>
+	</div>
+  
+	<nav id="navbar" class="navbar">
+	  <ul>
+		<li><a class="active pointer" id="home" onclick="return load_page('dnd', this, 'home')">Home</a></li>
+		<li id="Generators" class="dropdown"><a class="pointer dropdown-top"><span>Generators</span> <i class="bi bi-chevron-down"></i></a>
+		  <ul>
+			<li><a class="pointer" id="character-gen" onclick="return load_page('dnd', this, 'character-gen', '#Generators')">Character Generator</a></li>
+			<li><a class="pointer" id="loot-gen" onclick="return load_page('dnd', this, 'items', '#Generators')">Loot Generator</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown"><a class="pointer dropdown-top" id="DM-Toolbox"><span>DM Toolbox</span> <i class="bi bi-chevron-down"></i></a>
+		  <ul>
+			<li><a class="pointer" id="cb-tracker" onclick="return load_page('dnd', this, 'combat-tracker', '#DM-Toolbox')">Combat Tracker</a></li>
+		  </ul>
+		</li>
+		<li><a  class="pointer" onclick="return load_page('dnd', this, 'homebrew')">Homebrew Content</a></li>
+		<li><a  class="pointer" onclick="return load_page('dnd', this, 'sheet')">Character Sheet</a></li>
+		<!-- <li><a href="blog">Blog</a></li>
+		<li><a href="contact">Contact Us</a></li>-->
+	  </ul>
+	  <i id="mobile-nav-toggle" class="bi bi-list mobile-nav-toggle"></i>
+	</nav><!-- .navbar -->
+  
+  </div>
+  <script>
+	  /**
+	  * Mobile nav toggle
+	  */
+	  $('#mobile-nav-toggle').on("click", function(e) {
+		$('#navbar').toggleClass('navbar-mobile');
+		$(this).toggleClass('bi-list');
+		$(this).toggleClass('bi-x');
+	  });
+  
+	  /**
+	  * Mobile nav dropdowns activate
+	  */
+	  $('a.dropdown-top').on('click', function(e) {
+		  console.log('click');
+	   if ($('#navbar').hasClass('navbar-mobile')) {
+		 e.preventDefault()
+		 $(this).next().toggleClass('dropdown-active');
+	   }
+	 });
+  </script>

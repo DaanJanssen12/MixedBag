@@ -1,0 +1,38 @@
+{
+    "name" : "Pomprim",
+    "primaryType": "Grass",
+    "secondaryType": "Fighting",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 45,
+        "atk": 45,
+        "def": 45,
+        "spd": 45,
+        "spatk": 45,
+        "spdef": 45
+    },
+    "evolutions": [
+        {
+            "nr": "079",
+            "name": "Pompet",
+            "lvl": 0
+        },
+        {
+            "nr": "080",
+            "name": "Pomprim",
+            "lvl": -1,
+            "extraInfo": "Leaf Stone"
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

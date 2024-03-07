@@ -1,0 +1,42 @@
+{
+    "name" : "Clolly",
+    "primaryType": "Grass",
+    "secondaryType": "",
+    "species": "",
+    "height": "",
+    "weight": "",
+    "catchRate": 0,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "",
+    "dexEntry": "",
+    "abilities": "",
+    "stats":{
+        "hp": 52,
+        "atk": 38,
+        "def": 45,
+        "spd": 38,
+        "spatk": 52,
+        "spdef": 62
+    },
+    "evolutions": [
+        {
+            "nr": "069",
+            "name": "Clowee",
+            "lvl": 0
+        },
+        {
+            "nr": "070",
+            "name": "Clolly",
+            "lvl": 18
+        },
+        {
+            "nr": "071",
+            "name": "Clodiva",
+            "lvl": 31
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"}
+    ]
+}

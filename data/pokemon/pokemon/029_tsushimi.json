@@ -1,0 +1,56 @@
+{
+    "name" : "Tsushimi",
+    "primaryType": "Dragon",
+    "secondaryType": "Poison",
+    "species": "Sushi",
+    "height": "1.4",
+    "weight": "8.3",
+    "catchRate": 45,
+    "baseExp": 147,
+    "baseFriendship": 40,
+    "hiddenAbilities": "Marvel Scale",
+    "abilities": "Sticky Hold, Poison Heal",
+    "dexEntry": "Tsushimi are the evolved form of Drashimi. Their expertice in neutralizing toxins make them great companions for culinair chefs who work with exoctic products.",
+    "stats":{
+        "hp": 72,
+        "atk": 72,
+        "def": 72,
+        "spd": 72,
+        "spatk": 72,
+        "spdef": 72
+    },
+    "evolutions": [
+        {
+            "nr": "028",
+            "name": "Drashimi",
+            "lvl": 0
+        },
+        {
+            "nr": "029",
+            "name": "Tsushimi",
+            "lvl": 29
+        },
+        {
+            "nr": "030",
+            "name": "Tobshimi",
+            "lvl": 48
+        }
+    ],
+    "moves": [
+        {"lvl": 0, "name": "Toxic Spikes"},
+        {"lvl": 1, "name": "Sticky Web"},
+        {"lvl": 1, "name": "Poison Sting"},
+        {"lvl": 5, "name": "Twister"},
+        {"lvl": 10, "name": "Purify"},
+        {"lvl": 15, "name": "Dragon Tail"},
+        {"lvl": 20, "name": "Agility"},
+        {"lvl": 25, "name": "Slam"},
+        {"lvl": 31, "name": "Aqua Tail"},
+        {"lvl": 35, "name": "Dragon Rush"},
+        {"lvl": 40, "name": "Safe Guard"},
+        {"lvl": 45, "name": "Coil"},
+        {"lvl": 50, "name": "Sludge Bomb"},
+        {"lvl": 55, "name": "Outrage"},
+        {"lvl": 60, "name": "Hyper Beam"}
+    ]
+}

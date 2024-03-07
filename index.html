@@ -55,19 +55,12 @@
 					</g>
 				  </svg>
 				</div>
-				  <div class="row align-items-center">
-					<div class="col-12">
-					  <div class="row justify-content-center">
-						<div class="col-md-12 text-center hero-text">
-						  <h1>A mixed bag of D&D Tools</h1>
-						</div>
-					  </div>
-					</div>
-				  </div>
 			  </section>
 			  <div id="page-content-container" class="container"></div>
 		</main>
 		<div id="cross-page-data-storage" style="display: none;">
+		<input type="hidden" id="POKEMON_ID" value=""/>
+		<input type="hidden" id="HAS_LOADED" value="0"/>
 		</div>
 		<footer id="footer" class="footer ignore-in-pdf" role="contentinfo"></footer>
 	</div>
@@ -81,36 +74,81 @@
   <script type="text/javascript" src="assets/vendor/google/js/jquery.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="scripts/rng.js"></script>
-  <script src="scripts/character-options.js"></script>
+  <script src="scripts/lib/general-functions.js"></script>
+  <script src="scripts/lib/helper-functions.js"></script>
+  <script type="module" src="scripts/lib/constants.js"></script>
+  <script src="scripts/dnd/character-options.js"></script>
   <script>
 	$(document).ready(function(){
-		load_header();
-		load_footer();
+		var page = "home";
+		var module = "";
+		
 		if(window.location.search !== '') {
 			var urlParams = new URLSearchParams(window.location.search);
 			if(window.location.search.includes('page')){
-				var page = 'pages/' + urlParams.get('page') + '.html';
-				load_page(null, page);
+				page = urlParams.get('page');
 			}
-			else {
-				load_page(null, "pages/home.html");
+			if(window.location.search.includes('module')){
+				module = urlParams.get('module');
+			}
+
+			if(module === "pokemon" && page === "pokedex" && window.location.search.includes("id"))
+			{
+				var id = urlParams.get('id');
+				$("#POKEMON_ID").val(id);
 			}
 		}
-		else {
-			load_page(null, "pages/home.html");
-		}
+
+		load_header(module);
+		load_footer(module);
+
+		load_page(module, null, page, null);
 	});
-	async function load_header(){
-		await $("#header").load("common/header.html");
+	async function load_header(module){
+		switch(module){
+			case "dnd":
+				await $("#header").load("common/dnd/header.html");
+				break;
+			case "pokemon":
+				await $("#header").load("common/pokemon/header.html");
+				break;
+			default:
+				await $("#header").load("common/header.html");
+				break;
+		}
 	}
-	async function load_footer(){
-		await $("#footer").load("common/footer.html");
+	async function load_footer(module){
+		switch(module){
+			case "dnd":
+				await $("#footer").load("common/dnd/footer.html");
+				break;
+			case "pokemon":
+				await $("#footer").load("common/pokemon/footer.html");
+				break;
+			default:
+				await $("#footer").load("common/footer.html");
+				break;
+		}
 	}
-	async function load_page(menuItem, pageToLoad, menuParent) {
-		await $("#page-content-container").load(pageToLoad);
+	async function load_page(module, menuItem, pageToLoad, menuParent) {
+		var currentModule = $("#current-active-module").val();
+		if(currentModule !== module){
+			load_header(module);
+			load_footer(module);
+		}
+
+		var pageUrl = "pages";
+		if(module !== undefined && module !== null && module !== ''){
+			pageUrl = `${pageUrl}/${module}`;
+		}
+		pageUrl = `${pageUrl}/${pageToLoad}.html`;
+		await $("#page-content-container").load(pageUrl);
 		
-		let pageResult = "?page="+pageToLoad.substring(pageToLoad.indexOf('/')+1, pageToLoad.indexOf('.'));
+		let pageResult = "?page="+pageToLoad;
+		if(module !== undefined && module !== null && module !== ''){
+			pageResult = "?module="+module+"&page="+pageToLoad;
+		}
+
 		await window.history.pushState("object or string", "Title", pageResult);
 		
 		$("#navbar .active").removeClass("active");
