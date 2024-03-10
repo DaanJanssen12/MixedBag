@@ -277,6 +277,7 @@ function calculateTypeDefenseStat(stats, type){
             stats.fighting /= 2;
             stats.ground /= 2;
             stats.grass /= 2;
+            stats.sound /= 2;
             //Immunities
             break;
         case "Ghost":
@@ -286,6 +287,7 @@ function calculateTypeDefenseStat(stats, type){
             //Resistances
             stats.poison /= 2;
             stats.bug /= 2;
+            stats.light /= 2;
             //Immunities
             stats.normal *= 0;
             stats.fighting *= 0;
@@ -316,6 +318,7 @@ function calculateTypeDefenseStat(stats, type){
             //Resistances
             stats.dragon /= 2;
             stats.ghost /= 2;
+            stats.sound /= 2;
             break;
         case "Grass":
             //Weaknesses
@@ -347,6 +350,7 @@ function calculateTypeDefenseStat(stats, type){
             //Weaknesses
             stats.grass *= 2;
             stats.electric *= 2;
+            stats.sound *= 2;
             //Resistances
             stats.steel /= 2;
             stats.fire /= 2;
@@ -410,6 +414,7 @@ function calculateTypeDefenseStat(stats, type){
             //Weaknesses
             stats.poison *= 2;
             stats.steel *= 2;
+            stats.sound *= 2;
             //Resistances
             stats.dark /=2;
             stats.fighting /=2;
@@ -424,6 +429,7 @@ function calculateTypeDefenseStat(stats, type){
             //Resistances
             stats.dark /=2;
             stats.fairy /=2;
+            stats.light /=2;
             //Immunities
             break;
     }
