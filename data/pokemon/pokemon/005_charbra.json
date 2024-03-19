@@ -47,5 +47,6 @@
         {"lvl": 27, "name": "Sunny Day"},
         {"lvl": 32, "name": "Flamethrower"},
         {"lvl": 39, "name": "Inferno"}
-    ]
+    ],
+    "tutorMoves": [ "Toxic", "Sunny Day", "Hyper Beam", "Light Screen", "Protect", "Safeguard", "Dazzling Gleam", "Thunderbolt", "Thunder", "Double Team", "Flamethrower", "Sludge Bomb", "Fire Blast", "Overheat", "Roost", "Focus Blast", "Dragon Pulse", "Nasty Plot",  "U-turn", "Substitute", "Flash Cannon", "Trick Room" ]
 }

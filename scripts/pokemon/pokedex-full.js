@@ -63,10 +63,6 @@ $(document).ready(function(){
     }else{
         $("[dev-mode]").remove();
     }
-
-    setTimeout(() => {
-        stopPageLoad();
-    }, 250);
 });
 
 function handleTypingCount(type){

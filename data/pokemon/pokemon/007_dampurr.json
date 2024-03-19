@@ -39,7 +39,8 @@
     "moves": [
         { "lvl": 1, "name": "Pound"},
         { "lvl": 1, "name": "Growl"},
-        { "lvl": 6, "name": "Water Gun"},
+        { "lvl": 5, "name": "Bubble"},
+        { "lvl": 7, "name": "Water Gun"},
         { "lvl": 9, "name": "Quick Attack"},
         { "lvl": 12, "name": "Defense Curl"},
         { "lvl": 17, "name": "Aqua Jet"},
@@ -48,5 +49,6 @@
         { "lvl": 27, "name": "Waterfall"},
         { "lvl": 32, "name": "Play Rough"},
         { "lvl": 37, "name": "Double-Edge"}
-    ]
+    ],
+    "tutorMoves": [ "Water Pulse", "Roar", "Bulk Up", "Work Up", "Taunt", "Ice Beam", "Hyper Beam", "Protect", "Rain Dance", "Iron Tail", "Low Sweep", "Dig", "Double Team", "Rock Tomb", "Facade", "Thief", "Scald", "False Swipe", "Brine", "Fling", "Swords Dance", "Stealth Rock", "Bulldoze", "Poison Jab", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
 }

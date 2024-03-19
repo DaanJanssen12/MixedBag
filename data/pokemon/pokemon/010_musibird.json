@@ -48,5 +48,6 @@
         {"lvl": 33, "name": "Roost"},
         {"lvl": 37, "name": "Hurricane"},
         {"lvl": 42, "name": "Boomburst"}
-    ]
+    ],
+    "tutorMoves": [ "Dragon Claw", "Hail", "Bullet Seed", "Work Up", "Sunny Day", "Ice Beam", "Hyper Beam", "Protect", "Brick Break", "Double Team", "Aerial Ace", "Facade", "Rest", "Steel Wing", "Roost", "Energy Ball", "False Swipe", "Fling",  "Endure", "Shadow Claw", "Thunder Wave", "Swords Dance", "Sleep Talk", "Poison Jab", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash" ]
 }

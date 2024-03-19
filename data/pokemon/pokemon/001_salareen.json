@@ -40,7 +40,7 @@
     "moves": [
         {"lvl": 1, "name": "Tackle"},
         {"lvl": 1, "name": "Growl"},
-        {"lvl": 6, "name": "Leafage"},
+        {"lvl": 5, "name": "Leafage"},
         {"lvl": 9, "name": "Synthesis"},
         {"lvl": 12, "name": "Twister"},
         {"lvl": 17, "name": "Razor Leaf"},

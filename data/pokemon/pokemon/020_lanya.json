@@ -44,9 +44,10 @@
         {"lvl": 7, "name": "Reflect"},
         {"lvl": 32, "name": "Flash Cannon"},
         {"lvl": 21, "name": "Blinding Beam"},
-        {"lvl": 9, "name": "Tail Glow"},
+        {"lvl": 25, "name": "Tail Glow"},
         {"lvl": 27, "name": "Light Pulse"},
         {"lvl": 12, "name": "Mirror Shot"},
         {"lvl": 17, "name": "Swift"}
-    ]
+    ],
+    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
 }

@@ -567,9 +567,9 @@
         "accuracy": "100"
     },
     {
-        "move": "Seance",
+        "move": "Dice Roll",
         "type": "Ghost",
-        "category": "Physical",
+        "category": "Special",
         "power": "-",
         "accuracy": "100"
     },

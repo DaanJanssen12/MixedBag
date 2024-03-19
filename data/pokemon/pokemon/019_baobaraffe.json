@@ -47,5 +47,6 @@
         {"lvl": 38, "name": "Double-Edge"},
         {"lvl": 42, "name": "Horn Leech"},
         {"lvl": 45, "name": "Leaf Blade"}
-    ]
+    ],
+    "tutorMoves": [ "Take Down", "Mud-Slap", "Trailblaze", "Protect", "Giga Drain", "Solar Beam", "Dig", "Brick Break", "Double Team", "Sludge Bomb", "Aerial Ace", "Facade", "Rest", "Attract", "Thief", "False Swipe", "Endure", "Flash", "Zen Headbutt", "X-Scissor", "Sleep Talk", "Poison Jab", "Grass Knot", "Swagger", "U-turn", "Substitute", "Cut", "Rock Smash", "Strength" ]
 }

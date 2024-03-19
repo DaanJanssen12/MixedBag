@@ -48,5 +48,6 @@
         { "lvl": 27, "name": "Waterfall"},
         { "lvl": 32, "name": "Play Rough"},
         { "lvl": 37, "name": "Double-Edge"}
-    ]
+    ],
+    "tutorMoves": [ "Water Pulse", "Roar", "Bulk Up", "Work Up", "Taunt", "Ice Beam", "Hyper Beam", "Protect", "Rain Dance", "Iron Tail", "Low Sweep", "Dig", "Double Team", "Rock Tomb", "Facade", "Thief", "Scald", "False Swipe", "Brine", "Fling", "Swords Dance", "Stealth Rock", "Bulldoze", "Poison Jab", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
 }

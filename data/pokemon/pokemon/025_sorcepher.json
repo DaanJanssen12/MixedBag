@@ -45,5 +45,6 @@
         {"lvl": 40, "name": "Surf"},
         {"lvl": 36, "name": "Future Sight"},
         {"lvl": 44, "name": "Psychic"}
-    ]
+    ],
+    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
 }

@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MixedBag</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+	<title>MixedBag</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  
-  <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-  <script>
-	if ('serviceWorker' in navigator) {
-	  navigator.serviceWorker.register('./serviceWorker.js')
-		.then(function(registration) {
-		  // Registration was successful
-		  console.log('ServiceWorker registration successful with scope: ', registration.scope);
-		}).catch(function(err) {
-		  // registration failed :(
-		  console.log('ServiceWorker registration failed: ', err);
-		});
-	}
-  </script>
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="assets/vendor/google/css/fonts.css" rel="stylesheet">
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./serviceWorker.js')
+				.then(function (registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}).catch(function (err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+		}
+	</script>
 
-  <!-- Vendor CSS Files -->
-  <link href="content/loading.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/89037a9190.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link href="assets/vendor/google/css/fonts.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+	<!-- Vendor CSS Files -->
+	<link href="content/loading.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/89037a9190.js" crossorigin="anonymous"></script>
+
+	<!-- Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,138 +48,142 @@
 		<main id="main" style="overflow-x: auto;">
 			<section class="hero-section inner-page">
 				<div class="wave">
-				  <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-					  <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
-						<path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z" id="Path"></path>
-					  </g>
-					</g>
-				  </svg>
+					<svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+								<path
+									d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z"
+									id="Path"></path>
+							</g>
+						</g>
+					</svg>
 				</div>
-			  </section>
-			  <div id="page-content-container" class="container"></div>
-			  <div id="loading"></div>
+			</section>
+			<div id="page-content-container" class="container"></div>
+			<div id="loading" style="display: none;"></div>
 		</main>
 		<div id="cross-page-data-storage" style="display: none;">
-		<input type="hidden" id="POKEMON_ID" value=""/>
-		<input type="hidden" id="HAS_LOADED" value="0"/>
+			<input type="hidden" id="POKEMON_ID" value="" />
+			<input type="hidden" id="HAS_LOADED" value="0" />
 		</div>
 		<footer id="footer" class="footer ignore-in-pdf" role="contentinfo"></footer>
 	</div>
-	
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center ignore-in-pdf"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/google/js/jquery.min.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="scripts/lib/general-functions.js"></script>
-  <script src="scripts/lib/helper-functions.js"></script>
-  <script type="module" src="scripts/lib/constants.js"></script>
-  <script src="scripts/dnd/character-options.js"></script>
-  <script>
-	$(document).ready(function(){
-		stopPageLoad();
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center ignore-in-pdf"><i
+			class="bi bi-arrow-up-short"></i></a>
 
-		var page = "home";
-		var module = "";
-		
-		if(window.location.search !== '') {
-			var urlParams = new URLSearchParams(window.location.search);
-			if(window.location.search.includes('page')){
-				page = urlParams.get('page');
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/google/js/jquery.min.js"></script>
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+	<script src="scripts/lib/general-functions.js"></script>
+	<script src="scripts/lib/helper-functions.js"></script>
+	<script type="module" src="scripts/lib/constants.js"></script>
+	<script src="scripts/dnd/character-options.js"></script>
+	<script>
+		$(document).ready(function () {
+			var page = "home";
+			var module = "";
+
+			if (window.location.search !== '') {
+				var urlParams = new URLSearchParams(window.location.search);
+				if (window.location.search.includes('page')) {
+					page = urlParams.get('page');
+				}
+				if (window.location.search.includes('module')) {
+					module = urlParams.get('module');
+				}
+
+				if (module === "pokemon" && page === "pokedex" && window.location.search.includes("id")) {
+					var id = urlParams.get('id');
+					$("#POKEMON_ID").val(id);
+				}
 			}
-			if(window.location.search.includes('module')){
-				module = urlParams.get('module');
-			}
 
-			if(module === "pokemon" && page === "pokedex" && window.location.search.includes("id"))
-			{
-				var id = urlParams.get('id');
-				$("#POKEMON_ID").val(id);
-			}
-		}
-
-		load_header(module);
-		load_footer(module);
-
-		load_page(module, null, page, null);
-	});
-	async function load_header(module){
-		switch(module){
-			case "dnd":
-				await $("#header").load("common/dnd/header.html");
-				break;
-			case "pokemon":
-				await $("#header").load("common/pokemon/header.html");
-				break;
-			default:
-				await $("#header").load("common/header.html");
-				break;
-		}
-	}
-	async function load_footer(module){
-		switch(module){
-			case "dnd":
-				await $("#footer").load("common/dnd/footer.html");
-				break;
-			case "pokemon":
-				await $("#footer").load("common/pokemon/footer.html");
-				break;
-			default:
-				await $("#footer").load("common/footer.html");
-				break;
-		}
-	}
-	async function load_page(module, menuItem, pageToLoad, menuParent) {
-		var currentModule = $("#current-active-module").val();
-		if(currentModule !== module){
 			load_header(module);
 			load_footer(module);
-		}
 
-		var pageUrl = "pages";
-		if(module !== undefined && module !== null && module !== ''){
-			pageUrl = `${pageUrl}/${module}`;
-		}
-		pageUrl = `${pageUrl}/${pageToLoad}.html`;
-
-		if(pageToLoad === "pokedex" || pageToLoad === "pokedex-full"){
-			startPageLoad();
-		}
-		await $("#page-content-container").load(pageUrl);
-
-		let pageResult = "?page="+pageToLoad;
-		if(module !== undefined && module !== null && module !== ''){
-			pageResult = "?module="+module+"&page="+pageToLoad;
-		}
-
-		await window.history.pushState("object or string", "Title", pageResult);
-		
-		$("#navbar .active").removeClass("active");
-		if(menuItem !== undefined){
-			$(menuItem).addClass("active");
-		}
-		if(menuParent !== undefined){
-			$(menuParent).addClass("active");
-		}
-		
-		if($(".back-to-top").length > 0){
-			$(".back-to-top").trigger('click');
-		}
-		
-		if($('.mobile-nav-toggle').length > 0 && $('.mobile-nav-toggle').css("display") !== "none"){
-			if($('.mobile-nav-toggle').hasClass('bi-x')){
-				$('.mobile-nav-toggle').trigger('click');
+			load_page(module, null, page, null);
+		});
+		async function load_header(module) {
+			switch (module) {
+				case "dnd":
+					await $("#header").load("common/dnd/header.html");
+					break;
+				case "pokemon":
+					await $("#header").load("common/pokemon/header.html");
+					break;
+				default:
+					await $("#header").load("common/header.html");
+					break;
 			}
 		}
-		
-		return false;
-	}
-  </script>
+		async function load_footer(module) {
+			switch (module) {
+				case "dnd":
+					await $("#footer").load("common/dnd/footer.html");
+					break;
+				case "pokemon":
+					await $("#footer").load("common/pokemon/footer.html");
+					break;
+				default:
+					await $("#footer").load("common/footer.html");
+					break;
+			}
+		}
+		async function load_page(module, menuItem, pageToLoad, menuParent) {
+			var currentModule = $("#current-active-module").val();
+			if (currentModule !== module) {
+				load_header(module);
+				load_footer(module);
+			}
+
+			var pageUrl = "pages";
+			if (module !== undefined && module !== null && module !== '') {
+				pageUrl = `${pageUrl}/${module}`;
+			}
+			pageUrl = `${pageUrl}/${pageToLoad}.html`;
+
+			if (pageToLoad === "pokedex" || pageToLoad === "pokedex-full") {
+				startPageLoad();
+				setTimeout(() => {
+					stopPageLoad();
+				}, 250);
+			}
+			await $("#page-content-container").load(pageUrl);
+
+			let pageResult = "?page=" + pageToLoad;
+			if (module !== undefined && module !== null && module !== '') {
+				pageResult = "?module=" + module + "&page=" + pageToLoad;
+			}
+
+			await window.history.pushState("object or string", "Title", pageResult);
+
+			$("#navbar .active").removeClass("active");
+			if (menuItem !== undefined) {
+				$(menuItem).addClass("active");
+			}
+			if (menuParent !== undefined) {
+				$(menuParent).addClass("active");
+			}
+
+			if ($(".back-to-top").length > 0) {
+				$(".back-to-top").trigger('click');
+			}
+
+			if ($('.mobile-nav-toggle').length > 0 && $('.mobile-nav-toggle').css("display") !== "none") {
+				if ($('.mobile-nav-toggle').hasClass('bi-x')) {
+					$('.mobile-nav-toggle').trigger('click');
+				}
+			}
+
+			return false;
+		}
+	</script>
 
 </body>
 

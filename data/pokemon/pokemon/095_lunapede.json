@@ -21,14 +21,26 @@
     },
     "evolutions": [
         {
-            "nr": "000",
-            "name": "Self",
+            "nr": "092",
+            "name": "Lumini",
             "lvl": 0
         },
         {
-            "nr": "000",
-            "name": "Evo",
-            "lvl": 24
+            "nr": "093",
+            "name": "Lumedi",
+            "lvl": 16
+        },
+        {
+            "nr": "094",
+            "name": "Lumaxi",
+            "lvl": -1,
+            "extraInfo": "Dawn Stone",
+            "alternateEvo":
+            {
+                "nr": "095",
+                "name": "Lunapede",
+                "lvl": 38
+            }
         }
     ],
     "moves": [

@@ -39,7 +39,8 @@
     "moves": [
         {"lvl": 1, "name": "Wrap"},
         {"lvl": 1, "name": "Defense Curl"},
-        {"lvl": 6, "name": "Ember"},
+        {"lvl": 5, "name": "Ember"},
+        {"lvl": 8, "name": "Fire Spin"},
         {"lvl": 12, "name": "Glare"},
         {"lvl": 17, "name": "Flame Wheel"},
         {"lvl": 20, "name": "Headbutt"},
@@ -47,5 +48,6 @@
         {"lvl": 27, "name": "Sunny Day"},
         {"lvl": 32, "name": "Flamethrower"},
         {"lvl": 39, "name": "Inferno"}
-    ]
+    ],
+    "tutorMoves": [ "Toxic", "Sunny Day", "Hyper Beam", "Light Screen", "Protect", "Safeguard", "Dazzling Gleam", "Thunderbolt", "Thunder", "Double Team", "Flamethrower", "Sludge Bomb", "Fire Blast", "Overheat", "Roost", "Focus Blast", "Dragon Pulse", "Nasty Plot",  "U-turn", "Substitute", "Flash Cannon", "Trick Room" ]
 }

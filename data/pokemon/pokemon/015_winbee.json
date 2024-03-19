@@ -53,5 +53,6 @@
         {"lvl": 29, "name": "Petal Blizzard"},
         {"lvl": 33, "name": "U-turn"},
         {"lvl": 36, "name": "Glare"}
-    ]
+    ],
+    "tutorMoves": [ "Bullet Seed", "Sunny Day", "Light Screen", "Protect", "Giga Drain", "Solar Beam", "Dig", "Brick Break", "Double Team", "Sludge Bomb", "Aerial Ace", "Facade", "Rest", "Attract", "Thief", "False Swipe", "Endure", "Flash", "Swords Dance", "X-Scissor", "Sleep Talk", "Poison Jab", "Grass Knot", "Swagger", "U-turn", "Substitute", "Cut", "Rock Smash" ]
 }

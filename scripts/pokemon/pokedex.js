@@ -6,7 +6,7 @@ function buildEvolutionChart(evolutions){
         
     evolutions.forEach(evolution => {
         //Arrow
-        if(evolution.lvl){
+        if(evolution.lvl || evolution.extraInfo){
             var $arrowSpan = $("<span></span>").addClass("infocard infocard-arrow");
 
             var $arrowI = $("<i></i>").addClass("icon-arrow icon-arrow-e");
@@ -608,9 +608,6 @@ $(document).ready(function(){
         if(!appsettings.developmentMode){
             $("[dev-mode]").remove();
         }
-        setTimeout(() => {
-            stopPageLoad();
-        }, 250);
     }
 });
 

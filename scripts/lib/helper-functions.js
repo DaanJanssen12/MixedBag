@@ -26,7 +26,7 @@ function toggleDiv(id){
     }
 }
 
-function startPageLoad(){
+function startPageLoad(stopAfterMilliseconds){
     $("#loading").show();
     $("#page-content-container").hide();
 }
@@ -37,7 +37,7 @@ function stopPageLoad(){
 
 function getAppSettings() {
     return {
-        developmentMode: false
+        developmentMode: true
     };
 }
 
