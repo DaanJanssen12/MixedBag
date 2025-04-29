@@ -273,6 +273,27 @@
         "accuracy": "100"
     },
     {
+        "move": "Echoed Voice",
+        "type": "Sound",
+        "category": "Special",
+        "power": "40",
+        "accuracy": "100"
+    },
+    {
+        "move": "Round",
+        "type": "Sound",
+        "category": "Special",
+        "power": "60",
+        "accuracy": "100"
+    },
+    {
+        "move": "Sing",
+        "type": "Sound",
+        "category": "Status",
+        "power": "-",
+        "accuracy": "55"
+    },
+    {
         "move": "Tearful Look",
         "type": "Normal",
         "category": "Special",

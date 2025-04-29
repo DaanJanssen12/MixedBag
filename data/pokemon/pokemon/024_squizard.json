@@ -1,23 +1,25 @@
 {
-    "name" : "Squizard",
+    "name": "Squizard",
     "primaryType": "Water",
     "secondaryType": "Psychic",
-    "species": "Squid",
-    "height": "0.9",
-    "weight": "45.5",
-    "catchRate": 190,
-    "baseExp": 67,
-    "baseFriendship": 50,
-    "hiddenAbilities": "Telepathy",
-    "dexEntry": "Squizard are intelligent creatures. They get their name because of the top of their heads which looks like a wizard hat.",
-    "abilities": "Infiltrator, Magic Bounce",
-    "stats":{
-        "hp": 50,
+    "species": "Magic Squid",
+    "height": "0.5",
+    "weight": "12.0",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumSlow",
+    "catchRate": 120,
+    "baseExp": 64,
+    "baseFriendship": 70,
+    "abilities": "Torrent,Synchronize",
+    "hiddenAbilities": "Magic Bounce",
+    "dexEntry": "Squizard are playful and curious aquatic creatures with a natural affinity for mental energy. Their wizard-like cap is actually a hardened fin used to focus psychic powers.",
+    "stats": {
+        "hp": 55,
         "atk": 40,
-        "def": 40,
-        "spd": 40,
-        "spatk": 100,
-        "spdef": 70
+        "def": 50,
+        "spd": 50,
+        "spatk": 65,
+        "spdef": 55
     },
     "evolutions": [
         {
@@ -32,19 +34,19 @@
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Teleport"},
-        {"lvl": 1, "name": "Water Gun"},
-        {"lvl": 4, "name": "Wrap"},
-        {"lvl": 8, "name": "Supersonic"},
-        {"lvl": 12, "name": "Confusion"},
-        {"lvl": 16, "name": "Water Pulse"},
-        {"lvl": 20, "name": "Psybeam"},
-        {"lvl": 24, "name": "Bubble Beam"},
-        {"lvl": 28, "name": "Octazooka"},
-        {"lvl": 32, "name": "Calm Mind"},
-        {"lvl": 40, "name": "Surf"},
-        {"lvl": 36, "name": "Future Sight"},
-        {"lvl": 44, "name": "Psychic"}
+        { "lvl": 1, "name": "Water Gun" },
+        { "lvl": 1, "name": "Confusion" },
+        { "lvl": 6, "name": "Aqua Ring" },
+        { "lvl": 10, "name": "Disable" },
+        { "lvl": 14, "name": "Water Pulse" },
+        { "lvl": 18, "name": "Psybeam" },
+        { "lvl": 23, "name": "Calm Mind" },
+        { "lvl": 27, "name": "Bubble Beam" },
+        { "lvl": 30, "name": "Amnesia" }
     ],
-    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
+    "tutorMoves": [
+        "Water Pulse", "Calm Mind", "Surf", "Psychic", "Icy Wind",
+        "Protect", "Reflect", "Light Screen", "Rest", "Magic Room",
+        "Trick Room", "Substitute"
+    ]
 }

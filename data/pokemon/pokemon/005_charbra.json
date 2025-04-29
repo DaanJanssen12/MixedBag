@@ -12,12 +12,12 @@
     "hiddenAbilities": "Solar Power",
     "dexEntry": "After evolving from Snaember, Charbra's fiery wings grow bigger and more defined. Some Charbra's are even seen flying for small amounts of time, but none have been able to do it consistantly",
     "stats":{
-        "hp": 58,
-        "atk": 64,
-        "def": 58,
-        "spd": 80,
-        "spatk": 80,
-        "spdef": 65
+        "hp": 60,
+        "atk": 70,
+        "def": 55,
+        "spd": 75,
+        "spatk": 85,
+        "spdef": 60
     },
     "evolutions": [
         {

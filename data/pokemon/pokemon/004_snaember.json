@@ -12,12 +12,12 @@
     "hiddenAbilities": "Solar Power",
     "dexEntry": "This little fire snake spends most of it's time in bright sunlight resting on a rock taking in the heat. As Snaember takes in heat, fire starts sprouting from it's body making it look like it has little wings.",
     "stats":{
-        "hp": 45,
-        "atk": 49,
-        "def": 49,
-        "spd": 45,
+        "hp": 40,
+        "atk": 55,
+        "def": 40,
         "spatk": 65,
-        "spdef": 65
+        "spdef": 50,
+        "spd": 60
     },
     "evolutions": [
         {

@@ -1,22 +1,24 @@
 {
-    "name" : "Duskalight",
+    "name": "Duskalight",
     "primaryType": "Light",
     "secondaryType": "Dark",
-    "species": "Dim Light",
-    "height": "1.1",
-    "weight": "22.5",
-    "catchRate": 75,
-    "baseExp": 170,
-    "baseFriendship": 50,
-    "abilities": "Illuminate, Dark Aura",
-    "hiddenAbilities": "Volt Absorb",
-    "dexEntry": "Duskalight are nocternal creatures. They can brighten and dim their light at will, making them good at adapting to the situation.",
-    "stats":{
-        "hp": 80,
-        "atk": 70,
-        "def": 70,
-        "spd": 80,
-        "spatk": 110,
+    "species": "Lantern Shade",
+    "height": "1.0",
+    "weight": "11.6",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 90,
+    "baseExp": 160,
+    "baseFriendship": 70,
+    "abilities": "Levitate",
+    "hiddenAbilities": "Infiltrator",
+    "dexEntry": "Duskalight drift through the night, their dim lanterns casting eerie shadows. While their glow may seem inviting, travelers often report unsettling dreams after crossing paths with one.",
+    "stats": {
+        "hp": 60,
+        "atk": 60,
+        "def": 60,
+        "spd": 105,
+        "spatk": 115,
         "spdef": 80
     },
     "evolutions": [
@@ -28,26 +30,33 @@
         {
             "nr": "021",
             "name": "Dawntern",
-            "lvl": 30,
+            "lvl": 28,
             "extraInfo": "Level up during the day",
-            "alternateEvo":{
+            "alternateEvo": {
                 "nr": "022",
                 "name": "Duskalight",
-                "lvl": 30,
+                "lvl": 28,
                 "extraInfo": "Level up during the night"
             }
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Light Screen"},
-        {"lvl": 1, "name": "Blinding Light"},
-        {"lvl": 7, "name": "Reflect"},
-        {"lvl": 30, "name": "Dark Pulse"},
-        {"lvl": 21, "name": "Blinding Beam"},
-        {"lvl": 25, "name": "Tail Glow"},
-        {"lvl": 27, "name": "Light Pulse"},
-        {"lvl": 12, "name": "Mirror Shot"},
-        {"lvl": 17, "name": "Swift"}
+        { "lvl": 1, "name": "Light Screen" },
+        { "lvl": 1, "name": "Blinding Light" },
+        { "lvl": 1, "name": "Reflect" },
+        { "lvl": 12, "name": "Swift" },
+        { "lvl": 17, "name": "Snarl" },
+        { "lvl": 21, "name": "Blinding Beam" },
+        { "lvl": 25, "name": "Tail Glow" },
+        { "lvl": 29, "name": "Light Pulse" },
+        { "lvl": 34, "name": "Dark Pulse" },
+        { "lvl": 38, "name": "Moonlight" },
+        { "lvl": 43, "name": "Nasty Plot" },
+        { "lvl": 48, "name": "Night Daze" }
     ],
-    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
+    "tutorMoves": [
+        "Dark Pulse", "Snarl", "Light Pulse", "Shadow Ball", "Moonlight",
+        "Thunderbolt", "Calm Mind", "Taunt", "Torment", "Psychic",
+        "Substitute", "Nasty Plot", "Night Daze", "Protect"
+    ]
 }

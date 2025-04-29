@@ -12,12 +12,12 @@
     "hiddenAbilities": "Photosynthesis",
     "dexEntry": "Whilst growing heavier Iguareen developed their back legs more needing to stand up right. This sudden need in energy caused the leaves om their backs to grow larger",
     "stats":{
-        "hp": 63,
-        "atk": 80,
-        "def": 60,
-        "spd": 80,
-        "spatk": 62,
-        "spdef": 60
+        "hp": 70,
+        "atk": 90,
+        "def": 65,
+        "spatk": 50,
+        "spdef": 60,
+        "spd": 70
     },
     "evolutions": [
         {
@@ -40,8 +40,8 @@
         {"lvl": 1, "name": "Tackle"},
         {"lvl": 1, "name": "Growl"},
         {"lvl": 6, "name": "Leafage"},
-        {"lvl": 12, "name": "Razor Leaf"},
-        {"lvl": 17, "name": "Synthesis"},
+        {"lvl": 12, "name": "Synthesis"},
+        {"lvl": 17, "name": "Razor Leaf"},
         {"lvl": 20, "name": "Needle Arm"},
         {"lvl": 23, "name": "Power-Up Punch"},
         {"lvl": 27, "name": "Worry Seed"},

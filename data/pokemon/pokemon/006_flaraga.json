@@ -12,12 +12,12 @@
     "hiddenAbilities": "Solar Power",
     "dexEntry": "With their wings fully grown, Flaraga can fly for long periods of time. With their slender streamlined body, they are said to reach an unthinkable speed while flying",
     "stats":{
-        "hp": 78,
-        "atk": 78,
-        "def": 84,
-        "spd": 109,
-        "spatk": 100,
-        "spdef": 85
+        "hp": 75,
+        "atk": 80,
+        "def": 70,
+        "spd": 110,
+        "spatk": 115,
+        "spdef": 75
     },
     "evolutions": [
         {

@@ -12,12 +12,12 @@
     "hiddenAbilities": "Enhanced Sound",
     "dexEntry": "Delugar are natural hunters, with their strong legs they can run with great speed and pounce and strike with great strength.",
     "stats":{
-        "hp": 80,
-        "atk": 126,
-        "def": 74,
-        "spd": 116,
-        "spatk": 60,
-        "spdef": 74
+        "hp": 85,
+        "atk": 100,
+        "def": 75,
+        "spd": 85,
+        "spatk": 105,
+        "spdef": 75
     },
     "evolutions": [
         {

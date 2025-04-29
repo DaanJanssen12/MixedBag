@@ -12,12 +12,12 @@
     "hiddenAbilities": "Enhanced Sound",
     "dexEntry": "Dampurr are playful little cats who love damp and wet weather. Their purring is in a certain frequency causing it to be amplified when the air is damp.    ",
     "stats":{
-        "hp": 40,
-        "atk": 66,
-        "def": 54,
-        "spd": 56,
-        "spatk": 50,
-        "spdef": 54
+        "hp": 50,
+        "atk": 45,
+        "def": 45,
+        "spd": 60,
+        "spatk": 60,
+        "spdef": 50
     },
     "evolutions": [
         {

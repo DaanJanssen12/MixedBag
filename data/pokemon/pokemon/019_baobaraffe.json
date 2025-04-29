@@ -1,23 +1,25 @@
 {
-    "name" : "Baobaraffe",
+    "name": "Baobaraffe",
     "primaryType": "Grass",
     "secondaryType": "",
-    "species": "Long Neck",
+    "species": "Canopy Giraffe",
     "height": "3.7",
-    "weight": "110.0",
-    "catchRate": 45,
-    "baseExp": 186,
-    "baseFriendship": 50,
-    "abilities": "Sap Sipper",
-    "hiddenAbilities": "Grass Pelt",
-    "dexEntry": "Baobaraffe are friendly pokemon. Seeing them in the wild is a rare sight, since most of the time they are taking care of any young Baoby.",
-    "stats":{
-        "hp": 123,
-        "atk": 100,
-        "def": 62,
-        "spd": 97,
-        "spatk": 81,
-        "spdef": 68
+    "weight": "112.5",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 75,
+    "baseExp": 161,
+    "baseFriendship": 70,
+    "abilities": "Overgrow,Sap Sipper",
+    "hiddenAbilities": "Leaf Guard",
+    "dexEntry": "Baobaraffe tower calmly over the savanna, with thick bark-like hides and a crown of leaves that sway in the wind. When threatened, they swing their heavy, bushy tails like a mace to ward off predators.",
+    "stats": {
+        "hp": 95,
+        "atk": 95,
+        "def": 90,
+        "spd": 60,
+        "spatk": 55,
+        "spdef": 75
     },
     "evolutions": [
         {
@@ -28,25 +30,25 @@
         {
             "nr": "019",
             "name": "Baobaraffe",
-            "lvl": 32
+            "lvl": 30
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Growth"},
-        {"lvl": 1, "name": "Tackle"},
-        {"lvl": 7, "name": "Vine Whip"},
-        {"lvl": 9, "name": "Tail Whip"},
-        {"lvl": 12, "name": "Leech Seed"},
-        {"lvl": 13, "name": "Razor Leaf"},
-        {"lvl": 16, "name": "Worry Seed"},
-        {"lvl": 20, "name": "Synthesis"},
-        {"lvl": 22, "name": "Take Down"},
-        {"lvl": 26, "name": "Bulldoze"},
-        {"lvl": 30, "name": "Seed Bomb"},
-        {"lvl": 34, "name": "Bulk Up"},
-        {"lvl": 38, "name": "Double-Edge"},
-        {"lvl": 42, "name": "Horn Leech"},
-        {"lvl": 45, "name": "Leaf Blade"}
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 1, "name": "Growth" },
+        { "lvl": 5, "name": "Leech Seed" },
+        { "lvl": 9, "name": "Razor Leaf" },
+        { "lvl": 13, "name": "Ingrain" },
+        { "lvl": 17, "name": "Stomp" },
+        { "lvl": 21, "name": "Synthesis" },
+        { "lvl": 25, "name": "Bulldoze" },
+        { "lvl": 29, "name": "Energy Ball" },
+        { "lvl": 34, "name": "Body Slam" },
+        { "lvl": 39, "name": "Wood Hammer" },
+        { "lvl": 44, "name": "Grassy Terrain" }
     ],
-    "tutorMoves": [ "Take Down", "Mud-Slap", "Trailblaze", "Protect", "Giga Drain", "Solar Beam", "Dig", "Brick Break", "Double Team", "Sludge Bomb", "Aerial Ace", "Facade", "Rest", "Attract", "Thief", "False Swipe", "Endure", "Flash", "Zen Headbutt", "X-Scissor", "Sleep Talk", "Poison Jab", "Grass Knot", "Swagger", "U-turn", "Substitute", "Cut", "Rock Smash", "Strength" ]
+    "tutorMoves": [
+        "Seed Bomb", "Leech Seed", "Grass Pledge", "Aromatherapy", "Body Slam",
+        "Rest", "Iron Tail", "Bulldoze", "Substitute", "Wood Hammer"
+    ]
 }

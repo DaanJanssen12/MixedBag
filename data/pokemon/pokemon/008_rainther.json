@@ -12,12 +12,12 @@
     "hiddenAbilities": "Enhanced Sound",
     "dexEntry": "After battle experience Dampurr evolves into Raither losing a little bit of his playfull nature and leaning in more into his natural hunter ancestory.",
     "stats":{
-        "hp": 60,
-        "atk": 91,
-        "def": 69,
-        "spd": 81,
-        "spatk": 50,
-        "spdef": 69
+        "hp": 65,
+        "atk": 65,
+        "def": 60,
+        "spd": 70,
+        "spatk": 80,
+        "spdef": 65
     },
     "evolutions": [
         {

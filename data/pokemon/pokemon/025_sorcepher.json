@@ -1,23 +1,25 @@
 {
-    "name" : "Sorcepher",
+    "name": "Sorcepher",
     "primaryType": "Water",
     "secondaryType": "Psychic",
-    "species": "Squid",
-    "height": "1.3",
-    "weight": "49.5",
-    "catchRate": 60,
-    "baseExp": 180,
-    "baseFriendship": 50,
-    "hiddenAbilities": "Telepathy",
-    "dexEntry": "Sorcepher are really in tune with their psychic powers. They solely see through their 3rd eye, the other 2 eyes are permanently closed.",
-    "abilities": "Infiltrator, Magic Bounce",
-    "stats":{
+    "species": "Oracle Octopus",
+    "height": "1.2",
+    "weight": "48.0",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumSlow",
+    "catchRate": 45,
+    "baseExp": 168,
+    "baseFriendship": 70,
+    "abilities": "Torrent,Synchronize",
+    "hiddenAbilities": "Magic Bounce",
+    "dexEntry": "Sorcepher possess a mysterious third eye that grants them visions of possible futures. Known for their eerie calm and precise attacks, they are revered by underwater civilizations as oracles.",
+    "stats": {
         "hp": 80,
-        "atk": 65,
-        "def": 80,
-        "spd": 70,
-        "spatk": 120,
-        "spdef": 100
+        "atk": 50,
+        "def": 70,
+        "spd": 60,
+        "spatk": 110,
+        "spdef": 90
     },
     "evolutions": [
         {
@@ -32,19 +34,21 @@
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Teleport"},
-        {"lvl": 1, "name": "Water Gun"},
-        {"lvl": 4, "name": "Wrap"},
-        {"lvl": 8, "name": "Supersonic"},
-        {"lvl": 12, "name": "Confusion"},
-        {"lvl": 16, "name": "Water Pulse"},
-        {"lvl": 20, "name": "Psybeam"},
-        {"lvl": 24, "name": "Bubble Beam"},
-        {"lvl": 28, "name": "Octazooka"},
-        {"lvl": 32, "name": "Calm Mind"},
-        {"lvl": 40, "name": "Surf"},
-        {"lvl": 36, "name": "Future Sight"},
-        {"lvl": 44, "name": "Psychic"}
+        { "lvl": 1, "name": "Water Gun" },
+        { "lvl": 1, "name": "Confusion" },
+        { "lvl": 6, "name": "Aqua Ring" },
+        { "lvl": 10, "name": "Disable" },
+        { "lvl": 14, "name": "Water Pulse" },
+        { "lvl": 18, "name": "Psybeam" },
+        { "lvl": 23, "name": "Calm Mind" },
+        { "lvl": 27, "name": "Bubble Beam" },
+        { "lvl": 33, "name": "Future Sight" },
+        { "lvl": 39, "name": "Psychic" },
+        { "lvl": 44, "name": "Hydro Pump" }
     ],
-    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
+    "tutorMoves": [
+        "Hydro Pump", "Surf", "Calm Mind", "Psychic", "Icy Wind",
+        "Protect", "Reflect", "Light Screen", "Rest", "Magic Room",
+        "Trick Room", "Substitute", "Shadow Ball", "Dazzling Gleam"
+    ]
 }

@@ -1,23 +1,25 @@
 {
-    "name" : "Dawntern",
+    "name": "Dawntern",
     "primaryType": "Light",
     "secondaryType": "Psychic",
-    "species": "Bright Light",
-    "height": "1.1",
-    "weight": "22.5",
-    "catchRate": 75,
-    "baseExp": 170,
-    "baseFriendship": 50,
-    "abilities": "Illuminate, Psychic Surge",
-    "hiddenAbilities": "Volt Absorb",
-    "dexEntry": "Dawntern have such bright light that standing too close to it for too long can result into blindness. For that reason Dawntern have learned to see without having their eyes open.",
-    "stats":{
-        "hp": 80,
-        "atk": 70,
+    "species": "Tranquil Lantern",
+    "height": "0.9",
+    "weight": "12.1",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 90,
+    "baseExp": 160,
+    "baseFriendship": 70,
+    "abilities": "Levitate",
+    "hiddenAbilities": "Serene Grace",
+    "dexEntry": "Dawntern are calm and meditative Pokémon that float silently with their eyes closed. Their glowing tails brighten the surroundings and are said to inspire peaceful thoughts in anyone nearby.",
+    "stats": {
+        "hp": 65,
+        "atk": 40,
         "def": 70,
-        "spd": 80,
+        "spd": 75,
         "spatk": 110,
-        "spdef": 80
+        "spdef": 120
     },
     "evolutions": [
         {
@@ -28,26 +30,33 @@
         {
             "nr": "021",
             "name": "Dawntern",
-            "lvl": 30,
+            "lvl": 28,
             "extraInfo": "Level up during the day",
-            "alternateEvo":{
+            "alternateEvo": {
                 "nr": "022",
                 "name": "Duskalight",
-                "lvl": 30,
+                "lvl": 28,
                 "extraInfo": "Level up during the night"
             }
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Light Screen"},
-        {"lvl": 1, "name": "Blinding Light"},
-        {"lvl": 7, "name": "Reflect"},
-        {"lvl": 30, "name": "Psychic"},
-        {"lvl": 21, "name": "Blinding Beam"},
-        {"lvl": 25, "name": "Tail Glow"},
-        {"lvl": 27, "name": "Light Pulse"},
-        {"lvl": 12, "name": "Mirror Shot"},
-        {"lvl": 17, "name": "Swift"}
+        { "lvl": 1, "name": "Light Screen" },
+        { "lvl": 1, "name": "Blinding Light" },
+        { "lvl": 1, "name": "Reflect" },
+        { "lvl": 12, "name": "Swift" },
+        { "lvl": 17, "name": "Calm Mind" },
+        { "lvl": 21, "name": "Blinding Beam" },
+        { "lvl": 25, "name": "Tail Glow" },
+        { "lvl": 29, "name": "Light Pulse" },
+        { "lvl": 34, "name": "Psychic" },
+        { "lvl": 38, "name": "Morning Sun" },
+        { "lvl": 43, "name": "Future Sight" },
+        { "lvl": 48, "name": "Dazzling Gleam" }
     ],
-    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
+    "tutorMoves": [
+        "Calm Mind", "Psychic", "Light Pulse", "Magic Room", "Reflect",
+        "Light Screen", "Zen Headbutt", "Energy Ball", "Safeguard",
+        "Shadow Ball", "Moonlight", "Telekinesis", "Dazzling Gleam"
+    ]
 }

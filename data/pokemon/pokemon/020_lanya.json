@@ -1,22 +1,24 @@
 {
-    "name" : "Lanya",
+    "name": "Lanya",
     "primaryType": "Light",
     "secondaryType": "",
-    "species": "Light",
-    "height": "0.1",
+    "species": "Glow Sprite",
+    "height": "0.3",
     "weight": "0.1",
-    "catchRate": 190,
-    "baseExp": 60,
-    "baseFriendship": 50,
-    "abilities": "Illuminate, Lightning Rod",
-    "hiddenAbilities": "Volt Absorb",
-    "dexEntry": "Lanya float about using their never-ending light to illuminate road ahead.",
-    "stats":{
-        "hp": 55,
-        "atk": 40,
-        "def": 40,
-        "spd": 55,
-        "spatk": 55,
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 180,
+    "baseExp": 48,
+    "baseFriendship": 70,
+    "abilities": "Illuminate,Levitate",
+    "hiddenAbilities": "Serene Grace",
+    "dexEntry": "Lanya float gently through the air, cradling a glowing light they were born with. The brightness of their light reflects their mood, dimming when afraid and flaring when excited.",
+    "stats": {
+        "hp": 40,
+        "atk": 25,
+        "def": 35,
+        "spd": 50,
+        "spatk": 60,
         "spdef": 55
     },
     "evolutions": [
@@ -28,26 +30,29 @@
         {
             "nr": "021",
             "name": "Dawntern",
-            "lvl": 30,
+            "lvl": 28,
             "extraInfo": "Level up during the day",
-            "alternateEvo":{
+            "alternateEvo": {
                 "nr": "022",
                 "name": "Duskalight",
-                "lvl": 30,
+                "lvl": 28,
                 "extraInfo": "Level up during the night"
             }
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Light Screen"},
-        {"lvl": 1, "name": "Blinding Light"},
-        {"lvl": 7, "name": "Reflect"},
-        {"lvl": 32, "name": "Flash Cannon"},
-        {"lvl": 21, "name": "Blinding Beam"},
-        {"lvl": 25, "name": "Tail Glow"},
-        {"lvl": 27, "name": "Light Pulse"},
-        {"lvl": 12, "name": "Mirror Shot"},
-        {"lvl": 17, "name": "Swift"}
+        { "lvl": 1, "name": "Light Screen" },
+        { "lvl": 1, "name": "Blinding Light" },
+        { "lvl": 7, "name": "Reflect" },
+        { "lvl": 12, "name": "Mirror Shot" },
+        { "lvl": 17, "name": "Swift" },
+        { "lvl": 21, "name": "Blinding Beam" },
+        { "lvl": 25, "name": "Tail Glow" },
+        { "lvl": 27, "name": "Light Pulse" },
+        { "lvl": 32, "name": "Flash Cannon" }
     ],
-    "tutorMoves": [ "Focus Punch", "Calm Mind", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Dazzling Gleam", "Psychic", "Shadow Ball", "Reflect", "Shock Wave", "Torment", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Bug Buzz", "Payback", "Psych Up", "Snarl", "Dark Pulse", "Dream Eater", "Grass Knot", "Substitute", "Flash Cannon", "Trick Room" ]
+    "tutorMoves": [
+        "Dazzling Gleam", "Calm Mind", "Thunder Wave", "Safeguard",
+        "Energy Ball", "Charge Beam", "Protect", "Magic Coat", "Substitute", "Rest"
+    ]
 }

@@ -12,12 +12,12 @@
     "hiddenAbilities": "Photosynthesis",
     "dexEntry": "Growing even taller and heavier then their predecessor Draguana's have gone from walking on 2 legs to walking on 4.",
     "stats":{
-        "hp": 83,
-        "atk": 100,
-        "def": 80,
-        "spd": 100,
-        "spatk": 82,
-        "spdef": 80
+        "hp": 90,
+        "atk": 115,
+        "def": 90,
+        "spatk": 65,
+        "spdef": 85,
+        "spd": 75
     },
     "evolutions": [
         {

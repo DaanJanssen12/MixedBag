@@ -1,0 +1,56 @@
+{
+    "name" : "Velazel",
+    "primaryType": "Normal",
+    "secondaryType": "",
+    "species": "Dashing",
+    "height": "1.2",
+    "weight": "47.5",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 120,
+    "baseExp": 150,
+    "baseFriendship": 100,
+    "abilities": "Unaware,Simple",
+    "hiddenAbilities": "Moody",
+    "dexEntry": "Velazel retain their youthful wonder but channel it into a relentless energy. They are swift and bold, often dashing into situations without a second thought. Trainers must be quick to keep up with these spirited companions.",
+    "stats": {
+        "hp": 75,
+        "atk": 80,
+        "def": 65,
+        "spd": 95,
+        "spatk": 45,
+        "spdef": 60
+    },
+    "evolutions": [
+        {
+            "nr": "013",
+            "name": "Amazel",
+            "lvl": 0
+        },
+        {
+            "nr": "014",
+            "name": "Velazel",
+            "lvl": 24
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 1, "name": "Growl"},
+        {"lvl": 5, "name": "Tearful Look"},
+        {"lvl": 9, "name": "Defense Curl"},
+        {"lvl": 13, "name": "Rollout"},
+        {"lvl": 17, "name": "Headbutt"},
+        {"lvl": 21, "name": "Taunt"},
+        {"lvl": 25, "name": "Yawn"},
+        {"lvl": 29, "name": "Crunch"},
+        {"lvl": 33, "name": "Take Down"},
+        {"lvl": 37, "name": "Super Fang"},
+        {"lvl": 41, "name": "Swords Dance"},
+        {"lvl": 45, "name": "Agility"},
+        {"lvl": 50, "name": "Double-Edge"},
+        {"lvl": 55, "name": "Giga Impact"}
+    ],
+    "tutorMoves": [ 
+        "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb"
+    ]
+}

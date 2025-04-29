@@ -14,10 +14,10 @@
     "stats":{
         "hp": 45,
         "atk": 65,
-        "def": 49,
-        "spd": 65,
-        "spatk": 49,
-        "spdef": 45
+        "def": 40,
+        "spatk": 40,
+        "spdef": 45,
+        "spd": 70
     },
     "evolutions": [
         {

@@ -1,23 +1,25 @@
 {
-    "name" : "Baoby",
+    "name": "Baoby",
     "primaryType": "Grass",
     "secondaryType": "",
-    "species": "Mount",
+    "species": "Sapling Calf",
     "height": "0.9",
-    "weight": "31.0",
-    "catchRate": 200,
-    "baseExp": 70,
-    "baseFriendship": 50,
-    "abilities": "Sap Sipper",
-    "hiddenAbilities": "Grass Pelt",
-    "dexEntry": "Baoby are very happy and playfull. Baoby are not shy, even in front of people. If you feed one of them, it will quickly take a liking to you.",
-    "stats":{
-        "hp": 66,
-        "atk": 65,
-        "def": 48,
-        "spd": 62,
-        "spatk": 57,
-        "spdef": 52
+    "weight": "24.6",
+    "genderRatio": "Female50Percent",
+    "growthRate": "MediumFast",
+    "catchRate": 190,
+    "baseExp": 64,
+    "baseFriendship": 70,
+    "abilities": "Overgrow,Sap Sipper",
+    "hiddenAbilities": "Leaf Guard",
+    "dexEntry": "Baoby’s skin is thick and cracked like tree bark, helping it blend into forests. Its leafy tail twitches gently in the breeze, absorbing sunlight throughout the day.",
+    "stats": {
+        "hp": 65,
+        "atk": 55,
+        "def": 65,
+        "spd": 40,
+        "spatk": 35,
+        "spdef": 50
     },
     "evolutions": [
         {
@@ -28,25 +30,22 @@
         {
             "nr": "019",
             "name": "Baobaraffe",
-            "lvl": 32
+            "lvl": 30
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Growth"},
-        {"lvl": 1, "name": "Tackle"},
-        {"lvl": 7, "name": "Vine Whip"},
-        {"lvl": 9, "name": "Tail Whip"},
-        {"lvl": 12, "name": "Leech Seed"},
-        {"lvl": 13, "name": "Razor Leaf"},
-        {"lvl": 16, "name": "Worry Seed"},
-        {"lvl": 20, "name": "Synthesis"},
-        {"lvl": 22, "name": "Take Down"},
-        {"lvl": 26, "name": "Bulldoze"},
-        {"lvl": 30, "name": "Seed Bomb"},
-        {"lvl": 34, "name": "Bulk Up"},
-        {"lvl": 38, "name": "Double-Edge"},
-        {"lvl": 42, "name": "Horn Leech"},
-        {"lvl": 45, "name": "Leaf Blade"}
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 1, "name": "Growth" },
+        { "lvl": 5, "name": "Leech Seed" },
+        { "lvl": 9, "name": "Razor Leaf" },
+        { "lvl": 13, "name": "Ingrain" },
+        { "lvl": 17, "name": "Stomp" },
+        { "lvl": 21, "name": "Synthesis" },
+        { "lvl": 25, "name": "Bulldoze" },
+        { "lvl": 29, "name": "Energy Ball" }
     ],
-    "tutorMoves": [ "Take Down", "Mud-Slap", "Trailblaze", "Protect", "Giga Drain", "Solar Beam", "Dig", "Brick Break", "Double Team", "Sludge Bomb", "Aerial Ace", "Facade", "Rest", "Attract", "Thief", "False Swipe", "Endure", "Flash", "Zen Headbutt", "X-Scissor", "Sleep Talk", "Poison Jab", "Grass Knot", "Swagger", "U-turn", "Substitute", "Cut", "Rock Smash", "Strength" ]
+    "tutorMoves": [
+        "Seed Bomb", "Leech Seed", "Grass Pledge", "Aromatherapy", "Body Slam",
+        "Rest", "Iron Tail", "Bulldoze", "Substitute"
+    ]
 }
