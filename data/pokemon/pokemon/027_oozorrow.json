@@ -6,7 +6,6 @@
     "height": "1.2",
     "weight": "18.0",
     "genderRatio": "Genderless",
-    "growthRate": "MediumFast",
     "catchRate": 90,
     "baseExp": 145,
     "baseFriendship": 70,

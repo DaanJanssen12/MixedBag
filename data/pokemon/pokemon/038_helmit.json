@@ -8,8 +8,6 @@
     "catchRate": 190,
     "baseExp": 100,
     "baseFriendship": 50,
-    "hiddenAbilities": "Defiant",
-    "abilities": "Sturdy,Battle Armor",
     "dexEntry": "Helmit may be small, but its steely resolve is unmatched. It charges into battle with its entire body protected by a heavy helm.",
     "stats":{
         "hp": 45,
@@ -19,6 +17,8 @@
         "spatk": 25,
         "spdef": 50
     },
+    "hiddenAbilities": "Defiant",
+    "abilities": "Sturdy,Battle Armor",
     "evolutions": [
         {
             "nr": "038",

@@ -1,41 +1,42 @@
 {
-    "name" : "Sligment",
+    "name": "Sligment",
     "primaryType": "Normal",
     "secondaryType": "Rock",
-    "species": "Snail",
-    "height": "0.7",
-    "weight": "22.7",
+    "species": "Shelled Snail",
+    "height": "0.6",
+    "weight": "35.0",
     "catchRate": 190,
-    "baseExp": 177,
+    "baseExp": 172,
     "baseFriendship": 50,
-    "hiddenAbilities": "Weak Armor",
-    "dexEntry": "These snails are mainly found in the mountains, as they can blend in with the environment with their shell which is made out of rock.",
-    "abilities": "Shell Armor, Solid Rock",
-    "stats":{
-        "hp": 105,
-        "atk": 65,
-        "def": 95,
-        "spd": 20,
-        "spatk": 65,
-        "spdef": 95
+    "hiddenAbilities": "Overcoat",
+    "dexEntry": "Sligment carry their heavy, rocky homes with pride. Despite their slow pace, their sturdy shells have been known to deflect even the strongest attacks. They often nestle in rocky hillsides, blending into the stone to avoid predators.",
+    "abilities": "Sturdy, Shell Armor",
+    "stats": {
+        "hp": 85,
+        "atk": 75,
+        "def": 110,
+        "spd": 55,
+        "spatk": 50,
+        "spdef": 85
     },
     "evolutions": [],
     "moves": [
-        {"lvl": 1, "name": "Constrict"},
-        {"lvl": 1, "name": "Harden"},
-        {"lvl": 5, "name": "Rollout"},
-        {"lvl": 10, "name": "Double Slap"},
-        {"lvl": 15, "name": "Headbutt"},
-        {"lvl": 20, "name": "Rock Throw"},
-        {"lvl": 25, "name": "Acupressure"},
-        {"lvl": 30, "name": "Assist"},
-        {"lvl": 35, "name": "Rock Slide"},
-        {"lvl": 40, "name": "Shell Smash"},
-        {"lvl": 45, "name": "Endure"},
-        {"lvl": 50, "name": "Explosion"},
-        {"lvl": 55, "name": "Rock Polish"},
-        {"lvl": 60, "name": "Head Smash"},
-        {"lvl": 65, "name": "Rock Wrecker"}
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 1, "name": "Withdraw" },
+        { "lvl": 5, "name": "Harden" },
+        { "lvl": 10, "name": "Smack Down" },
+        { "lvl": 14, "name": "Body Slam" },
+        { "lvl": 18, "name": "Rock Polish" },
+        { "lvl": 22, "name": "Protect" },
+        { "lvl": 26, "name": "Headbutt" },
+        { "lvl": 30, "name": "Stealth Rock" },
+        { "lvl": 34, "name": "Iron Defense" },
+        { "lvl": 38, "name": "Stone Edge" },
+        { "lvl": 42, "name": "Recover" },
+        { "lvl": 46, "name": "Heavy Slam" }
     ],
-    "tutorMoves": [ "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Solar Beam", "Earthquake", "Dig", "Double Team", "Reflect", "Sludge Bomb", "Sandstorm", "Rock Tomb", "Rest", "Attract", "Thief", "Endure", "Will-O-Wisp", "Bug Buzz", "Explosion", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Stealth Rock", "Psych Up", "Rock Slide", "Sleep Talk", "Bulldoze", "Poison Jab", "Swagger", "U-turn", "Substitute", "Strength", "Rock Smash", "Rock Climb" ]
+    "tutorMoves": [
+        "Protect", "Rest", "Rock Slide", "Rock Tomb", "Safeguard", "Sandstorm", "Endure", "Attract", "Substitute",
+        "Stealth Rock", "Stone Edge", "Iron Defense", "Bulldoze", "Body Slam", "Double Team", "Strength", "Dig"
+    ]
 }

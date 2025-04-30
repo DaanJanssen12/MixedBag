@@ -6,7 +6,7 @@
     "height": "1.2",
     "weight": "48.0",
     "genderRatio": "Female50Percent",
-    "growthRate": "MediumSlow",
+    "growthRate": "Slow",
     "catchRate": 45,
     "baseExp": 168,
     "baseFriendship": 70,
