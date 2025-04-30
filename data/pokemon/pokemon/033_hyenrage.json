@@ -1,0 +1,53 @@
+{
+    "name": "Hyenrage",
+    "primaryType": "Dark",
+    "secondaryType": "Sound",
+    "species": "Alpha Howl",
+    "height": "1.7",
+    "weight": "42.0",
+    "genderRatio": "Female50Percent",
+    "growthRate": "Parabolic",
+    "catchRate": 45,
+    "baseExp": 239,
+    "baseFriendship": 70,
+    "abilities": "Intimidate,Soundproof",
+    "hiddenAbilities": "Frisk",
+    "dexEntry": "Hyenrage’s roars can disorient even the most seasoned opponents. It rallies its allies with thunderous howls, asserting dominance across its territory.",
+    "stats": {
+      "hp": 85,
+      "atk": 110,
+      "def": 75,
+      "spd": 88,
+      "spatk": 55,
+      "spdef": 67
+    },
+    "evolutions": [
+      {
+        "nr": "031",
+        "name": "Hyuff",
+        "lvl": 0
+      },
+      {
+        "nr": "032",
+        "name": "Hyackle",
+        "lvl": 18
+      },
+      {
+        "nr": "033",
+        "name": "Hyenrage",
+        "lvl": 36
+      }
+    ],
+    "moves": [
+      { "lvl": 0, "name": "Echo Strike" },
+      { "lvl": 1, "name": "Crunch" },
+      { "lvl": 1, "name": "Roar" },
+      { "lvl": 36, "name": "Hyper Voice" },
+      { "lvl": 42, "name": "Throat Chop" },
+      { "lvl": 48, "name": "Outrage" },
+      { "lvl": 54, "name": "Boomburst" }
+    ],
+    "tutorMoves": [
+      "Dark Pulse", "Hyper Voice", "Uproar", "Snarl", "Taunt", "Protect"
+    ]
+  }

@@ -1,0 +1,51 @@
+{
+    "name" : "Gallokid",
+    "primaryType": "Steel",
+    "secondaryType": "Fighting",
+    "species": "Armored",
+    "height": "0.8",
+    "weight": "44.0",
+    "catchRate": 90,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "dexEntry": "Gallokid is always eager to prove itself in battle. It trains tirelessly, dreaming of the day it becomes a true knight.",
+    "stats":{
+        "hp": 65,
+        "atk": 85,
+        "def": 80,
+        "spd": 60,
+        "spatk": 30,
+        "spdef": 60
+    },
+    "hiddenAbilities": "Defiant",
+    "abilities": "Sturdy,Battle Armor",
+    "evolutions": [
+        {
+            "nr": "038",
+            "name": "Helmit",
+            "lvl": 0
+        },
+        {
+            "nr": "039",
+            "name": "Gallokid",
+            "lvl": 18
+        },
+        {
+            "nr": "040",
+            "name": "Sirvalier",
+            "lvl": 36
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 1, "name": "Iron Defense"},
+        {"lvl": 5, "name": "Metal Claw"},
+        {"lvl": 10, "name": "Protect"},
+        {"lvl": 14, "name": "Double Kick"},
+        {"lvl": 18, "name": "Headbutt"},
+        {"lvl": 23, "name": "Counter"},
+        {"lvl": 28, "name": "Iron Head"},
+        {"lvl": 33, "name": "Swords Dance"}
+    ],
+    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Bulk Up", "Work Up", "Taunt", "Iron Tail", "Low Sweep", "Dig", "Brick Break", "Double Team", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Steel Wing", "Skill Swap", "Focus Blast", "Energy Ball", "False Swipe", "Fling", "Endure", "Drain Punch", "Will-O-Wisp", "Nasty Plot", "Shadow Claw", "Payback", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Swords Dance", "Stealth Rock", "Rock Slide", "X-Scissor", "Bulldoze", "U-turn", "Substitute", "Flash Cannon", "Cut", "Strength", "Rock Smash", "Rock Climb" ]
+}

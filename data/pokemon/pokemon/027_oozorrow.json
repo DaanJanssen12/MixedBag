@@ -1,0 +1,49 @@
+{
+    "name": "Oozorrow",
+    "primaryType": "Ghost",
+    "secondaryType": "Poison",
+    "species": "Mourning Ooze",
+    "height": "1.2",
+    "weight": "18.0",
+    "genderRatio": "Genderless",
+    "growthRate": "MediumFast",
+    "catchRate": 90,
+    "baseExp": 145,
+    "baseFriendship": 70,
+    "abilities": "Aftermath,Cursed Body",
+    "hiddenAbilities": "Infiltrator",
+    "dexEntry": "Three spirits bound by sorrow fused into a single, corrupted form. The remnants of their broken helmets still cling to them, held together by poisonous ectoplasm.",
+    "stats": {
+        "hp": 70,
+        "atk": 95,
+        "def": 85,
+        "spd": 40,
+        "spatk": 65,
+        "spdef": 75
+    },
+    "evolutions": [
+        {
+            "nr": "026",
+            "name": "Helmyre",
+            "lvl": 0
+        },
+        {
+            "nr": "027",
+            "name": "Oozorrow",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Astonish" },
+        { "lvl": 1, "name": "Lick" },
+        { "lvl": 1, "name": "Hex" },
+        { "lvl": 30, "name": "Sludge" },
+        { "lvl": 34, "name": "Shadow Claw" },
+        { "lvl": 38, "name": "Toxic" },
+        { "lvl": 42, "name": "Phantom Force" },
+        { "lvl": 46, "name": "Gunk Shot" }
+    ],
+    "tutorMoves": [
+        "Will-O-Wisp", "Shadow Ball", "Protect", "Toxic", "Rest", "Substitute", "Sludge Bomb", "Venoshock", "Endure"
+    ]
+}

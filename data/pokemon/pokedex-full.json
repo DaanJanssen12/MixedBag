@@ -126,12 +126,12 @@
     },
     {
         "nr": "026",
-        "name": "Mindow",
+        "name": "Helmyre",
         "type": "Ghost,None"
     },
     {
         "nr": "027",
-        "name": "Slugnami",
+        "name": "Oozorrow",
         "type": "Ghost,Poison"
     },
     {
@@ -151,27 +151,27 @@
     },
     {
         "nr": "031",
-        "name": "Pyen",
+        "name": "Hyuff",
         "type": "Dark,None"
     },
     {
         "nr": "032",
-        "name": "Pyron",
+        "name": "Hyackle",
         "type": "Dark,Sound"
     },
     {
         "nr": "033",
-        "name": "Pyrain",
+        "name": "Hyenrage",
         "type": "Dark,Sound"
     },
     {
         "nr": "034",
-        "name": "Kudo",
+        "name": "Lunibbit",
         "type": "Fairy,Light"
     },
     {
         "nr": "035",
-        "name": "Doechi",
+        "name": "Lunova",
         "type": "Fairy,Light"
     },
     {
@@ -181,22 +181,22 @@
     },
     {
         "nr": "037",
-        "name": "Seiramp",
+        "name": "Ghantique",
         "type": "Ghost,None"
     },
     {
         "nr": "038",
-        "name": "Minsel",
+        "name": "Helmit",
         "type": "Steel,None"
     },
     {
         "nr": "039",
-        "name": "Habkid",
+        "name": "Gallokid",
         "type": "Steel,Fighting"
     },
     {
         "nr": "040",
-        "name": "Habknight",
+        "name": "Sirvalier",
         "type": "Steel,Fighting"
     },
     {

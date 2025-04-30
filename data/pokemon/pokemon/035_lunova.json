@@ -1,50 +1,48 @@
 {
-    "name" : "Kudo",
+    "name" : "Lunova",
     "primaryType": "Fairy",
     "secondaryType": "Light",
     "species": "Bunny",
-    "height": "0.4",
-    "weight": "3.5",
-    "catchRate": 200,
-    "baseExp": 68,
+    "height": "1.1",
+    "weight": "28.0",
+    "catchRate": 140,
+    "baseExp": 210,
     "baseFriendship": 100,
-    "hiddenAbilities": "Pixilate",
-    "dexEntry": "Kudo are these sweet innocent creatures who spend most of their days just hopping around with wonder.",
-    "abilities": "Sweet Veil, Unburden",
+    "hiddenAbilities": "Magic Guard",
+    "dexEntry": "Lunova channels cosmic energy through the star on its forehead. Playful by nature, it dances under moonlight to draw power from the skies.",
+    "abilities": "Serene Grace, Illuminate",
     "stats":{
-        "hp": 62,
-        "atk": 59,
-        "def": 39,
-        "spd": 82,
-        "spatk": 43,
-        "spdef": 42
+        "hp": 80,
+        "atk": 60,
+        "def": 75,
+        "spatk": 100,
+        "spdef": 95,
+        "spd": 85
     },
     "evolutions": [
         {
             "nr": "034",
-            "name": "Kudo",
+            "name": "Lunibbit",
             "lvl": 0
         },
         {
             "nr": "035",
-            "name": "Doechi",
-            "lvl": 31
+            "name": "Lunova",
+            "lvl": 30
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Tackle"},
-        {"lvl": 1, "name": "Play Nice"},
-        {"lvl": 4, "name": "Fairy Wind"},
-        {"lvl": 12, "name": "Draining Kiss"},
-        {"lvl": 9, "name": "Fake Tears"},
-        {"lvl": 21, "name": "Round"},
-        {"lvl": 18, "name": "Blinding Light"},
-        {"lvl": 27, "name": "Mirror Shot"},
-        {"lvl": 7, "name": "Baby-Doll Eyes"},
-        {"lvl": 15, "name": "Charm"},
-        {"lvl": 33, "name": "Play Rough"},
-        {"lvl": 24, "name": "Swift"},
-        {"lvl": 36, "name": "Blinding Beam"}
+        {"lvl": 1, "name": "Fairy Wind"},
+        {"lvl": 1, "name": "Tail Whip"},
+        {"lvl": 5, "name": "Moonlight"},
+        {"lvl": 10, "name": "Disarming Voice"},
+        {"lvl": 15, "name": "Light Pulse"},
+        {"lvl": 20, "name": "Calm Mind"},
+        {"lvl": 26, "name": "Wish"},
+        {"lvl": 32, "name": "Moonblast"},
+        {"lvl": 38, "name": "Dazzling Gleam"},
+        {"lvl": 44, "name": "Twilight Nova"},
+        {"lvl": 50, "name": "Healing Wish"}
     ],
     "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
 }

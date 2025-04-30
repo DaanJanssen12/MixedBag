@@ -1,59 +1,50 @@
 {
-    "name" : "Pyen",
-    "primaryType": "Dark",
+    "name" : "Ghantique",
+    "primaryType": "Ghost",
     "secondaryType": "",
-    "species": "Howling",
-    "height": "0.4",
-    "weight": "11.5",
-    "catchRate": 255,
-    "baseExp": 56,
+    "species": "Teapot",
+    "height": "1.2",
+    "weight": "3.0",
+    "catchRate": 100,
+    "baseExp": 100,
     "baseFriendship": 50,
-    "hiddenAbilities": "Intimidate",
-    "dexEntry": "Pyen have tons of energy and like to play with other Pyen. The 'playing' can sometimes get too rough and has to be interrupted.",
-    "abilities": "Run Away, Rattled",
+    "genderRatio": "Genderless",
+    "hiddenAbilities": "Aftermath",
+    "dexEntry": "Now partially freed from its ceramic housing, Ghantique manipulates objects from afar using its spectral arms. It is believed to carry the memories of every soul it’s ever housed.",
+    "abilities": "Levitate,Cursed Body",
     "stats":{
-        "hp": 45,
-        "atk": 60,
-        "def": 40,
-        "spatk": 30,
-        "spdef": 45,
-        "spd": 70
+        "hp": 70,
+        "atk": 50,
+        "def": 80,
+        "spatk": 105,
+        "spdef": 95,
+        "spd": 50
     },
     "evolutions": [
         {
-            "nr": "031",
-            "name": "Pyen",
+            "nr": "036",
+            "name": "Ellamp",
             "lvl": 0
         },
         {
-            "nr": "032",
-            "name": "Pyron",
-            "lvl": 21
-        },
-        {
-            "nr": "033",
-            "name": "Pyrain",
-            "lvl": 42
+            "nr": "037",
+            "name": "Ghantique",
+            "lvl": 33
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Growl"},
-        {"lvl": 1, "name": "Tackle"},
-        {"lvl": 4, "name": "Howl"},
-        {"lvl": 7, "name": "Sand Attack"},
-        {"lvl": 10, "name": "Bite"},
-        {"lvl": 13, "name": "Mud-Slap"},
-        {"lvl": 16, "name": "Roar"},
-        {"lvl": 19, "name": "Swagger"},
-        {"lvl": 22, "name": "Assurance"},
-        {"lvl": 25, "name": "Snarl"},
-        {"lvl": 28, "name": "Headbutt"},
-        {"lvl": 31, "name": "Taunt"},
-        {"lvl": 34, "name": "Crunch"},
-        {"lvl": 37, "name": "Yawn"},
-        {"lvl": 40, "name": "Take Down"},
-        {"lvl": 43, "name": "Sucker Punch"},
-        {"lvl": 46, "name": "Boomburst"}
+        { "lvl": 1, "name": "Lick" },
+        { "lvl": 1, "name": "Astonish" },
+        { "lvl": 6, "name": "Spite" },
+        { "lvl": 10, "name": "Confuse Ray" },
+        { "lvl": 14, "name": "Shadow Sneak" },
+        { "lvl": 19, "name": "Hex" },
+        { "lvl": 23, "name": "Will-O-Wisp" },
+        { "lvl": 28, "name": "Night Shade" },
+        { "lvl": 33, "name": "Shadow Ball" },
+        { "lvl": 36, "name": "Calm Mind" },
+        { "lvl": 41, "name": "Phantom Force" },
+        { "lvl": 47, "name": "Memento" }
     ],
     "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
 }

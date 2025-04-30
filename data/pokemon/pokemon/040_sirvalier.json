@@ -1,0 +1,56 @@
+{
+    "name" : "Sirvalier",
+    "primaryType": "Steel",
+    "secondaryType": "Fighting",
+    "species": "Armored",
+    "height": "2.2",
+    "weight": "144.0",
+    "catchRate": 45,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "dexEntry": "Sirvalier rides into battle with grace and force, its lance a blur of precision. Bonded with its steed since youth, the two now move as one in perfect harmony.",
+    "stats":{
+        "hp": 85,
+        "atk": 115,
+        "def": 90,
+        "spd": 65,
+        "spatk": 40,
+        "spdef": 75
+    },
+    "hiddenAbilities": "Defiant",
+    "abilities": "Sturdy,Battle Armor",
+    "evolutions": [
+        {
+            "nr": "038",
+            "name": "Helmit",
+            "lvl": 0
+        },
+        {
+            "nr": "039",
+            "name": "Gallokid",
+            "lvl": 18
+        },
+        {
+            "nr": "040",
+            "name": "Sirvalier",
+            "lvl": 36
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Smart Strike"},
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 1, "name": "Iron Defense"},
+        {"lvl": 5, "name": "Metal Claw"},
+        {"lvl": 10, "name": "Protect"},
+        {"lvl": 14, "name": "Double Kick"},
+        {"lvl": 18, "name": "Headbutt"},
+        {"lvl": 22, "name": "Smart Strike"},
+        {"lvl": 27, "name": "Counter"},
+        {"lvl": 32, "name": "Iron Head"},
+        {"lvl": 36, "name": "Sacred Sword"},
+        {"lvl": 42, "name": "Swords Dance"},
+        {"lvl": 48, "name": "Close Combat"},
+        {"lvl": 55, "name": "Iron Tail"}
+    ],
+    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Bulk Up", "Work Up", "Taunt", "Iron Tail", "Low Sweep", "Dig", "Brick Break", "Double Team", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Steel Wing", "Skill Swap", "Focus Blast", "Energy Ball", "False Swipe", "Fling", "Endure", "Drain Punch", "Will-O-Wisp", "Nasty Plot", "Shadow Claw", "Payback", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Swords Dance", "Stealth Rock", "Rock Slide", "X-Scissor", "Bulldoze", "U-turn", "Substitute", "Flash Cannon", "Cut", "Strength", "Rock Smash", "Rock Climb" ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Helmyre",
+    "primaryType": "Ghost",
+    "secondaryType": "",
+    "species": "Bubble Spirit",
+    "height": "0.4",
+    "weight": "1.1",
+    "genderRatio": "Genderless",
+    "growthRate": "MediumFast",
+    "catchRate": 190,
+    "baseExp": 60,
+    "baseFriendship": 70,
+    "abilities": "Aftermath,Cursed Body",
+    "hiddenAbilities": "Infiltrator",
+    "dexEntry": "These drifting spirits wear mysterious bubble-like shells that resemble old helmets. Some believe they’re drawn to the memories of forgotten disasters.",
+    "stats": {
+        "hp": 40,
+        "atk": 35,
+        "def": 45,
+        "spd": 35,
+        "spatk": 60,
+        "spdef": 55
+    },
+    "evolutions": [
+        {
+            "nr": "026",
+            "name": "Helmyre",
+            "lvl": 0
+        },
+        {
+            "nr": "027",
+            "name": "Oozorrow",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Astonish" },
+        { "lvl": 4, "name": "Lick" },
+        { "lvl": 7, "name": "Spite" },
+        { "lvl": 10, "name": "Confuse Ray" },
+        { "lvl": 13, "name": "Shadow Sneak" },
+        { "lvl": 17, "name": "Hex" },
+        { "lvl": 21, "name": "Curse" },
+        { "lvl": 25, "name": "Payback" }
+    ],
+    "tutorMoves": [
+        "Will-O-Wisp", "Shadow Ball", "Protect", "Toxic", "Rest", "Substitute", "Sludge Bomb", "Venoshock", "Endure"
+    ]
+}

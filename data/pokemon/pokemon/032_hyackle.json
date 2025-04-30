@@ -1,0 +1,53 @@
+{
+    "name": "Hyackle",
+    "primaryType": "Dark",
+    "secondaryType": "Sound",
+    "species": "Laughing Jackal",
+    "height": "1.1",
+    "weight": "27.3",
+    "genderRatio": "Female50Percent",
+    "growthRate": "Parabolic",
+    "catchRate": 90,
+    "baseExp": 142,
+    "baseFriendship": 70,
+    "abilities": "Soundproof,Intimidate",
+    "hiddenAbilities": "Frisk",
+    "dexEntry": "Hyackle are known for their unsettling cackles that can throw off opponents’ focus. They communicate through eerie vocalizations that strengthen pack cohesion.",
+    "stats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 60,
+      "spd": 78,
+      "spatk": 45,
+      "spdef": 57
+    },
+    "evolutions": [
+      {
+        "nr": "031",
+        "name": "Hyuff",
+        "lvl": 0
+      },
+      {
+        "nr": "032",
+        "name": "Hyackle",
+        "lvl": 18
+      },
+      {
+        "nr": "033",
+        "name": "Hyenrage",
+        "lvl": 36
+      }
+    ],
+    "moves": [
+      { "lvl": 1, "name": "Snarl" },
+      { "lvl": 1, "name": "Echoed Voice" },
+      { "lvl": 18, "name": "Roar" },
+      { "lvl": 22, "name": "Stomp" },
+      { "lvl": 26, "name": "Hyper Voice" },
+      { "lvl": 30, "name": "Scary Face" },
+      { "lvl": 34, "name": "Crunch" }
+    ],
+    "tutorMoves": [
+      "Uproar", "Dark Pulse", "Snore", "Protect", "Taunt", "Swagger"
+    ]
+  }

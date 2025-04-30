@@ -1,0 +1,54 @@
+{
+    "name": "Hyuff",
+    "primaryType": "Dark",
+    "secondaryType": "Sound",
+    "species": "Pup Call",
+    "height": "0.6",
+    "weight": "11.4",
+    "genderRatio": "Female50Percent",
+    "growthRate": "Parabolic",
+    "catchRate": 200,
+    "baseExp": 60,
+    "baseFriendship": 70,
+    "abilities": "Soundproof,Run Away",
+    "hiddenAbilities": "Frisk",
+    "dexEntry": "Hyuff are playful but loud Pokémon that travel in small packs. Their barks carry far into the night, often mistaken for laughter.",
+    "stats": {
+      "hp": 50,
+      "atk": 60,
+      "def": 40,
+      "spd": 55,
+      "spatk": 35,
+      "spdef": 40
+    },
+    "evolutions": [
+      {
+        "nr": "031",
+        "name": "Hyuff",
+        "lvl": 0
+      },
+      {
+        "nr": "032",
+        "name": "Hyackle",
+        "lvl": 18
+      },
+      {
+        "nr": "033",
+        "name": "Hyenrage",
+        "lvl": 36
+      }
+    ],
+    "moves": [
+      { "lvl": 1, "name": "Growl" },
+      { "lvl": 1, "name": "Tackle" },
+      { "lvl": 5, "name": "Echoed Voice" },
+      { "lvl": 9, "name": "Snarl" },
+      { "lvl": 13, "name": "Howl" },
+      { "lvl": 17, "name": "Bite" },
+      { "lvl": 21, "name": "Screech" },
+      { "lvl": 25, "name": "Crunch" }
+    ],
+    "tutorMoves": [
+      "Uproar", "Hyper Voice", "Dark Pulse", "Endure", "Swagger", "Taunt"
+    ]
+  }

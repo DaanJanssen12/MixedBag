@@ -595,6 +595,20 @@
         "accuracy": "100"
     },
     {
+        "move": "Echo Strike",
+        "type": "Sound",
+        "category": "Physical",
+        "power": "60",
+        "accuracy": "100"
+    },
+    {
+        "move": "Twilight Nova",
+        "type": "Light",
+        "category": "Special",
+        "power": "100",
+        "accuracy": "100"
+    },
+    {
         "move": "",
         "type": "",
         "category": "",

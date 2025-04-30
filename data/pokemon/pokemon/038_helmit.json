@@ -1,0 +1,49 @@
+{
+    "name" : "Helmit",
+    "primaryType": "Steel",
+    "secondaryType": "",
+    "species": "Helmet",
+    "height": "0.2",
+    "weight": "6.0",
+    "catchRate": 190,
+    "baseExp": 100,
+    "baseFriendship": 50,
+    "hiddenAbilities": "Defiant",
+    "abilities": "Sturdy,Battle Armor",
+    "dexEntry": "Helmit may be small, but its steely resolve is unmatched. It charges into battle with its entire body protected by a heavy helm.",
+    "stats":{
+        "hp": 45,
+        "atk": 60,
+        "def": 70,
+        "spd": 35,
+        "spatk": 25,
+        "spdef": 50
+    },
+    "evolutions": [
+        {
+            "nr": "038",
+            "name": "Helmit",
+            "lvl": 0
+        },
+        {
+            "nr": "039",
+            "name": "Gallokid",
+            "lvl": 18
+        },
+        {
+            "nr": "040",
+            "name": "Sirvalier",
+            "lvl": 36
+        }
+    ],
+    "moves": [
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 1, "name": "Iron Defense"},
+        {"lvl": 4, "name": "Harden"},
+        {"lvl": 7, "name": "Metal Claw"},
+        {"lvl": 10, "name": "Protect"},
+        {"lvl": 13, "name": "Rock Smash"},
+        {"lvl": 16, "name": "Headbutt"}
+    ],
+    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Bulk Up", "Work Up", "Taunt", "Iron Tail", "Low Sweep", "Dig", "Brick Break", "Double Team", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Steel Wing", "Skill Swap", "Focus Blast", "Energy Ball", "False Swipe", "Fling", "Endure", "Drain Punch", "Will-O-Wisp", "Nasty Plot", "Shadow Claw", "Payback", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Swords Dance", "Stealth Rock", "Rock Slide", "X-Scissor", "Bulldoze", "U-turn", "Substitute", "Flash Cannon", "Cut", "Strength", "Rock Smash", "Rock Climb" ]
+}
