@@ -1,23 +1,23 @@
 {
-    "name" : "Armadix",
+    "name": "Armadix",
     "primaryType": "Ground",
     "secondaryType": "",
-    "species": "Armadillo",
-    "height": "0.6",
-    "weight": "20.0",
+    "species": "Burrow Beast",
+    "height": "0.5",
+    "weight": "12.3",
     "catchRate": 180,
-    "baseExp": 100,
+    "baseExp": 64,
     "baseFriendship": 50,
-    "hiddenAbilities": "Sand Rush",
-    "dexEntry": "",
-    "abilities": "Rock Head, Sturdy",
-    "stats":{
-        "hp": 45,
-        "atk": 65,
-        "def": 57,
-        "spatk": 35,
-        "spdef": 35,
-        "spd": 55
+    "hiddenAbilities": "Sand Veil",
+    "dexEntry": "Armadix lives underground and uses its tough, leathery hide to burrow through soil. Though shy by nature, it fiercely defends its territory.",
+    "abilities": "Battle Armor, Sand Rush",
+    "stats": {
+        "hp": 50,
+        "atk": 70,
+        "def": 60,
+        "spd": 40,
+        "spatk": 30,
+        "spdef": 40
     },
     "evolutions": [
         {
@@ -28,32 +28,30 @@
         {
             "nr": "049",
             "name": "Marvog",
-            "lvl": 29
+            "lvl": 26
         },
         {
             "nr": "050",
             "name": "Gramervog",
-            "lvl": 42
+            "lvl": 44
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Defense Curl"},
-        {"lvl": 1, "name": "Rollout"},
-        {"lvl": 4, "name": "Sand Attack"},
-        {"lvl": 8, "name": "Mud Slap"},
-        {"lvl": 12, "name": "Accelerock"},
-        {"lvl": 16, "name": "Bulldoze"},
-        {"lvl": 20, "name": "Iron Defense"},
-        {"lvl": 24, "name": "Metal Claw"},
-        {"lvl": 28, "name": "Iron Tail"},
-        {"lvl": 33, "name": "Earth Power"},
-        {"lvl": 36, "name": "Protect"},
-        {"lvl": 40, "name": "Autotomize"},
-        {"lvl": 44, "name": "Earthquake"},
-        {"lvl": 48, "name": "Heavy Slam"},
-        {"lvl": 52, "name": "Double-Edge"},
-        {"lvl": 56, "name": "Metal Burst"},
-        {"lvl": 60, "name": "Iron Head"}
+        { "lvl": 1, "name": "Scratch" },
+        { "lvl": 1, "name": "Sand Attack" },
+        { "lvl": 5, "name": "Mud-Slap" },
+        { "lvl": 9, "name": "Rapid Spin" },
+        { "lvl": 13, "name": "Rollout" },
+        { "lvl": 17, "name": "Bulldoze" },
+        { "lvl": 21, "name": "Defense Curl" },
+        { "lvl": 25, "name": "Dig" },
+        { "lvl": 29, "name": "Iron Defense" },
+        { "lvl": 33, "name": "Metal Claw" },
+        { "lvl": 37, "name": "Earth Power" },
+        { "lvl": 41, "name": "Iron Head" },
+        { "lvl": 45, "name": "Earthquake" }
     ],
-    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
+    "tutorMoves": [
+        "Toxic", "Protect", "Hidden Power", "Sandstorm", "Dig", "Rock Tomb", "Rest", "Attract", "Thief", "Endure", "Shadow Claw", "Iron Tail", "Bulldoze", "Substitute", "Stealth Rock", "Rock Slide", "Gyro Ball"
+    ]
 }

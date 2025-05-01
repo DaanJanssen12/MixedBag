@@ -1,23 +1,23 @@
 {
-    "name" : "Droopig",
+    "name": "Droopig",
     "primaryType": "Ground",
     "secondaryType": "Normal",
-    "species": "Pig",
-    "height": "0.6",
-    "weight": "20.1",
-    "catchRate": 200,
-    "baseExp": 100,
+    "species": "Sloth Pig",
+    "height": "0.9",
+    "weight": "48.2",
+    "catchRate": 190,
+    "baseExp": 142,
     "baseFriendship": 50,
-    "hiddenAbilities": "Defiant",
-    "dexEntry": "",
-    "abilities": "Gluttony, Thick Fat",
-    "stats":{
-        "hp": 40,
-        "atk": 55,
-        "def": 75,
-        "spd": 35,
+    "hiddenAbilities": "Anger Point",
+    "dexEntry": "Droopig spend most of their day lying in the dirt, soaking up the sun. Though sluggish in movement, they can deliver a powerful headbutt when startled.",
+    "abilities": "Thick Fat, Oblivious",
+    "stats": {
+        "hp": 95,
+        "atk": 60,
+        "def": 80,
+        "spd": 25,
         "spatk": 35,
-        "spdef": 65
+        "spdef": 80
     },
     "evolutions": [
         {
@@ -28,26 +28,21 @@
         {
             "nr": "047",
             "name": "Hoolihog",
-            "lvl": 26
+            "lvl": 30
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Pound"},
-        {"lvl": 1, "name": "Rollout"},
-        {"lvl": 1, "name": "Defense Curl"},
-        {"lvl": 1, "name": "Sand Attack"},
-        {"lvl": 5, "name": "Mud-Slap"},
-        {"lvl": 8, "name": "Sand Tomb"},
-        {"lvl": 12, "name": "Headbutt"},
-        {"lvl": 17, "name": "Bulldoze"},
-        {"lvl": 22, "name": "Double Slap"},
-        {"lvl": 25, "name": "Belly Drum"},
-        {"lvl": 29, "name": "Spikes"},
-        {"lvl": 33, "name": "Yawn"},
-        {"lvl": 36, "name": "Rest"},
-        {"lvl": 40, "name": "Dig"},
-        {"lvl": 44, "name": "Sleep Talk"},
-        {"lvl": 48, "name": "Earthquake"}
+        {"lvl": 1, "name": "Tackle"},
+        {"lvl": 1, "name": "Mud-Slap"},
+        {"lvl": 5, "name": "Yawn"},
+        {"lvl": 9, "name": "Defense Curl"},
+        {"lvl": 13, "name": "Headbutt"},
+        {"lvl": 17, "name": "Mud Shot"},
+        {"lvl": 21, "name": "Slack Off"},
+        {"lvl": 25, "name": "Body Slam"},
+        {"lvl": 29, "name": "Bulldoze"}
     ],
-    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
+    "tutorMoves": [
+        "Toxic", "Hidden Power", "Protect", "Earthquake", "Return", "Dig", "Double Team", "Facade", "Rest", "Attract", "Sleep Talk", "Substitute", "Rock Tomb", "Bulldoze", "Work Up"
+    ]
 }
