@@ -1,23 +1,23 @@
 {
-    "name" : "Clowee",
+    "name": "Clowee",
     "primaryType": "Grass",
     "secondaryType": "",
-    "species": "",
-    "height": "",
-    "weight": "",
-    "catchRate": 0,
-    "baseExp": 100,
-    "baseFriendship": 50,
-    "hiddenAbilities": "",
-    "dexEntry": "",
-    "abilities": "",
-    "stats":{
-        "hp": 42,
-        "atk": 30,
-        "def": 38,
-        "spd": 32,
-        "spatk": 30,
-        "spdef": 38
+    "species": "Clover Bud",
+    "height": "0.3",
+    "weight": "2.1",
+    "catchRate": 255,
+    "baseExp": 62,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Natural Cure",
+    "dexEntry": "Clowee hides in fields of clovers, blending in with its surroundings. It's said finding one brings good luck.",
+    "abilities": "Overgrow, Flower Veil",
+    "stats": {
+        "hp": 45,
+        "atk": 35,
+        "def": 45,
+        "spd": 35,
+        "spatk": 50,
+        "spdef": 60
     },
     "evolutions": [
         {
@@ -28,16 +28,23 @@
         {
             "nr": "070",
             "name": "Clolly",
-            "lvl": 18
+            "lvl": 16
         },
         {
             "nr": "071",
             "name": "Clodiva",
-            "lvl": 31
+            "lvl": 32
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Tackle"}
+        { "lvl": 1, "name": "Absorb" },
+        { "lvl": 4, "name": "Fairy Wind" },
+        { "lvl": 7, "name": "Growth" },
+        { "lvl": 10, "name": "Stun Spore" },
+        { "lvl": 13, "name": "Magical Leaf" },
+        { "lvl": 17, "name": "Leech Seed" }
     ],
-    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
+    "tutorMoves": [
+        "Energy Ball", "Dazzling Gleam", "Substitute", "Protect", "Light Screen", "Aromatherapy", "Grassy Terrain", "Calm Mind", "Sleep Talk"
+    ]
 }

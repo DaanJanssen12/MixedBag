@@ -1,22 +1,22 @@
 {
-    "name" : "Taimber",
+    "name": "Taimber",
     "primaryType": "Fire",
     "secondaryType": "Dark",
-    "species": "",
-    "height": "",
-    "weight": "",
-    "catchRate": 0,
-    "baseExp": 100,
+    "species": "Scorch Pup",
+    "height": "0.6",
+    "weight": "12.5",
+    "catchRate": 120,
+    "baseExp": 64,
     "baseFriendship": 50,
-    "hiddenAbilities": "",
-    "dexEntry": "",
-    "abilities": "",
-    "stats":{
-        "hp": 45,
-        "atk": 65,
-        "def": 40,
-        "spd": 70,
-        "spatk": 60,
+    "hiddenAbilities": "Flash Fire",
+    "dexEntry": "Taimber are mischievous and brave, often seen playfully chasing their own flaming tails. Its embers burn hotter when it's excited.",
+    "abilities": "Blaze, Flame Body",
+    "stats": {
+        "hp": 50,
+        "atk": 60,
+        "def": 45,
+        "spd": 65,
+        "spatk": 50,
         "spdef": 40
     },
     "evolutions": [
@@ -28,16 +28,27 @@
         {
             "nr": "067",
             "name": "Embadon",
-            "lvl": 31
+            "lvl": 16
         },
         {
             "nr": "068",
-            "name": "Zerbbadon",
-            "lvl": 48
+            "name": "Cerberaze",
+            "lvl": 36
         }
     ],
     "moves": [
-        {"lvl": 1, "name": "Tackle"}
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 1, "name": "Ember" },
+        { "lvl": 5, "name": "Howl" },
+        { "lvl": 8, "name": "Smog" },
+        { "lvl": 12, "name": "Bite" },
+        { "lvl": 15, "name": "Incinerate" },
+        { "lvl": 18, "name": "Roar" },
+        { "lvl": 22, "name": "Flame Charge" },
+        { "lvl": 26, "name": "Snarl" },
+        { "lvl": 30, "name": "Fire Fang" }
     ],
-    "tutorMoves": [ "Focus Punch", "Dragon Claw", "Water Pulse", "Calm Mind", "Roar", "Toxic", "Hail", "Bulk Up", "Bullet Seed", "Work Up", "Sunny Day", "Taunt", "Ice Beam", "Hyper Beam", "Light Screen", "Protect", "Rain Dance", "Giga Drain", "Safeguard", "Dazzling Gleam", "Solar Beam", "Iron Tail", "Thunderbolt", "Thunder", "Earthquake", "Low Sweep", "Dig", "Psychic", "Shadow Ball", "Brick Break", "Double Team", "Reflect", "Shock Wave", "Flamethrower", "Sludge Bomb", "Sandstorm", "Fire Blast", "Rock Tomb", "Aerial Ace", "Torment", "Facade", "Volt Switch", "Rest", "Attract", "Thief", "Steel Wing", "Skill Swap", "Scald", "Overheat", "Roost", "Focus Blast", "Energy Ball", "False Swipe", "Brine", "Fling", "Charge Beam", "Endure", "Dragon Pulse", "Drain Punch", "Will-O-Wisp", "Bug Buzz", "Nasty Plot", "Explosion", "Shadow Claw", "Payback", "Recycle", "Giga Impact", "Rock Polish", "Flash", "Stone Edge", "Avalanche", "Thunder Wave", "Swords Dance", "Stealth Rock", "Psych Up", "Snarl", "Dark Pulse", "Rock Slide", "X-Scissor", "Sleep Talk", "Bulldoze", "Poison Jab", "Dream Eater", "Grass Knot", "Swagger", "Pluck", "U-turn", "Substitute", "Flash Cannon", "Trick Room", "Cut", "Fly", "Strength", "Rock Smash", "Waterfall", "Rock Climb" ]
+    "tutorMoves": [
+        "Fire Fang", "Crunch", "Will-O-Wisp", "Taunt", "Protect", "Substitute", "Flame Charge", "Dark Pulse", "Overheat"
+    ]
 }

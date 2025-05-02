@@ -22,7 +22,7 @@
     "evolutions": [
       {
         "nr": "042",
-        "name": "Minimai",
+        "name": "Minamai",
         "lvl": 0
       },
       {
@@ -47,8 +47,7 @@
       {"lvl": 37, "name": "Secret Sword"},
       {"lvl": 40, "name": "Thunder"},
       {"lvl": 44, "name": "Swords Dance"},
-      {"lvl": 52, "name": "Aqua Tail"},
-      {"lvl": 60, "name": "Sword Barrage"}
+      {"lvl": 52, "name": "Aqua Tail"}
     ],
     "tutorMoves": [
       "Water Pulse", "Thunderbolt", "Ice Beam", "Volt Switch", "Dive", "Surf",

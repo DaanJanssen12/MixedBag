@@ -1,0 +1,52 @@
+{
+    "name": "Cerberaze",
+    "primaryType": "Fire",
+    "secondaryType": "Dark",
+    "species": "Infernal Guardian",
+    "height": "1.8",
+    "weight": "70.2",
+    "catchRate": 45,
+    "baseExp": 239,
+    "baseFriendship": 35,
+    "hiddenAbilities": "Flash Fire",
+    "dexEntry": "Cerberaze is said to guard the gates of the underworld. Its three heads each embody a different flame—rage, cunning, and retribution.",
+    "abilities": "Blaze, Flame Body",
+    "stats": {
+        "hp": 85,
+        "atk": 115,
+        "def": 80,
+        "spd": 90,
+        "spatk": 75,
+        "spdef": 70
+    },
+    "evolutions": [
+        {
+            "nr": "066",
+            "name": "Taimber",
+            "lvl": 0
+        },
+        {
+            "nr": "067",
+            "name": "Embadon",
+            "lvl": 16
+        },
+        {
+            "nr": "068",
+            "name": "Cerberaze",
+            "lvl": 36
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Bite" },
+        { "lvl": 1, "name": "Fire Fang" },
+        { "lvl": 36, "name": "Flamethrower" },
+        { "lvl": 42, "name": "Crunch" },
+        { "lvl": 47, "name": "Will-O-Wisp" },
+        { "lvl": 53, "name": "Flare Blitz" },
+        { "lvl": 58, "name": "Nasty Plot" },
+        { "lvl": 64, "name": "Dark Pulse" }
+    ],
+    "tutorMoves": [
+        "Flamethrower", "Fire Blast", "Dark Pulse", "Will-O-Wisp", "Taunt", "Protect", "Substitute", "Crunch", "Flare Blitz", "Heat Wave", "Snarl"
+    ]
+}

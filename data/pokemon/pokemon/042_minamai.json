@@ -1,5 +1,5 @@
 {
-    "name": "Minimai",
+    "name": "Minamai",
     "primaryType": "Water",
     "secondaryType": "Electric",
     "species": "Tiny Swordfish",
@@ -10,7 +10,7 @@
     "baseFriendship": 50,
     "hiddenAbilities": "Lightning Rod",
     "abilities": "Swift Swim, Volt Absorb",
-    "dexEntry": "Minimai zip through warm ocean currents at high speed, often racing each other in short bursts of electricity-charged water. Their small size hides the sharpness of their developing blade-like snouts.",
+    "dexEntry": "Minamai zip through warm ocean currents at high speed, often racing each other in short bursts of electricity-charged water. Their small size hides the sharpness of their developing blade-like snouts.",
     "stats": {
       "hp": 45,
       "atk": 60,
@@ -22,7 +22,7 @@
     "evolutions": [
       {
         "nr": "042",
-        "name": "Minimai",
+        "name": "Minamai",
         "lvl": 0
       },
       {
