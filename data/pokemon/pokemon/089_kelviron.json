@@ -1,0 +1,57 @@
+{
+    "name": "Kelviron",
+    "primaryType": "Water",
+    "secondaryType": "Dragon",
+    "species": "Tidelord",
+    "height": "2.3",
+    "weight": "128.0",
+    "catchRate": 45,
+    "baseExp": 239,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Swift Swim",
+    "dexEntry": "Kelviron commands the tides and is both feared and revered by sailors. Its mane flows like liquid light, and its cry echoes like wind across the sea.",
+    "abilities": "Torrent",
+    "stats": {
+        "hp": 92,
+        "atk": 88,
+        "def": 80,
+        "spd": 96,
+        "spatk": 112,
+        "spdef": 95
+    },
+    "evolutions": [
+        {
+            "nr": "087",
+            "name": "Vapplet",
+            "lvl": 0
+        },
+        {
+            "nr": "088",
+            "name": "Vaponyx",
+            "lvl": 16
+        },
+        {
+            "nr": "089",
+            "name": "Kelviron",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Tail Whip" },
+        { "lvl": 1, "name": "Water Gun" },
+        { "lvl": 4, "name": "Bubble" },
+        { "lvl": 8, "name": "Aqua Jet" },
+        { "lvl": 12, "name": "Water Pulse" },
+        { "lvl": 17, "name": "Twister" },
+        { "lvl": 22, "name": "Rain Dance" },
+        { "lvl": 27, "name": "Dragon Breath" },
+        { "lvl": 33, "name": "Aqua Ring" },
+        { "lvl": 38, "name": "Dragon Pulse" },
+        { "lvl": 44, "name": "Surf" },
+        { "lvl": 50, "name": "Hydro Pump" },
+        { "lvl": 56, "name": "Hurricane" }
+    ],
+    "tutorMoves": [
+        "Surf", "Waterfall", "Ice Beam", "Dragon Tail", "Protect", "Substitute", "Toxic", "Rest", "Rain Dance", "Scald", "Dragon Pulse", "Hurricane", "Hyper Beam"
+    ]
+}

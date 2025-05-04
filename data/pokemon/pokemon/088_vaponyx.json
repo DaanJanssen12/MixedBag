@@ -1,0 +1,53 @@
+{
+    "name": "Vaponyx",
+    "primaryType": "Water",
+    "secondaryType": "Dragon",
+    "species": "Mist Steed",
+    "height": "1.4",
+    "weight": "48.2",
+    "catchRate": 45,
+    "baseExp": 142,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Swift Swim",
+    "dexEntry": "Vaponyx often hovers just above the ground, surrounded by a veil of mist. Its mane is said to shimmer like moonlit dew.",
+    "abilities": "Torrent",
+    "stats": {
+        "hp": 68,
+        "atk": 65,
+        "def": 58,
+        "spd": 80,
+        "spatk": 78,
+        "spdef": 65
+    },
+    "evolutions": [
+        {
+            "nr": "087",
+            "name": "Vapplet",
+            "lvl": 0
+        },
+        {
+            "nr": "088",
+            "name": "Vaponyx",
+            "lvl": 16
+        },
+        {
+            "nr": "089",
+            "name": "Kelviron",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Tail Whip" },
+        { "lvl": 1, "name": "Water Gun" },
+        { "lvl": 4, "name": "Bubble" },
+        { "lvl": 8, "name": "Aqua Jet" },
+        { "lvl": 12, "name": "Water Pulse" },
+        { "lvl": 17, "name": "Twister" },
+        { "lvl": 22, "name": "Rain Dance" },
+        { "lvl": 27, "name": "Dragon Breath" },
+        { "lvl": 33, "name": "Aqua Ring" }
+    ],
+    "tutorMoves": [
+        "Surf", "Waterfall", "Ice Beam", "Dragon Tail", "Protect", "Substitute", "Toxic", "Rest", "Rain Dance", "Scald", "Dragon Pulse"
+    ]
+}

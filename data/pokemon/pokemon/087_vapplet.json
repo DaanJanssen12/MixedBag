@@ -1,0 +1,50 @@
+{
+    "name": "Vapplet",
+    "primaryType": "Water",
+    "secondaryType": "",
+    "species": "Bubble Cub",
+    "height": "0.6",
+    "weight": "11.5",
+    "catchRate": 45,
+    "baseExp": 66,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Swift Swim",
+    "dexEntry": "Vapplet loves to play in shallow waters, blowing bubbles to confuse predators. Though small, it’s agile thanks to its powerful tail flicks.",
+    "abilities": "Torrent",
+    "stats": {
+        "hp": 48,
+        "atk": 50,
+        "def": 42,
+        "spd": 60,
+        "spatk": 58,
+        "spdef": 45
+    },
+    "evolutions": [
+        {
+            "nr": "087",
+            "name": "Vapplet",
+            "lvl": 0
+        },
+        {
+            "nr": "088",
+            "name": "Vaponyx",
+            "lvl": 16
+        },
+        {
+            "nr": "089",
+            "name": "Kelviron",
+            "lvl": 34
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Splash" },
+        { "lvl": 1, "name": "Tail Whip" },
+        { "lvl": 4, "name": "Water Gun" },
+        { "lvl": 8, "name": "Bubble" },
+        { "lvl": 12, "name": "Aqua Jet" },
+        { "lvl": 16, "name": "Water Pulse" }
+    ],
+    "tutorMoves": [
+        "Surf", "Waterfall", "Ice Beam", "Protect", "Substitute", "Toxic", "Hail", "Rest", "Rain Dance", "Scald"
+    ]
+}
