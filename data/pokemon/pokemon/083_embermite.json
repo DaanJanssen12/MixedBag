@@ -1,0 +1,49 @@
+{
+    "name": "Embermite",
+    "primaryType": "Dark",
+    "secondaryType": "",
+    "species": "Plume Critter",
+    "height": "0.4",
+    "weight": "6.2",
+    "catchRate": 190,
+    "baseExp": 64,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Aftermath",
+    "dexEntry": "Embermite uses the smoky plumes on its back to cloak its movements in shadows. It watches intruders with piercing red eyes before vanishing without a sound.",
+    "abilities": "Frisk, Run Away",
+    "stats": {
+        "hp": 45,
+        "atk": 60,
+        "def": 40,
+        "spd": 80,
+        "spatk": 50,
+        "spdef": 40
+    },
+    "evolutions": [
+        {
+            "nr": "083",
+            "name": "Embermite",
+            "lvl": 0
+        },
+        {
+            "nr": "084",
+            "name": "Noctuff",
+            "lvl": 30
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Leer" },
+        { "lvl": 4, "name": "Snarl" },
+        { "lvl": 8, "name": "Pursuit" },
+        { "lvl": 12, "name": "Haze" },
+        { "lvl": 16, "name": "Quick Attack" },
+        { "lvl": 20, "name": "Feint Attack" },
+        { "lvl": 25, "name": "Torment" },
+        { "lvl": 30, "name": "Shadow Sneak" },
+        { "lvl": 35, "name": "Crunch" },
+        { "lvl": 40, "name": "Nasty Plot" }
+    ],
+    "tutorMoves": [
+        "Dark Pulse", "Taunt", "Protect", "Shadow Claw", "Substitute", "Rest", "Snatch", "Thief", "Toxic", "Swagger"
+    ]
+}

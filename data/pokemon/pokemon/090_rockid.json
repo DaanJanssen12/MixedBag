@@ -19,33 +19,19 @@
         "spatk": 45,
         "spdef": 45
     },
+    "forms": [
+        "Tuff", "Glim", "Ferra"
+    ],
     "evolutions": [
         {
             "nr": "090",
             "name": "Rockid",
-            "lvl": 0,
-            "forms": [
-                {
-                    "primaryType": "Rock",
-                    "secondaryType": "Normal",
-                    "imageName": "Rockid(Normal).png"
-                },
-                {
-                    "primaryType": "Rock",
-                    "secondaryType": "Fairy",
-                    "imageName": "Rockid(Fairy).png"
-                },
-                {
-                    "primaryType": "Rock",
-                    "secondaryType": "Steel",
-                    "imageName": "Rockid(Steel).png"
-                }
-            ]
+            "lvl": 0
         },
         {
             "nr": "091",
             "name": "Stubhorn",
-            "lvl": 24
+            "lvl": 32
         }
     ],
     "moves": [

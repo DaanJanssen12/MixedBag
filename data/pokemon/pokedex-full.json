@@ -411,38 +411,38 @@
     },
     {
         "nr": "083",
-        "name": "Deveep",
+        "name": "Embermite",
         "type": "Dark,None"
     },
     {
         "nr": "084",
-        "name": "Dozein",
+        "name": "Noctuff",
         "type": "Dark,None"
     },
     {
         "nr": "085",
-        "name": "Goatyr",
-        "type": "Fairy"
+        "name": "Kidling",
+        "type": "Fairy,None"
     },
     {
         "nr": "086",
-        "name": "Goataur",
+        "name": "Caprindel",
         "type": "Fairy,Fighting"
     },
     {
         "nr": "087",
-        "name": "Quex",
-        "type": "Dragon,None"
+        "name": "Vapplet",
+        "type": "Water,None"
     },
     {
         "nr": "088",
-        "name": "Dalbex",
-        "type": "Dragon,None"
+        "name": "Vaponyx",
+        "type": "Water,Dragon"
     },
     {
         "nr": "089",
-        "name": "Unex",
-        "type": "Dragon,None"
+        "name": "Kelviron",
+        "type": "Water,Dragon"
     },
     {
         "nr": "090",

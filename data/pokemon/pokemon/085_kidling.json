@@ -1,0 +1,45 @@
+{
+    "name": "Kidling",
+    "primaryType": "Fairy",
+    "secondaryType": "",
+    "species": "Sproutling Goat",
+    "height": "0.5",
+    "weight": "6.8",
+    "catchRate": 190,
+    "baseExp": 60,
+    "baseFriendship": 120,
+    "hiddenAbilities": "Sap Sipper",
+    "dexEntry": "Kidling are often seen darting between forest glades, hiding behind trees. Their leafy tails store sunlight, and they hum softly when calm.",
+    "abilities": "Leaf Guard, Cute Charm",
+    "stats": {
+        "hp": 48,
+        "atk": 40,
+        "def": 45,
+        "spd": 55,
+        "spatk": 50,
+        "spdef": 60
+    },
+    "evolutions": [
+        {
+            "nr": "085",
+            "name": "Kidling",
+            "lvl": 0
+        },
+        {
+            "nr": "086",
+            "name": "Caprindel",
+            "lvl": 24
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 3, "name": "Charm" },
+        { "lvl": 6, "name": "Fairy Wind" },
+        { "lvl": 10, "name": "Growth" },
+        { "lvl": 14, "name": "Leech Seed" },
+        { "lvl": 18, "name": "Sweet Kiss" }
+    ],
+    "tutorMoves": [
+        "Aromatherapy", "Protect", "Dazzling Gleam", "Bullet Seed", "Safeguard", "Energy Ball", "Rest", "Light Screen"
+    ]
+}

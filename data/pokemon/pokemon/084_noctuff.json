@@ -1,0 +1,48 @@
+{
+    "name": "Noctuff",
+    "primaryType": "Dark",
+    "secondaryType": "",
+    "species": "Shroud Beast",
+    "height": "0.9",
+    "weight": "22.5",
+    "catchRate": 90,
+    "baseExp": 135,
+    "baseFriendship": 70,
+    "hiddenAbilities": "Intimidate",
+    "dexEntry": "Noctuff lurks in remote caves and forgotten ruins, using its shadowy mane to mask its scent. Travelers say its red eyes glow like embers from the dark.",
+    "abilities": "Frisk, Keen Eye",
+    "stats": {
+        "hp": 70,
+        "atk": 80,
+        "def": 75,
+        "spd": 90,
+        "spatk": 50,
+        "spdef": 70
+    },
+    "evolutions": [
+        {
+            "nr": "083",
+            "name": "Embermite",
+            "lvl": 0
+        },
+        {
+            "nr": "084",
+            "name": "Noctuff",
+            "lvl": 30
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Snarl" },
+        { "lvl": 1, "name": "Feint Attack" },
+        { "lvl": 1, "name": "Torment" },
+        { "lvl": 30, "name": "Shadow Sneak" },
+        { "lvl": 34, "name": "Scary Face" },
+        { "lvl": 38, "name": "Crunch" },
+        { "lvl": 42, "name": "Sucker Punch" },
+        { "lvl": 47, "name": "Nasty Plot" },
+        { "lvl": 52, "name": "Night Daze" }
+    ],
+    "tutorMoves": [
+        "Dark Pulse", "Taunt", "Protect", "Shadow Claw", "Substitute", "Rest", "Snatch", "Thief", "Toxic", "Swagger"
+    ]
+}

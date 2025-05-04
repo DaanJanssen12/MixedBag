@@ -1,0 +1,49 @@
+{
+    "name": "Caprindel",
+    "primaryType": "Fairy",
+    "secondaryType": "Fighting",
+    "species": "Guardian Centaur",
+    "height": "1.6",
+    "weight": "88.2",
+    "catchRate": 90,
+    "baseExp": 140,
+    "baseFriendship": 100,
+    "hiddenAbilities": "Inner Focus",
+    "dexEntry": "Caprindel stand tall to protect the weak. Though peaceful by nature, their sharp horns and swift strikes make them fierce in battle when defending their home.",
+    "abilities": "Serene Grace, Leaf Guard",
+    "stats": {
+        "hp": 80,
+        "atk": 85,
+        "def": 70,
+        "spd": 75,
+        "spatk": 75,
+        "spdef": 85
+    },
+    "evolutions": [
+        {
+            "nr": "085",
+            "name": "Kidling",
+            "lvl": 0
+        },
+        {
+            "nr": "086",
+            "name": "Caprindel",
+            "lvl": 22
+        }
+    ],
+    "moves": [
+        { "lvl": 1, "name": "Tackle" },
+        { "lvl": 1, "name": "Fairy Wind" },
+        { "lvl": 1, "name": "Leech Seed" },
+        { "lvl": 20, "name": "Aromatherapy" },
+        { "lvl": 24, "name": "Force Palm" },
+        { "lvl": 28, "name": "Draining Kiss" },
+        { "lvl": 34, "name": "Horn Leech" },
+        { "lvl": 40, "name": "Play Rough" },
+        { "lvl": 46, "name": "High Horsepower" },
+        { "lvl": 52, "name": "Sacred Sword" }
+    ],
+    "tutorMoves": [
+        "Dazzling Gleam", "Aura Sphere", "Protect", "Bulk Up", "Horn Leech", "Rest", "Play Rough", "Focus Blast", "Energy Ball"
+    ]
+}
